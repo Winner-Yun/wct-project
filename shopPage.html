@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Premium</title>
+    <link rel="icon" href="./img/Kanesha.png">
+    <link rel="stylesheet" href="./css/shopPage.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>របៀបទិញ Premium Plus!</h1>
+            <p>ចុចប៊ូតុងទិញទិញឥឡូវនេះ ដើម្បីទិញ Premium Plus ដោយចំណាយតែ៥០មុឺនរៀល ទទូលបានPremium Plus ពេញមួយឆ្នាំ។
+
+            </p>
+        </div>
+
+        <!-- Back Button -->
+        <button class="back-btn" onclick="history.back()">ត្រឡប់ក្រោយ</button>
+
+        <div class="pricing-table">
+
+            <div class="plan most-popular">
+                <div class="plan-header">
+                    <h2>Premium Plus</h2>
+                    <p class="price">៥០០០០០​ រៀល <span>/ ឆ្នាំ</span></p>
+                    <p class="discount">មានសញ្ញាប័ត្រក្រិយបញ្ចប់ការសិក្សាក្នុងវគ្គណាមួយ។</p>
+                </div>
+                <button class="btn" id="buybtn">ទិញឥឡូវនេះ</button>
+                <p class="features">អាចទស្សនាបានគ្រប់វីដេអូ និងជួយពីក្រុម developers</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("buybtn").addEventListener("click", function() {
+        window.location.href = 'qrCodePay.html';
+    });
+    </script>
+</body>
+</html>

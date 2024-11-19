@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Kanesha.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/settingPage.css" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="settings-wrapper">
+      <aside class="sidebar">
+        <div class="controlBack" style="display: flex;">
+          <button style="align-items: center; background: none; border: none;" id="backBtn" onclick="window.location.href='welcomePage.html';"><i class="bx bx-arrow-back"></i></button>
+          <h2>ការកំណត់</h2>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#" class="active" id="account-link">គណនី</a></li>
+            <li><a href="#" id="privacy-link">ឯកជនភាព</a></li>
+            <li><a href="#" id="notifications-link">ការជូនដំណឹង</a></li>
+            <li><a href="#" id="premium-link">Premium Plus</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="settings-content">
+        <section id="account-section">
+          <header>
+            <h1>ការកំណត់ គណនី</h1>
+            <p>
+              ធ្វើបច្ចុប្បន្នភាពព័ត៌មានលម្អិតផ្ទាល់ខ្លួនរបស់អ្នក
+              គ្រប់គ្រងចំណូលចិត្ត និងធានាសុវត្ថិភាពគណនីរបស់អ្នក។
+            </p>
+          </header>
+          <form>
+            <div class="form-section">
+              <h2>Personal Information</h2>
+              <div class="form-group">
+                <label for="profile-pic">រូបភាពប្រើប្រាស់</label>
+
+                <div class="profile-pic-wrapper">
+                  <img
+                    id="profile-pic"
+                    src="./img/profacer_Man.png"
+                    alt="Profile Picture"
+                    class="profile-pic"
+                  />
+                  <button
+                    type="button"
+                    class="btn-primarySP"
+                    id="change-pic-btn"
+                  >
+                    ផ្លាស់ប្តូររូបភាព
+                  </button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="full-name">ឈ្មោះអ្នកប្រើប្រាស់</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  placeholder="Username"
+                  value="នារី បុរស"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">អុីមែល</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Kanesha@example.com"
+                  value="Kanesha@gmail.com"
+                />
+              </div>
+            </div>
+            <div class="form-section">
+              <h2>Security</h2>
+              <div class="form-group">
+                <label for="password">ពាក្យសម្ងាត់</label>
+                <button type="button" class="btn-primary">
+                  ផ្លាស់ប្តូពាក្យសម្ងាត់
+                </button>
+              </div>
+            </div>
+            <div class="form-section">
+              <h2>ចំណង់ចំណូលចិត្ត</h2>
+              <div class="form-group">
+                <label for="theme">Theme</label>
+                <select id="theme">
+                  <option value="light">ភ្លឺ</option>
+                  <option value="dark">ងងឹត</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Save Changes</button>
+              <button type="reset" class="btn-secondary">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Privacy Section -->
+        <section id="privacy-section" style="display: none">
+          <header>
+            <h1>ការកំណត់ ឯកជនភាព</h1>
+            <p>គ្រប់គ្រងការកំណត់សុវត្ថិភាព និងឯកជនភាពរបស់អ្នក</p>
+          </header>
+          <p class="note">
+            **កាលណាអ្នកប្តូរទៅ
+            <b style="color: #004680">ឯកជន</b> រាល់ការបញ្ចេញមតិ ឬ
+            ការសួរសំនួរទៅកាន់គ្រូ អ្នកមិនអាចមើលរូបប្រូហ្វាល និង
+            ពត៍មានរបស់អ្នកដ៏ទៃបានទេ (ឈ្មោះអ្នលប្រើប្រាស់...)
+            អ្នកដ៏ទៃក៏មិនអាចមើលឃើញពត៍មានរបស់អ្នកដូចគ្នា។
+          </p>
+          <form>
+            <div class="form-group">
+              <label for="privacy-setting">ឯកជនភាព</label>
+              <select id="privacy-setting">
+                <option value="public">សាធារណៈ</option>
+                <option value="private">ឯកជន</option>
+              </select>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">
+                Save Privacy Settings
+              </button>
+              <button type="reset" class="btn-secondary">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Notifications Section -->
+        <section id="notifications-section" style="display: none">
+          <header>
+            <h1>ការកំណត់ ការជូនដំណឹង</h1>
+            <p>ប្ដូរតម្រូវការការជូនដំណឹងរបស់អ្នក</p>
+          </header>
+          <form>
+            <div class="form-group">
+              <label>ការជូនដំណឹង​តាម អុីមែល</label>
+              <div class="toggle-switch">
+                <input type="checkbox" id="email-notifications" checked />
+                <label for="email-notifications"></label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">
+                Save Notification Settings
+              </button>
+              <button type="reset" class="btn-secondary">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Premium Plus Section -->
+        <section id="premium-section" style="display: none">
+          <header>
+            <h1>Premium Plus</h1>
+            <p>ពត៌មានអំពីការជាវ Premium Plus</p>
+          </header>
+          <form>
+            <div class="form-group">
+              <label for="premium-option">ជាវ Premium Plus</label>
+              <select id="premium-option">
+                <option value="basic">ការផ្តល់ជូនដោយឥតគិតថ្លៃ</option>
+                <option value="premium">Premium Plus</option>
+              </select>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Activate</button>
+              <button type="reset" class="btn-secondary">Cancel</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      function switchSection(activeSectionId) {
+        const sections = [
+          "account-section",
+          "privacy-section",
+          "notifications-section",
+          "premium-section",
+        ];
+
+        sections.forEach((section) => {
+          const sectionElement = document.getElementById(section);
+          if (section === activeSectionId) {
+            sectionElement.style.display = "block";
+          } else {
+            sectionElement.style.display = "none";
+          }
+        });
+
+        const links = document.querySelectorAll("aside nav ul li a");
+        links.forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        document
+          .getElementById(`${activeSectionId}-link`)
+          .classList.add("active");
+      }
+
+      document
+        .getElementById("account-link")
+        .addEventListener("click", () => switchSection("account-section"));
+      document
+        .getElementById("privacy-link")
+        .addEventListener("click", () => switchSection("privacy-section"));
+      document
+        .getElementById("notifications-link")
+        .addEventListener("click", () =>
+          switchSection("notifications-section")
+        );
+      document
+        .getElementById("premium-link")
+        .addEventListener("click", () => switchSection("premium-section"));
+
+      switchSection("account-section");
+    </script>
+    <script src="./js/animate.js"></script>
+  </body>
+</html>

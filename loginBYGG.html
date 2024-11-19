@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./icon/gg_logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/loginBYGG.css" />
+    <title>Google Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png"
+          style="width: 8rem"
+          alt="Google Logo"
+          class="google-logo"
+        />
+        <span class="language-switch" onclick="toggleLanguage()">khmer</span>
+      </div>
+      <p class="sub-title" id="subtitleText">
+        to continue to <span class="highlight">Kanesha</span>
+      </p>
+
+      <ul class="user-list">
+        <li class="user-item">
+          <img src="./img/teacher/utakra.png" alt="User 1" />
+          <div class="user-info">
+            <strong>Ly Utakra</strong>
+            <span>UtakraSmos@gmail.com</span>
+          </div>
+        </li>
+        <div class="divider"></div>
+        <li class="user-item">
+          <img src="./img/teacher/kimchay.png" alt="User 2" />
+          <div class="user-info">
+            <strong>Mr kimchay</strong>
+            <span>kimchaySava@gmail.com</span>
+          </div>
+        </li>
+        <div class="divider"></div>
+        <li class="user-item">
+          <div class="user-info">
+            <p style="color: #0073e6" id="addAccountText">
+              Use another account
+            </p>
+          </div>
+        </li>
+      </ul>
+      <hr style="border: solid 0.01px #dbdbdb" />
+      <p class="info-text" id="infoText">
+        Before using this software, you can check
+        <a href="#" class="link" id="privacyLink">Kanesha's privacy policy</a>
+        and <a href="#" class="link" id="termsLink">terms of use</a>.
+      </p>
+
+      <div class="footer">
+        <span id="privacyText">Privacy</span>
+        <span id="termsText">Terms of Service</span>
+        <span id="helpText">Help</span>
+      </div>
+    </div>
+    <script src="./js/loginBYGG.js"></script>
+  </body>
+</html>

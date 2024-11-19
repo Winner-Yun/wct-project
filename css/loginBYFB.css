@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kantumruy Pro", sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  scale: 1.2;
+  width: 360px;
+  text-align: center;
+}
+.header {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.header button {
+  scale: 0.8;
+  margin-top: 1rem;
+}
+.header h1 {
+  font-size: 48px;
+  color: #1877f2;
+  margin-bottom: 20px;
+}
+
+.green-button {
+  background-color: #42b72a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  width: 10rem;
+  height: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: solid 1px #42b72a;
+  transition: all 0.2s;
+}
+.green-button:hover {
+  background-color: #fdfdfd;
+  color: #42b72a;
+}
+
+.login-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.login-form h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+}
+input:focus {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  box-shadow: 0 2px 1px rgb(24, 119, 242);
+}
+.blue-button {
+  background-color: #1877f2;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: solid 1px #1877f2;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+.blue-button:hover{
+    background-color: #fff;
+    color: #1877f2;
+}
+
+.links {
+  margin: 15px 0;
+}
+
+.links a {
+  color: #1877f2;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #00bbff;
+}
+
+.footer a {
+  font-size: 12px;
+  color: #8a8d91;
+}
+.footer a:hover {
+  color: #1877f2;
+}
+
+.footer hr {
+  border: 0;
+  height: 1px;
+  background: #dddfe2;
+  margin: 10px 0;
+}
+.footer p{
+    color: #8a8d91;
+}

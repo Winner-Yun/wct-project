@@ -1,0 +1,164 @@
+/* General layout styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Kantumruy Pro", sans-serif;
+    background: #00a7cd; 
+    color: #1e88e5; 
+  }
+  h1 {
+    margin-top: 4rem;
+    font-size: 2.8em;
+    color: #ffffff; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  .backBtn {
+    position: absolute;
+    margin-left: -65rem;
+    margin-top: 3rem;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    color: #ffffff;
+    background: linear-gradient(145deg, #85e1e1, #1e88e5);
+    border: 2px solid #4fc3f7;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.backBtn:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.4); /* White shiny gloss effect */
+    border-radius: 50%;
+    opacity: 0.5;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.backBtn:hover {
+    transform: scale(1.05);
+    color: #01486b;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.backBtn:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+  .card-container {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    padding: 20px;
+  }
+
+  .card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: #01486b;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    backdrop-filter: blur(5px);
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #00a7cd, #01486b, #00a7cd, #01486b); /* Gradient matching main page's blue tones */
+    background-size: 200% 200%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .card:hover::before {
+    opacity: 1;
+    animation: glow 2.5s linear infinite;
+  }
+  
+  @keyframes glow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+  }
+  
+  .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-bottom: 10px solid #00a7cd;
+  }
+  
+  .card-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-info h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-info p {
+    font-size: 1em;
+    color: #c9c9c9;
+    margin: 10px 0;
+  }
+  
+  .card-info .subject {
+    font-size: 1em;
+    font-weight: bold;
+    color: #00aeff;
+    margin: 10px 0;
+  }
+
+  .card-info p, .card-info h2, .card-info .subject {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover .card-info p,
+  .card:hover .card-info h2,
+  .card:hover .card-info .subject {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

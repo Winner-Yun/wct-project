@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon/ig_logo.png" />
+    <title>Instagram Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      * {
+        font-family: "Kantumruy Pro", sans-serif;
+      }
+      body {
+        font-family: "Kantumruy Pro", sans-serif;
+        background: linear-gradient(
+          45deg,
+          #f09433,
+          #e6683c,
+          #dc2743,
+          #cc2366,
+          #bc1888
+        );
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 350px;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #262626;
+      }
+
+      .header h1 {
+        color: #cc2366;
+        font-family: "Lobster", cursive;
+        font-weight: 200;
+        font-size: 3rem;
+      }
+
+      .red-button,
+      .blue-button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .blue-button {
+        background-color: #3897f0;
+        color: #ffffff;
+        transition: all 0.2s;
+      }
+
+      .red-button {
+        background-color: #e1306c;
+        color: #ffffff;
+        transition: all 0.2s;
+      }
+
+      .red-button:hover,
+      .blue-button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .input-field {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        outline: none;
+        font-size: 1rem;
+        background-color: #fafafa;
+        color: #262626;
+      }
+
+      .links a {
+        color: #3897f0;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 20px;
+      }
+
+      .footer a {
+        color: #898989;
+        font-size: 0.8rem;
+        text-decoration: none;
+        margin: 5px;
+      }
+
+      .footer a:hover {
+        color: #bc1888;
+        text-decoration: underline;
+      }
+
+      .footer hr {
+        border: 0;
+        border-top: 1px solid #dbdbdb;
+        margin: 10px 0;
+      }
+
+      .footer p {
+        font-size: 0.7rem;
+        color: #999;
+      }
+    </style>
+    <div class="container">
+      <div class="header">
+        <h1>Instagram</h1>
+        <button class="blue-button">បង្កើតគណនីថ្មី</button>
+      </div>
+      <div class="login-form">
+        <h2>ចូលគណនីរបស់អ្នកក្នុង Instagram</h2>
+        <form>
+          <input
+            type="text"
+            placeholder="លេខទូរស័ព្ទ ឬ អ៊ីមែល"
+            value="Kanesha.com"
+            class="input-field"
+          />
+          <input
+            type="password"
+            placeholder="ពាក្យសម្ងាត់"
+            value="JJJJJJ"
+            class="input-field"
+          />
+          <button type="submit" class="red-button">ចូល</button>
+          <div class="links" style="color: #1877f2">
+            <a href="#">បំភ្លេចពាក្យសម្ងាត់?</a> |
+            <a href="#">ផ្លាស់ប្តូរពាក្យសំងាត់</a>
+          </div>
+          <button class="blue-button">បង្កើតគណនីថ្មី</button>
+        </form>
+      </div>
+      <div class="footer">
+        <a href="">ភាសាខ្មែរ</a>
+        <a href="">English (US)</a>
+        <a href="">Français (France)</a>
+        <a href="">Tiếng Việt 中文(简体)</a>
+        <a href="">ភាសាថៃ</a>
+        <a href="">한국어</a>
+        <a href="">日本語</a>
+        <a href="">Español</a>
+        <a href="">Português (Brasil)</a>
+        <a href="">Deutsch</a>
+        <hr />
+        <p>Meta © 2024</p>
+      </div>
+    </div>
+  </body>
+</html>

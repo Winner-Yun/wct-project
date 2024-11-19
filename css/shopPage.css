@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Khmer";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #1f1f1f, #2b2b2b);
+  color: #f1f1f1;
+  background: url(https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  text-align: center;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.info h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f7f7f7;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  z-index: 3;
+  position: relative;
+}
+
+.info p {
+  font-size: 1.15rem;
+  color: #bdbdbd;
+  margin-bottom: 40px;
+  z-index: 3;
+  position: relative;
+}
+
+.pricing-table {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 40px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.most-popular {
+  position: relative;
+  border: 2px solid #c9a43a;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(201, 164, 58, 0.5), 0 0 25px rgba(201, 164, 58, 0.3);
+  overflow: visible;
+  transition: transform 0.3s ease-in-out;
+  animation: smoothPremiumGlow 2s infinite alternate ease-in-out;
+}
+
+@keyframes smoothPremiumGlow {
+  0% {
+    box-shadow: 0 0 15px rgba(201, 164, 58, 0.4),
+      0 0 25px rgba(201, 164, 58, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
+  }
+}
+
+.most-popular::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  z-index: -1;
+  animation: smoothInnerGlow 4s infinite alternate ease-in-out;
+}
+
+@keyframes smoothInnerGlow {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.most-popular .plan-header,
+.most-popular .price,
+.most-popular .features,
+.most-popular .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.plan-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f7f7f7;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #c9a43a;
+  margin: 10px 0;
+}
+
+.price span {
+  font-size: 1.1rem;
+  color: #a6a6a6;
+}
+
+.discount {
+  font-size: 1rem;
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.features {
+  font-size: 1.05rem;
+  color: #c2c2c2;
+  margin: 20px 0;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #c9a43a, #d8b057);
+  color: #1f1f1f;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(201, 164, 58, 0.4);
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #d8b057, #c9a43a);
+  transform: translateY(-3px);
+}
+
+.back-btn {
+  position: absolute;
+  top: 2px;
+  left: -16rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #c9a43a;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-btn:hover {
+  background-color: #d8b057;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info h1 {
+    font-size: 2.5rem;
+  }
+
+  .price {
+    font-size: 2.2rem;
+  }
+}

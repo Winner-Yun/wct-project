@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Kanesha.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>QR Code Payment</title>
+    <link rel="stylesheet" href="./css/qrCodePay.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button class="back-button" onclick="history.back()">
+          ត្រឡប់ក្រោយ
+        </button>
+        <h1>Scan QR Code ដើម្បី Pay លុយ</h1>
+      </header>
+
+      <div class="qr-section">
+        <img src="./img/payQr.jpg" alt="QR Code for Payment" class="qr-code" />
+        <p>ស្កេនកូដ QR ជាមួយធនាគារ​ ដើម្បីបង់ប្រាក់សម្រាប់ការទិញ</p>
+      </div>
+    </div>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Add animation classes when the element is in view
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInLeftBig"
+            );
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      document.querySelectorAll(".container").forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>
