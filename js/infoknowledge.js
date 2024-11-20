@@ -22,38 +22,87 @@ profileBtn.addEventListener("click", function () {
   profileBar.classList.toggle("show");
 });
 
-/*End*/ 
-
+/*End*/
 
 // Interactive Example: Update course details dynamically
-document.querySelectorAll('.details-btn').forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-      const rightPanel = document.querySelector('.right-panel');
-      const courses = [
-          {
-              title: "HTML Basics",
-              description: "សិក្សាអំពីរចនាសម្ព័ន្ធនៃទំព័របណ្តាញ, HTML ដែលមានន័យសំខាន់, និងស្លាកដែលចាំបាច់ដើម្បីបង្កើតគេហទំព័រដំបូងរបស់អ្នកចាប់ពីដំបូង។",
-          },
-          {
-              title: "CSS Mastery",
-              description: "ជាអ្នកជំនាញ CSS ដើម្បីបង្កើតការរចនាដែលគួរឲ្យទាក់ទាញ, អនិមិត្តភាព, និងទំរង់ត្រូវតាមប្រព័ន្ធសម្រាប់គម្រោងបណ្តាញសម័យថ្មីៗ។",
-          },
-          {
-              title: "JavaScript Essentials",
-              description: "យល់ដឹងអំពីមូលដ្ឋាននៃ JavaScript រួមមានអថេរ, វ្រង្ស, មុខងារ, និងការប្រតិបត្តិការលើ DOM។",
-          },
-          {
-              title: "React for Beginners",
-              description: "លោតចូលទៅក្នុង React ដើម្បីបង្កើតគំនិត UI ដំណើរការល្អដែលអាចប្រើឡើងវិញ និងគ្រប់គ្រងស្ថានភាពបានយ៉ាងងាយស្រួលសម្រាប់កម្មវិធីបណ្តាញដែលមានអន្តរកម្ម។",
-          },
-          {
-              title: "Responsive Web Design",
-              description: "រៀនពីរបៀបបង្កើតគេហទំព័រដែលឆ្លើយតប ហើយមានរូបរាងស្អាតនៅលើកុំព្យូទ័រ, តាប្លេត, និងឧបករណ៍ទូរស័ព្ទចល័តដោយប្រើ CSS និង media queries។",
-          },
-      ];
-      const { title, description } = courses[index];
-      rightPanel.querySelector('h2').textContent = title;
-      rightPanel.querySelector('.description').textContent = description;
+document.querySelectorAll(".details-btn").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    const rightPanel = document.querySelector(".right-panel");
+    const courses = [
+      {
+        title: "HTML Basics",
+        description:
+          "សិក្សាអំពីរចនាសម្ព័ន្ធនៃទំព័របណ្តាញ, HTML ដែលមានន័យសំខាន់, និងស្លាកដែលចាំបាច់ដើម្បីបង្កើតគេហទំព័រដំបូងរបស់អ្នកចាប់ពីដំបូង។",
+      },
+      {
+        title: "CSS Mastery",
+        description:
+          "ជាអ្នកជំនាញ CSS ដើម្បីបង្កើតការរចនាដែលគួរឲ្យទាក់ទាញ, អនិមិត្តភាព, និងទំរង់ត្រូវតាមប្រព័ន្ធសម្រាប់គម្រោងបណ្តាញសម័យថ្មីៗ។",
+      },
+      {
+        title: "JavaScript Essentials",
+        description:
+          "យល់ដឹងអំពីមូលដ្ឋាននៃ JavaScript រួមមានអថេរ, វ្រង្ស, មុខងារ, និងការប្រតិបត្តិការលើ DOM។",
+      },
+      {
+        title: "React for Beginners",
+        description:
+          "លោតចូលទៅក្នុង React ដើម្បីបង្កើតគំនិត UI ដំណើរការល្អដែលអាចប្រើឡើងវិញ និងគ្រប់គ្រងស្ថានភាពបានយ៉ាងងាយស្រួលសម្រាប់កម្មវិធីបណ្តាញដែលមានអន្តរកម្ម។",
+      },
+      {
+        title: "Responsive Web Design",
+        description:
+          "រៀនពីរបៀបបង្កើតគេហទំព័រដែលឆ្លើយតប ហើយមានរូបរាងស្អាតនៅលើកុំព្យូទ័រ, តាប្លេត, និងឧបករណ៍ទូរស័ព្ទចល័តដោយប្រើ CSS និង media queries។",
+      },
+    ];
+    const { title, description } = courses[index];
+    rightPanel.querySelector("h2").textContent = title;
+    rightPanel.querySelector(".description").textContent = description;
   });
 });
 
+/*add scrool position by a */
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to scroll to a percentage of the page
+  function scrollToPercentage(percent) {
+    const totalHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const targetScrollPosition = (percent / 100) * totalHeight;
+
+    window.scrollTo({
+      top: targetScrollPosition,
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  }
+
+  // Add event listeners for each link
+  document.getElementById("whyKanesha").addEventListener("click", function (e) {
+    e.preventDefault();
+    scrollToPercentage(15); // Scroll to 25% of the page
+  });
+
+  document
+    .getElementById("programInfo")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      scrollToPercentage(42); // Scroll to 50% of the page
+    });
+
+  document
+    .getElementById("programPrice")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      scrollToPercentage(62); // Scroll to 75% of the page
+    });
+});
+
+const scrollToTopBtn = document.getElementById("arrow-upbtn");
+
+// Add click event listener
+scrollToTopBtn.addEventListener("click", function () {
+  // Scroll to the top smoothly
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // This ensures smooth scrolling
+  });
+});
