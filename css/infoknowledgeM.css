@@ -541,7 +541,7 @@ img {
 }
 .title {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .title h4{
   text-align: center;
@@ -555,11 +555,12 @@ img {
   display: flex;
 }
 .box {
+  scale: 0.9;
   background-color: #fff;
   border: solid 3px #d8d8d8;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   width: 25rem;
   height: 21rem;
   padding: 2rem;
