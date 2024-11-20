@@ -61,9 +61,9 @@ document.querySelectorAll(".details-btn").forEach((btn, index) => {
   });
 });
 
-/*add scrool position by a */
+/*add scroll by link to website*/
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to scroll to a percentage of the page
+
   function scrollToPercentage(percent) {
     const totalHeight =
       document.documentElement.scrollHeight - window.innerHeight;
@@ -71,38 +71,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.scrollTo({
       top: targetScrollPosition,
-      behavior: "smooth", // Smooth scrolling effect
+      behavior: "smooth", 
     });
   }
 
-  // Add event listeners for each link
   document.getElementById("whyKanesha").addEventListener("click", function (e) {
     e.preventDefault();
-    scrollToPercentage(15); // Scroll to 25% of the page
+    scrollToPercentage(15); 
   });
 
   document
     .getElementById("programInfo")
     .addEventListener("click", function (e) {
       e.preventDefault();
-      scrollToPercentage(42); // Scroll to 50% of the page
+      scrollToPercentage(42); 
     });
 
   document
     .getElementById("programPrice")
     .addEventListener("click", function (e) {
       e.preventDefault();
-      scrollToPercentage(62); // Scroll to 75% of the page
+      scrollToPercentage(62);
     });
 });
 
 const scrollToTopBtn = document.getElementById("arrow-upbtn");
 
-// Add click event listener
+
 scrollToTopBtn.addEventListener("click", function () {
-  // Scroll to the top smoothly
   window.scrollTo({
     top: 0,
-    behavior: "smooth", // This ensures smooth scrolling
+    behavior: "smooth", 
   });
 });
