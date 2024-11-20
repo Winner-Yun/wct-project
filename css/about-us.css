@@ -348,7 +348,7 @@ input:focus {
 /* Header Section */
 
  .about-header {
-  padding: -2px 20px;
+  padding: -10px 20px;
   background-image: linear-gradient(90deg, rgba(238,255,255,0.7721238938053098) 0%, rgba(24,234,255,0.3495575221238938) 50%, rgba(238,255,255,1) 100%);
   text-align: center;
 
@@ -424,6 +424,7 @@ input:focus {
     margin: 0 auto;
   }
 }
+
 
 /*underlink*/
 .underlinks {
