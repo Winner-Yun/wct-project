@@ -506,30 +506,84 @@ input:focus {
 #buyNowBtn:hover {
   background-color: #004d8d;
 }
-.controlInfo{
-    position: absolute;
-    text-align: center;
-    margin-top: 40.1rem;
-    background-color: #0078d7;
-    padding-top: 1.5rem;
-    width: 100%;
-    height: 4rem;
+.controlInfo {
+  position: absolute;
+  text-align: center;
+  margin-top: 40.1rem;
+  background-color: #0078d7;
+  padding-top: 1.5rem;
+  width: 100%;
+  height: 4rem;
 }
-.controlInfo a{
-    text-decoration: none;
-    color: #ffffff;
-    margin-right: 15rem;
-    font-weight: 600;
-    font-size: 1.2rem;
-    transition: all 0.2s;
+.controlInfo a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 15rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.2s;
 }
 .controlInfo a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
-.controlInfo a:hover{
-    color: #9db9ff;
+.controlInfo a:hover {
+  color: #9db9ff;
 }
- img{
-    width: 30px;
-    margin-right: 10px;
+img {
+  width: 30px;
+  margin-right: 10px;
+}
+.whyChose {
+  position: absolute;
+  margin-top: 55rem;
+  width: 85rem;
+  margin-left: 5rem;
+}
+.title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.title h4{
+  text-align: center;
+  color: #0078d7;
+}
+.title h2{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.info-Contain {
+  display: flex;
+}
+.box {
+  background-color: #fff;
+  border: solid 3px #d8d8d8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  width: 25rem;
+  height: 21rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+.box:hover h4{
+  color: #0078d7;
+}
+
+.box h4{
+  font-family: "Kantumruy Pro", sans-serif;
+  width:16rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.box p{
+  line-height: 2rem;
+  color: #6c6c6c;
+}
+.box:last-child{
+  margin-right: 0;
 }
