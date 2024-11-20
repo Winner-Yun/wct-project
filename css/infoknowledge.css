@@ -585,5 +585,5 @@ img {
   color: #6c6c6c;
 }
 .box:last-child{
-  margin-right: 1;
+  margin-right: 0;
 }
