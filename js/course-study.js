@@ -116,4 +116,8 @@ function toggleMenu() {
 }
 
 
+/*go to info*/
+
+
+
 
