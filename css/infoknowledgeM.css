@@ -543,11 +543,12 @@ img {
   text-align: center;
   margin-bottom: 3rem;
 }
-.title h4{
+.title h4 {
   text-align: center;
   color: #0078d7;
 }
-.title h2{
+.title h2 {
+  font-family: "Kantumruy Pro", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
 }
@@ -571,20 +572,164 @@ img {
   transform: translateY(-10px);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.3);
 }
-.box:hover h4{
+.box:hover h4 {
   color: #0078d7;
 }
 
-.box h4{
+.box h4 {
   font-family: "Kantumruy Pro", sans-serif;
-  width:16rem;
+  width: 16rem;
   font-size: 1.2rem;
   line-height: 2rem;
 }
-.box p{
+.box p {
   line-height: 2rem;
   color: #6c6c6c;
 }
-.box:last-child{
+.box:last-child {
   margin-right: 0;
+}
+
+.howStu {
+  position: absolute;
+  margin-top: 91rem;
+  width: 85rem;
+  text-align: center;
+  margin-left: 5rem;
+}
+
+.showWStu {
+  position: absolute;
+  margin-top: 130rem;
+  width: 85rem;
+  margin-left: 5rem;
+}
+.container {
+  scale: 0.9;
+  margin-top: 3rem;
+  display: flex;
+  margin-left: 5rem;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+.left-panel {
+  flex: 1;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(145deg, #f0f4f8, #e0e8f0);
+  overflow-y: auto;
+  height: 40rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left-panel::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 4px;
+}
+
+.left-panel .heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #004085;
+}
+
+.course-card {
+  background-color: #f9fbff;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.course-card i{
+  color: #ababab;
+  margin-right: 0.5rem;
+}
+
+.course-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  background-color: #0353a9;
+}
+
+.course-card:hover h3 {
+  color: #fff;
+}
+
+.course-card:hover .info {
+  color: #fff;
+}
+
+.course-card h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-card .info {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.details-btn {
+  background-color: #007bff;
+  color: white;
+  font-family: "Kantumruy Pro", sans-serif;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #0056b3;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #fff;
+  border: solid 3px #d8d8d8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 8px 30px rgba(0, 0, 0, 0.1);
+  height: 20rem;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.right-panel h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #004085;
+}
+
+.right-panel .description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.enroll-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-family: "Kantumruy Pro", sans-serif;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #0056b3;
 }
