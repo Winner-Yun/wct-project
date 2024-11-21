@@ -332,7 +332,7 @@ header {
   margin-top: 4rem;
   padding: 1.5em;
   background-color: #007BFF;
-  width: 100%;
+  width: 96.8%;
   color: white;
   position: absolute;
 }
@@ -348,6 +348,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.messagebox {
+  resize: none;
 }
 
 .contact-form, .contact-info {
@@ -424,7 +428,7 @@ footer {
   margin-top: 80rem;
   background-color: rgb(10, 10, 10);
   padding: 2rem;
-  width: 95%;
+  width: 95.8%;
   height: 20.5rem;
 }
 .bottomInformation {
