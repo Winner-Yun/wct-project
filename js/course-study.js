@@ -91,9 +91,6 @@ const observer3 = new IntersectionObserver((entries) => {
   });
 });
 
-document.querySelectorAll('.introTelling').forEach(element => {
-  observer3.observe(element);
-});
 document.querySelectorAll('.search-course').forEach(element => {
   observer3.observe(element);
 });
