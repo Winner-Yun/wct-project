@@ -402,7 +402,7 @@ input:focus {
     margin-top: -1.5rem;
     padding: 0;
   }
-  .introPage h2{
+  .introPage h2 {
     scale: 0.7;
     margin-bottom: -1rem;
     margin-left: -10rem;
@@ -412,7 +412,6 @@ input:focus {
     scale: 0.7;
     margin-left: -10rem;
     line-height: 0.5rem;
-
   }
   .search-course {
     scale: 0.8;
@@ -456,6 +455,62 @@ input:focus {
 .introTelling h3 {
   font-size: 2.5rem;
 }
+.animationCombo {
+  display: flex;
+}
+.dots-loader {
+  scale: 0.9;
+  margin-left: 1rem;
+  margin-top: 3.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.dot1 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  animation: bounce 2s infinite alternate;
+}
+.dot2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  animation: bounce 2s infinite alternate;
+}
+.dot3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  animation: bounce 2s infinite alternate;
+}
+
+.dot1:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot1:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.dot2:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot2:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.dot3:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot3:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
 .qoute {
   display: flex;
 }
@@ -476,7 +531,6 @@ input:focus {
   padding-right: 10rem;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
     0 0 20px rgba(255, 255, 255, 0.5);
-  animation: glowingBox 1.5s infinite alternate;
   font-size: 1rem;
 }
 .search-course a {
@@ -485,15 +539,6 @@ input:focus {
   position: absolute;
   margin-left: 21rem;
   margin-top: -0.8rem;
-}
-@keyframes glowingBox {
-  0% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
-      0 0 20px rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1);
-  }
 }
 
 /*programStudy*/

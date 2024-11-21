@@ -569,7 +569,6 @@ img {
 }
 
 .box:hover {
-  transform: translateY(-10px);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 .box:hover h4 {
@@ -775,7 +774,6 @@ img {
   gap: 60px;
   margin: 0 auto; 
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: fit-content;
 }
 
