@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Kanesha.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/reanPage.css" />
+    <title>Explore-Knowledge</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h1>គណេស.ខម</h1>
+        <h4>Kanesha.com</h4>
+      </div>
+      <div class="buttonControl">
+        <div class="search">
+          <input type="text" placeholder="ស្វែងរក...." />
+          <a href=""><i class="bx bx-search-alt-2"></i></a>
+        </div>
+        <div class="controlbtn">
+          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
+            <i class="bx bxs-bell-ring"></i>
+          </button>
+          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
+
+          <!-- Notification Dropdown -->
+          <div id="notificationDropdown" class="notification-dropdown">
+            <!-- Notification Header (Title + Settings) -->
+            <div class="notification-header">
+              <span class="notification-title"> ការជូនដំណឹង</span>
+              <a href="#" class="settings-icon">
+                <i class="bx bx-cog"></i>
+                <!-- Settings Icon -->
+              </a>
+            </div>
+            <!-- Notification Items -->
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">5 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">10 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">
+                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
+                </p>
+                <p class="notification-time">15 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">30 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 ម៉ោងមុន</p>
+              </div>
+            </div>
+            <!-- Add more notifications as needed -->
+          </div>
+        </div>
+      </div>
+      <div class="navbarbtn">
+        <div class="menu">
+          <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
+          <div class="dropdown">
+            <a class="course" id="menu" href="course-study.html">វគ្គសិក្សា</a>
+            <div class="dropdown-content">
+              <div class="devolopmentdrop">
+                <a href="#" id="id1"
+                  ><i class="bx bx-code-alt"></i>Devolopment
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="devolopmentdrop-drop">
+                  <a href="course-study.html">
+                    <i class="bx bx-code-block"></i>Web Devolopment</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-data"></i>Data Science</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
+                  >
+                  <a href="">Progaming language</a>
+                  <a href="">Software Engineering</a>
+                </div>
+              </div>
+              <div class="designdrop">
+                <a href="#" id="id2"
+                  ><i class="bx bxs-pen"></i>Design
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="designdrop-drop">
+                  <a href="">
+                    <i class="bx bxs-eyedropper"></i>UX & UI Design</a
+                  >
+                  <a href=""><i class="bx bxs-slideshow"></i>Graphic Design</a>
+                </div>
+              </div>
+              <div class="itAndSoftwaredrop">
+                <a href="#" id="id3"
+                  ><i class="bx bx-chip"></i>IT & Software
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="itAndSoftwaredrop-drop">
+                  <a href="">
+                    <i class="bx bx-shield-quarter"></i>cyber security</a
+                  >
+                  <a href=""
+                    ><i class="bx bx-network-chart"></i>Network security</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
+          <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
+        </div>
+        <button id="profileBtn">
+          <img src="./img/profacer_Man.png" alt="" />
+        </button>
+        <div class="profile-bar">
+          <a
+            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
+          >
+            <div class="profilePic">
+              <img src="./img/profacer_Man.png" id="pfer" alt="" />
+              <h4>នារី​ បុរស</h4>
+            </div>
+          </a>
+          <a href="settingPage.html">
+            <div class="set"><i class="bx bx-cog"></i>ការកំណត់</div>
+          </a>
+          <a href="login_signUp.html"
+            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="main-title">
+        តោះមកស្វែងយល់ពីផែនការរៀនជំនាញខាងក្រោមទាំងអស់គ្នា ៖​
+      </h1>
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div
+            class="card-image"
+            style="background-image: url('./img/reanB1.jpg')"
+          >
+            <a
+              href="#"
+              id="iconToggle1"
+              style="
+                color: rgb(255, 230, 0);
+                text-decoration: none;
+                font-size: 2rem;
+                position: absolute;
+                left: 22rem;
+                top: 0.3rem;
+              "
+            >
+              <i class="bx bx-bookmark"></i>
+            </a>
+
+            <h2 class="styleMTx">Frontend Development</h2>
+            <h4 class="styleTx">ចង់ក្លាយជាFrontend Developerមែនទេ?</h4>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="date">01 មករា 2024</span>
+              <span class="react">
+                <span class="likes"
+                  ><i
+                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
+                    class="bx bxs-heart"
+                  ></i>
+                  312</span
+                >
+                <span class="views"
+                  ><i
+                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
+                    class="bx bx-show"
+                  ></i>
+                  1005</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div
+            class="card-image"
+            style="background-image: url('./img/reanB2.avif')"
+          >
+            <a
+              href="#"
+              id="iconToggle2"
+              style="
+                color: rgb(255, 230, 0);
+                text-decoration: none;
+                font-size: 2rem;
+                position: absolute;
+                left: 22rem;
+                top: 0.3rem;
+              "
+            >
+              <i class="bx bx-bookmark"></i>
+            </a>
+
+            <h2 class="styleMTx">Fullstack Development</h2>
+            <h4 class="styleTx">ចង់ក្លាយជាFullstack Developerមែនទេ?</h4>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="date">01 មករា 2024</span>
+              <span class="react">
+                <span class="likes"
+                  ><i
+                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
+                    class="bx bxs-heart"
+                  ></i>
+                  312</span
+                >
+                <span class="views"
+                  ><i
+                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
+                    class="bx bx-show"
+                  ></i>
+                  1005</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div
+            class="card-image"
+            style="background-image: url('./img/reanB3.jpg')"
+          >
+            <a
+              href="#"
+              id="iconToggle3"
+              style="
+                color: rgb(255, 230, 0);
+                text-decoration: none;
+                font-size: 2rem;
+                position: absolute;
+                left: 22rem;
+                top: 0.3rem;
+              "
+            >
+              <i class="bx bx-bookmark"></i>
+            </a>
+
+            <h2 class="styleMTx">Backend Development</h2>
+            <h4 class="styleTx">ចង់ក្លាយជាBackend Developerមែនទេ?</h4>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="date">01 មករា 2024</span>
+              <span class="react">
+                <span class="likes"
+                  ><i
+                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
+                    class="bx bxs-heart"
+                  ></i>
+                  312</span
+                >
+                <span class="views"
+                  ><i
+                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
+                    class="bx bx-show"
+                  ></i>
+                  1005</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div
+            class="card-image"
+            style="background-image: url('./img/reanB4.webp')"
+          >
+            <a
+              href="#"
+              id="iconToggle4"
+              style="
+                color: rgb(255, 230, 0);
+                text-decoration: none;
+                font-size: 2rem;
+                position: absolute;
+                left: 22rem;
+                top: 0.3rem;
+              "
+            >
+              <i class="bx bx-bookmark"></i>
+            </a>
+
+            <h2 class="styleMTx">Data Analysis</h2>
+            <h4 class="styleTx">ចង់ក្លាយជាFrontend Developerមែនទេ?</h4>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="date">01 មករា 2024</span>
+              <span class="react">
+                <span class="likes"
+                  ><i
+                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
+                    class="bx bxs-heart"
+                  ></i>
+                  312</span
+                >
+                <span class="views"
+                  ><i
+                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
+                    class="bx bx-show"
+                  ></i>
+                  1005</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div
+            class="card-image"
+            style="background-image: url('./img/about_us.jpg')"
+          >
+            <a
+              href="#"
+              id="iconToggle5"
+              style="
+                color: rgb(255, 230, 0);
+                text-decoration: none;
+                font-size: 2rem;
+                position: absolute;
+                left: 22rem;
+                top: 0.3rem;
+              "
+            >
+              <i class="bx bx-bookmark"></i>
+            </a>
+
+            <h2 class="styleMTx">Cybersecurity</h2>
+            <h4 class="styleTx">ចង់ក្លាយជាCybersecurityមែនទេ?</h4>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="date">01 មករា 2024</span>
+              <span class="react">
+                <span class="likes"
+                  ><i
+                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
+                    class="bx bxs-heart"
+                  ></i>
+                  312</span
+                >
+                <span class="views"
+                  ><i
+                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
+                    class="bx bx-show"
+                  ></i>
+                  1005</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="underlinks">
+      <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
+      <div class="bottomInformation">
+        <div class="logo">
+          <h1>គណេស.ខម</h1>
+          <h4>Kanesha.com</h4>
+          <p>
+            គណេស.Kanesha ជាវេបសាយមួយដែលបង្កើតឡើងក្នុងគោលបំណង​
+            អោយអ្នកប្រើប្រាស់អាចសិក្សានូវវគ្គសិក្សាជាច្រើនសម្រាប់អភិវឌ្ឍន៍ចំណេះដឹងលើបច្ចេកវិទ្យាថ្មីៗដោយមិនគិតថ្លៃតាមរយ:
+            វីដេអូ​​ ​និង ឯកសារជាច្រើន។
+          </p>
+        </div>
+        <div class="links">
+          <h2>Link បន្ថែម</h2>
+          <a href="./reanPage.html">រៀន</a>
+          <a href="#">ប្លុក</a>
+          <a href="#">ការងារ</a>
+          <a href="#">អំពីយើង</a>
+          <a href="#">ទំនាក់ទំនង</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div class="courseBT">
+          <h2>វគ្គសិក្សា</h2>
+          <a href="#">Devolopment</a>
+          <a href="#">Design</a>
+          <a href="#">IT & Software</a>
+        </div>
+        <div class="contactMe">
+          <h2>ទំនាក់ទំនង</h2>
+          <div class="contactLink">
+            <a href="#"><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a>
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a>
+          </div>
+
+          <div class="icon">
+            <a href=""><i class="bx bxl-facebook-circle"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <hr />
+        <div class="creditBy">
+          <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
+          <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/reanPage.js"></script>
+    <script src="./js/loopjs.js"></script>
+    <script src="./js/animate.js"></script>
+    
+  </body>
+</html>
