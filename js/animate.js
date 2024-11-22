@@ -102,3 +102,8 @@ document.querySelectorAll(".qr-phone").forEach((element) => {
 document.querySelectorAll(".payment-form").forEach((element) => {
   observer5.observe(element);
 });
+
+/*animation on reanPage*/
+document.querySelectorAll(".card").forEach((element) => {
+  observer5.observe(element);
+});
