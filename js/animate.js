@@ -107,3 +107,24 @@ document.querySelectorAll(".payment-form").forEach((element) => {
 document.querySelectorAll(".card").forEach((element) => {
   observer5.observe(element);
 });
+
+
+/*animation on website Page frontend*/
+document.querySelectorAll(".hero-text").forEach((element) => {
+  observer.observe(element);
+});
+document.querySelectorAll(".project-card ").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".testimonials ").forEach((element) => {
+  observer4.observe(element);
+});
+document.querySelectorAll(".services h2  ").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".services p  ").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".anima").forEach((element) => {
+  observer5.observe(element);
+});

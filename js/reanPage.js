@@ -15,3 +15,29 @@ function toggleIcon(event) {
 ].forEach((id) => {
   document.getElementById(id).addEventListener("click", toggleIcon);
 });
+
+
+/*card change page*/
+
+// Add an event listener to the card
+document.getElementById("card1").addEventListener("click", function () {
+  window.location.href = "website_FrontendC.html"; // Redirect to your target page
+});
+
+// Add click event listener to each card
+document.getElementById('card2').addEventListener('click', function () {
+    window.location.href = 'website_FrontendC.html'; // Redirect for Card 2
+  });
+  
+  document.getElementById('card3').addEventListener('click', function () {
+    window.location.href = 'website_FrontendC.html'; // Redirect for Card 3
+  });
+  
+  document.getElementById('card4').addEventListener('click', function () {
+    window.location.href = 'website_FrontendC.html'; // Redirect for Card 4
+  });
+  
+  document.getElementById('card5').addEventListener('click', function () {
+    window.location.href = 'website_FrontendC.html'; // Redirect for Card 5
+  });
+  

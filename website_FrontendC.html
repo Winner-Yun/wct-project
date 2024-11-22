@@ -3,37 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/Kanesha.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Front-End Development Course</title>
+    <link rel="stylesheet" href="./css/website_FrontendC.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./css/reanPage.css" />
-    <title>Explore-Knowledge</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="navbar">
@@ -189,246 +172,119 @@
       </div>
     </div>
 
-    <div class="container">
-      <h1 class="main-title">
-        តោះមកស្វែងយល់ពីផែនការរៀនជំនាញខាងក្រោមទាំងអស់គ្នា ៖​
-      </h1>
-      <div class="card-grid">
-        <!-- Card 1 -->
-        <div class="card" id="card1">
-          <div
-            class="card-image"
-            style="background-image: url('./img/reanB1.jpg')"
-          >
-            <a
-              href="#"
-              id="iconToggle1"
-              style="
-                color: rgb(255, 230, 0);
-                text-decoration: none;
-                font-size: 2rem;
-                position: absolute;
-                left: 22rem;
-                top: 0.3rem;
-              "
+    <div class="fronDeC">
+      <header class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>អំពី Front-End Development</h1>
+            <p>
+              បើកសក្តានុពលរបស់អ្នកជាមួយនឹងការរៀនដោយធ្វើការជាក់ស្តែង។
+              បញ្ចប់គម្រោងជាក់ស្តែង និងការណែនាំពីអ្នកជំនាញ។
+              ក្លាយជាអ្នកជំនាញក្នុងការបង្កើតគេហទំព័រដ៏គួរឱ្យទាក់ទាញ
+              និងងាយស្រួលប្រើ។
+            </p>
+            <a href="#services" class="btn-primary" style="font-size: 1.2rem"
+              >ចាប់ផ្តើមរៀន</a
             >
-              <i class="bx bx-bookmark"></i>
-            </a>
-
-            <h2 class="styleMTx">Frontend Development</h2>
-            <h4 class="styleTx">ចង់ក្លាយជាFrontend Developerមែនទេ?</h4>
           </div>
-          <div class="card-content">
-            <div class="card-meta">
-              <span class="date">01 មករា 2024</span>
-              <span class="react">
-                <span class="likes"
-                  ><i
-                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
-                    class="bx bxs-heart"
-                  ></i>
-                  312</span
-                >
-                <span class="views"
-                  ><i
-                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
-                    class="bx bx-show"
-                  ></i>
-                  1005</span
-                >
-              </span>
+          <div class="hero-image"></div>
+        </div>
+      </header>
+
+      <main>
+        <section id="services" class="services">
+          <div class="container">
+            <h2>អ្វីដែលអ្នកត្រូវនឹងរៀន</h2>
+            <p>
+              ប្រធានបទទូលំទូលាយដែលជួយអ្នកឱ្យលេចធ្លោក្នុងការជាអ្នកអភិវឌ្ឍន៍
+              Front-End វិជ្ជាជីវៈ។
+            </p>
+            <div class="service-cards">
+              <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>
+                  រៀនអំពីរចនាសម្ព័ន្ធ
+                  និងការរចនាគេហទំព័របច្ចុប្បន្នដោយប្រើបច្ចេកទេសឆ្លើយតប។
+                </p>
+                <a href="#">រៀនបន្ថែមទៀត</a>
+              </div>
+              <div class="card">
+                <h3>JavaScript & Logic</h3>
+                <p>
+                  ចេះជំនាញភាសាកម្មវិធីដែលជួយចល័តគេហទំព័រដើម្បីបន្ថែមអន្តរកម្ម។
+                </p>
+                <a href="#">រៀនបន្ថែមទៀត</a>
+              </div>
+              <div class="card">
+                <h3>React & Frameworks</h3>
+                <p>
+                  យល់ដឹងអំពី UI ដែលមានភាពដើរតួដោយការសាងសង់ជាមួយ React
+                  និងឧបករណ៍បច្ចុប្បន្នពេញនិយម។
+                </p>
+                <a href="#">រៀនបន្ថែមទៀត</a>
+              </div>
+              <div class="card">
+                <h3>Real Projects</h3>
+                <p>ធ្វើការលើកំណត់កម្មវិធីពិតៗ ដើម្បីបង្ហាញសមត្ថភាពរបស់អ្នក។</p>
+                <a href="#">រៀនបន្ថែមទៀត</a>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <!-- Card 2 -->
-        <div class="card" id="card2">
-          <div
-            class="card-image"
-            style="background-image: url('./img/reanB2.avif')"
-          >
-            <a
-              href="#"
-              id="iconToggle2"
-              style="
-                color: rgb(255, 230, 0);
-                text-decoration: none;
-                font-size: 2rem;
-                position: absolute;
-                left: 22rem;
-                top: 0.3rem;
-              "
-            >
-              <i class="bx bx-bookmark"></i>
-            </a>
-
-            <h2 class="styleMTx">Fullstack Development</h2>
-            <h4 class="styleTx">ចង់ក្លាយជាFullstack Developerមែនទេ?</h4>
-          </div>
-          <div class="card-content">
-            <div class="card-meta">
-              <span class="date">01 មករា 2024</span>
-              <span class="react">
-                <span class="likes">
-                  <i
-                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
-                    class="bx bxs-heart"
-                  ></i>
-                  312
-                </span>
-                <span class="views">
-                  <i
-                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
-                    class="bx bx-show"
-                  ></i>
-                  1005
-                </span>
-              </span>
+        <section id="projects" class="projects">
+          <div class="container">
+            <h2 style="margin-bottom: 1rem" class="anima">PROJECT ដែលអ្នកត្រូវធ្វើ:</h2>
+            <p style="margin-bottom: 2rem" class="anima">
+              ទទួលបានបទពិសោធន៍ជាក់ស្តែងតាមរយៈគម្រោងពិតៗដែលបានរចនាឡើងដើម្បីភ្ជាប់អ្នកសម្រាប់វិស័យនេះ។
+            </p>
+            <div class="project-grid">
+              <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>
+                  បង្កើតព្រឹត្តិការណ៍ផ្ទាល់ខ្លួនលើអ៊ិនធឺណិតដើម្បីបង្ហាញសកម្មភាព
+                  និងជំនាញរបស់អ្នក។
+                </p>
+              </div>
+              <div class="project-card">
+                <h3>E-Commerce Store</h3>
+                <p>
+                  អភិវឌ្ឍហាងអេឡិចត្រូនិចឆ្លើយតបមួយដែលមានរទេះទិញ
+                  និងទម្រង់បង់ប្រាក់។
+                </p>
+              </div>
+              <div class="project-card">
+                <h3>Dynamic Dashboard</h3>
+                <p>
+                  សាងសង់ផ្ទាំងគ្រប់គ្រងមានមុខងារផ្ទាល់ខ្លួនដោយមានការបង្ហាញទិន្នន័យពិតប្រាកដក្នុងពេលវេលា។
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <!-- Card 3 -->
-        <div class="card" id="card3">
-          <div
-            class="card-image"
-            style="background-image: url('./img/reanB3.jpg')"
-          >
-            <a
-              href="#"
-              id="iconToggle3"
-              style="
-                color: rgb(255, 230, 0);
-                text-decoration: none;
-                font-size: 2rem;
-                position: absolute;
-                left: 22rem;
-                top: 0.3rem;
-              "
-            >
-              <i class="bx bx-bookmark"></i>
-            </a>
-
-            <h2 class="styleMTx">Backend Development</h2>
-            <h4 class="styleTx">ចង់ក្លាយជាBackend Developerមែនទេ?</h4>
-          </div>
-          <div class="card-content">
-            <div class="card-meta">
-              <span class="date">01 មករា 2024</span>
-              <span class="react">
-                <span class="likes">
-                  <i
-                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
-                    class="bx bxs-heart"
-                  ></i>
-                  312
-                </span>
-                <span class="views">
-                  <i
-                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
-                    class="bx bx-show"
-                  ></i>
-                  1005
-                </span>
-              </span>
+        <section class="testimonials">
+          <div class="container">
+            <h2>សូមអានមតិពីសិស្សរបស់យើង</h2>
+            <p>សិស្សរបស់យើងស្រឡាញ់អ្វីដែលពួកគេរៀន និងទទួលបាន។</p>
+            <div class="testimonials-grid">
+              <div class="testimonial">
+                <p>
+                  "វគ្គសិក្សានេះផ្តល់រចនាសម្ព័ន្ធដែលខ្ញុំត្រូវការដើម្បីរៀនការអភិវឌ្ឍន៍
+                  front-end ដោយមានប្រសិទ្ធភាព។"
+                </p>
+                <h4>- ចេក ចេក.</h4>
+              </div>
+              <div class="testimonial">
+                <p>
+                  "ខ្ញុំទទួលបានការងារអភិវឌ្ឍន៍គេហទំព័រជាលើកដំបូងរយៈពេលបីខែបន្ទាប់ពីបញ្ចប់វគ្គសិក្សានេះ!"
+                </p>
+                <h4>- ប្រូ បឿន.</h4>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card" id="card4">
-          <div
-            class="card-image"
-            style="background-image: url('./img/reanB4.webp')"
-          >
-            <a
-              href="#"
-              id="iconToggle4"
-              style="
-                color: rgb(255, 230, 0);
-                text-decoration: none;
-                font-size: 2rem;
-                position: absolute;
-                left: 22rem;
-                top: 0.3rem;
-              "
-            >
-              <i class="bx bx-bookmark"></i>
-            </a>
-
-            <h2 class="styleMTx">Data Analysis</h2>
-            <h4 class="styleTx">ចង់ក្លាយជាFrontend Developerមែនទេ?</h4>
-          </div>
-          <div class="card-content">
-            <div class="card-meta">
-              <span class="date">01 មករា 2024</span>
-              <span class="react">
-                <span class="likes">
-                  <i
-                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
-                    class="bx bxs-heart"
-                  ></i>
-                  312
-                </span>
-                <span class="views">
-                  <i
-                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
-                    class="bx bx-show"
-                  ></i>
-                  1005
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card" id="card5">
-          <div
-            class="card-image"
-            style="background-image: url('./img/about_us.jpg')"
-          >
-            <a
-              href="#"
-              id="iconToggle5"
-              style="
-                color: rgb(255, 230, 0);
-                text-decoration: none;
-                font-size: 2rem;
-                position: absolute;
-                left: 22rem;
-                top: 0.3rem;
-              "
-            >
-              <i class="bx bx-bookmark"></i>
-            </a>
-
-            <h2 class="styleMTx">Cybersecurity</h2>
-            <h4 class="styleTx">ចង់ក្លាយជាCybersecurityមែនទេ?</h4>
-          </div>
-          <div class="card-content">
-            <div class="card-meta">
-              <span class="date">01 មករា 2024</span>
-              <span class="react">
-                <span class="likes">
-                  <i
-                    style="color: rgb(255, 125, 125); font-size: 1.2rem"
-                    class="bx bxs-heart"
-                  ></i>
-                  312
-                </span>
-                <span class="views">
-                  <i
-                    style="color: rgb(4, 255, 62); font-size: 1.2rem"
-                    class="bx bx-show"
-                  ></i>
-                  1005
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
 
     <div class="underlinks">
@@ -485,9 +341,7 @@
         </div>
       </div>
     </div>
-
-    <script src="./js/reanPage.js"></script>
-    <script src="./js/loopjs.js"></script>
-    <script src="./js/animate.js"></script>
   </body>
+  <script src="./js/loopjs.js"></script>
+  <script src="./js/animate.js"></script>
 </html>
