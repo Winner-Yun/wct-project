@@ -331,11 +331,30 @@ header {
   text-align: center;
   margin-top: 4rem;
   padding: 1.5em;
-  background-color: #007BFF;
+  position: absolute;
   width: 96.8%;
   color: white;
-  position: absolute;
+  overflow: hidden;
 }
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/Typing.jpg'); /* Set your background image */
+  background-size: cover; /* Ensure image covers the entire header */
+  background-position: center; /* Keep image centered */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  z-index: -1; /* Ensure it's behind the text */
+}
+
+header {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)) !important;
+}
+
 
 main {
   max-width: 1200px;
@@ -344,23 +363,46 @@ main {
 }
 
 .contact-container {
-  margin-top: 20rem;
+  margin-top: 17rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
 .messagebox {
   resize: none;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%; /* Stretch to full width */
+  padding: 10px; /* Add some internal padding */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Optional rounded corners */
+  font-size: 16px; /* Make text easily readable */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.contact-form label {
+  display: block;
+  margin: 15px 0 5px;
+}
+
+.contact-form textarea:focus, 
+.contact-form input:focus {
+  border-color: #007BFF; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle glow */
 }
 
 .contact-form, .contact-info {
   flex: 1;
   background: white;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-width: 300px;
+  min-width: 450px;
 }
 
 .contact-form h2, .contact-info h2 {
@@ -369,7 +411,7 @@ main {
 
 .contact-form label {
   display: block;
-  margin: 10px 0 5px;
+  margin: 15px 0 5px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -394,15 +436,124 @@ main {
   background-color: #0056b3;
 }
 
-.contact-info p {
-  margin: 10px 0;
+/* Main container styles */
+.contact-info {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 450px;
+}
+
+/* Header styles */
+.contact-info h2 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Contact items container */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd; /* Simple border */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white; /* Simple white background */
+}
+
+/* Hover effect for the contact item box */
+.contact-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle hover shadow */
+}
+
+/* Box around icons */
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #007BFF; /* Blue border for focus */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  background: linear-gradient(145deg, rgba(0, 123, 255, 0.8), rgba(0, 198, 255, 0.8)); /* Cool gradient */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Icon styling */
+.icon-box i {
+  font-size: 20px;
+  color: white; /* Ensure visibility */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the icon box */
+.icon-box:hover {
+  background: linear-gradient(145deg, rgba(0, 123, 255, 0.6), rgba(255, 255, 255, 0.5)); /* Faint hover effect */
+  transform: scale(1.1); /* Subtle scale */
+  transform: rotate(360deg);
+}
+
+.icon-box i:hover {
+  color: #007BFF; /* Gives a reverse effect */
+  transform: rotate(360deg);
+}
+
+/* Box for text content */
+.content-box p {
+  margin: 5px 0;
+}
+
+.content-box p strong {
+  font-weight: bold;
+}
+
+/* Social Media styles */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .social-icons a {
   margin: 0 10px;
-  text-decoration: none;
-  color: #007BFF;
   font-size: 24px;
+  color: #007BFF;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #0056b3;
+}
+
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 40px; /* Adjust icon size */
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.social-icons a .fa-facebook-f {
+  color: #1877F2; /* Facebook blue */
+}
+
+.social-icons a .fa-twitter {
+  color: #1DA1F2; /* Twitter blue */
+}
+
+.social-icons a .fa-instagram {
+  color: #E4405F; /* Instagram pinkish-red */
 }
 
 .map {

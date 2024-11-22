@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/contactUs.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <title>Contact Us</title>
   </head>
   <body>
@@ -106,7 +107,7 @@
 
     <header>
       <h1>ទំនាក់ទំនងមកកាន់ពួកយើង</h1>
-      <p>យើងនៅទីនេះដើម្បីជួយ! ទាក់ទងដោយប្រើទម្រង់ខាងក្រោម ឬតាមរយៈមធ្យោបាយផ្សេងទៀត។</p>
+      <p>យើងនៅទីនេះដើម្បីជួយអ្នក! ទាក់ទងដោយប្រើទម្រង់ខាងក្រោម ឬតាមរយៈមធ្យោបាយផ្សេងទៀត។</p>
     </header>
 
     <main>
@@ -128,21 +129,50 @@
           </form>
         </div>
   
-        <!-- Contact Information -->
         <div class="contact-info">
           <h2>ទាក់ទង</h2>
-          <p><strong>Email:</strong> support@example.com</p>
-          <p><strong>Phone:</strong> +1 123-456-7890</p>
-          <p><strong>Address:</strong> 1234 Street Name, City, Country</p>
           
-          <!-- Social Media Links -->
-          <div class="social-icons">
-            <p>Follow us on:</p>
-            <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
-            <a href="https://twitter.com" target="_blank">🌐 Twitter</a>
-            <a href="https://instagram.com" target="_blank">🌐 Instagram</a>
+          <!-- Email Section -->
+          <div class="contact-item">
+            <div class="icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="content-box">
+              <p><strong>Email:</strong></p>
+              <p>support@example.com</p>
+            </div>
           </div>
-        </div>
+          
+          <!-- Phone Section -->
+          <div class="contact-item">
+            <div class="icon-box">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="content-box">
+              <p><strong>Phone:</strong></p>
+              <p>+1 123-456-7890</p>
+            </div>
+          </div>
+          
+          <!-- Address Section -->
+          <div class="contact-item">
+            <div class="icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="content-box">
+              <p><strong>Address:</strong></p>
+              <p>1234 Street Name, City, Country</p>
+            </div>
+          </div>
+          
+          <!-- Social Media Section -->
+          <h3>Social Media</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>                   
       </div>
   
       <!-- Google Map Embed -->
