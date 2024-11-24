@@ -146,17 +146,17 @@ document.querySelectorAll(".navbar").forEach((element) => {
 document.querySelectorAll(".informationWeb").forEach((element) => {
   observer2.observe(element);
 });
-document.querySelectorAll(".value_of_cat").forEach((element) => {
+document.querySelectorAll(".teacherValue").forEach((element) => {
   observer4.observe(element);
 });
 document.querySelectorAll(".scroll-container").forEach((element) => {
-  observer4.observe(element);
+  observer3.observe(element);
 });
 document.querySelectorAll(".review-section").forEach((element) => {
-  observer4.observe(element);
+  observer3.observe(element);
 });
 document.querySelectorAll(".container").forEach((element) => {
-  observer4.observe(element);
+  observer2.observe(element);
 });
 
 function toggleNotificationDropdown() {
