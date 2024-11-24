@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: "Noto Sans Khmer", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffffb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Success Page Container */
+.success-page {
+    scale: 0.8;
+    background: rgba(255, 255, 255, 0.85); /* Glass-like effect */
+    padding: 40px 50px;
+    border-radius: 10%;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px); /* For glassy effect */
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    animation: slideUp 0.8s ease-in-out;
+}
+
+/* Success Icon */
+.success-icon {
+    font-size: 70px;
+    color: #0066cc;
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite;
+    text-shadow: 0px 4px 10px rgba(0, 102, 204, 0.3);
+}
+
+/* Success Message */
+.success-message {
+    font-size: 30px;
+    font-weight: 700;
+    color: #004d99;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 5px rgba(0, 77, 153, 0.2);
+}
+
+/* Success Details */
+.success-details {
+    font-size: 18px;
+    color: #336699;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-align: left; /* Improved readability */
+    margin-left: 10px;
+}
+
+/* Salutation Emoji */
+.salutation-emoji {
+    font-size: 90px;
+    color: #0066cc;
+    margin: 20px 0;
+    animation: pulse 1.8s infinite;
+    text-shadow: 0px 4px 15px rgba(0, 102, 204, 0.4);
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #0066cc, #004d99);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.4);
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #004d99, #003366);
+    box-shadow: 0 12px 25px rgba(0, 77, 153, 0.5);
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .success-page {
+        padding: 30px 25px;
+    }
+
+    .success-message {
+        font-size: 26px;
+    }
+
+    .success-details {
+        font-size: 16px;
+    }
+
+    .back-button {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+}
