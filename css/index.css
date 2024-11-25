@@ -1032,7 +1032,7 @@ hr {
   background-color: #00568f;
 }
 .teacherValue:hover {
-  transform: scale(1.05);
+  scale: 1.05;
   background-color: #edf2f9;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   cursor: pointer;

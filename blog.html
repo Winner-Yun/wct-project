@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Blog</title>
+    <link rel="icon" href="./img/Kanesha.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h1>គណេស.ខម</h1>
+        <h4>Kanesha.com</h4>
+      </div>
+      <div class="buttonControl">
+        <div class="search">
+          <input type="text" placeholder="ស្វែងរក...." />
+          <a href=""><i class="bx bx-search-alt-2"></i></a>
+        </div>
+        <div class="controlbtn">
+          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
+            <i class="bx bxs-bell-ring"></i>
+          </button>
+          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
+
+          <!-- Notification Dropdown -->
+          <div id="notificationDropdown" class="notification-dropdown">
+            <!-- Notification Header (Title + Settings) -->
+            <div class="notification-header">
+              <span class="notification-title"> ការជូនដំណឹង</span>
+              <a href="#" class="settings-icon">
+                <i class="bx bx-cog"></i>
+                <!-- Settings Icon -->
+              </a>
+            </div>
+            <!-- Notification Items -->
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">5 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">10 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">
+                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
+                </p>
+                <p class="notification-time">15 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">30 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 ម៉ោងមុន</p>
+              </div>
+            </div>
+            <!-- Add more notifications as needed -->
+          </div>
+        </div>
+      </div>
+      <div class="navbarbtn">
+        <div class="menu">
+          <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
+          <div class="dropdown">
+            <a class="course" id="menu" href="course-study.html">វគ្គសិក្សា</a>
+            <div class="dropdown-content">
+              <div class="devolopmentdrop">
+                <a href="#" id="id1"
+                  ><i class="bx bx-code-alt"></i>Devolopment
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="devolopmentdrop-drop">
+                  <a href="course-study.html">
+                    <i class="bx bx-code-block"></i>Web Devolopment</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-data"></i>Data Science</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
+                  >
+                  <a href="">Progaming language</a>
+                  <a href="">Software Engineering</a>
+                </div>
+              </div>
+              <div class="designdrop">
+                <a href="#" id="id2"
+                  ><i class="bx bxs-pen"></i>Design
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="designdrop-drop">
+                  <a href="">
+                    <i class="bx bxs-eyedropper"></i>UX & UI Design</a
+                  >
+                  <a href=""><i class="bx bxs-slideshow"></i>Graphic Design</a>
+                </div>
+              </div>
+              <div class="itAndSoftwaredrop">
+                <a href="#" id="id3"
+                  ><i class="bx bx-chip"></i>IT & Software
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="itAndSoftwaredrop-drop">
+                  <a href="cyber_security.html"
+                    ><i class="bx bx-shield-quarter"></i>cyber security</a
+                  >
+                  <a href=""
+                    ><i class="bx bx-network-chart"></i>Network security</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
+          <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
+        </div>
+        <button id="profileBtn">
+          <img src="./img/profacer_Man.png" alt="" />
+        </button>
+        <div class="profile-bar">
+          <a
+            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
+          >
+            <div class="profilePic">
+              <img src="./img/profacer_Man.png" id="pfer" alt="" />
+              <h4>នារី​ បុរស</h4>
+            </div>
+          </a>
+          <a href="settingPage.html">
+            <div class="set"><i class="bx bx-cog"></i>ការកំណត់</div>
+          </a>
+          <a href="login_signUp.html"
+            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section with Auto-Switching Background -->
+    <section id="home" class="hero">
+      <div class="carousel">
+        <div
+          class="slide active"
+          style="background-image: url('./img/blog-img6.png')"
+        >
+          <div class="slide-content">
+            <span class="tag"><i class="bx bxs-purchase-tag"></i>AI</span>
+            <h1>AI ជាអ្វី?</h1>
+            <p>
+              ស្វែងយល់ពីសេចក្ដីនិយមន័យ
+              និងការចែកចាយជាគ្រិកនៃបញ្ញាសិប្បនិម្មិតក្នុងបរិស្ថានស្នូល។
+            </p>
+            <a href="#" class="btn">មើលបន្ថែម</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('./img/blog-img4.png')">
+          <div class="slide-content">
+            <span class="tag">
+              <i class="bx bxs-purchase-tag"></i>Blockchain</span
+            >
+            <h1>Blockchain ត្រូវបានប្រើប្រាស់ដោយវិធីណា?</h1>
+            <p>
+              ការពិពណ៌នាអំពីការប្រើប្រាស់ Blockchain ក្នុងដែនកសិកម្ម សុខាភិបាល
+              និងសេដ្ឋកិច្ច។
+            </p>
+            <a href="#" class="btn">មើលបន្ថែម</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('./img/blog-img2.png')">
+          <div class="slide-content">
+            <span class="tag"><i class="bx bxs-purchase-tag"></i>Web</span>
+            <h1>HTML, CSS, និង Js សម្រាប់អ្នកចាប់ផ្ដើម</h1>
+            <p>ការចាប់ផ្ដើមជាមួយបច្ចេកទេសគន្លឹះក្នុងការសាងសង់គេហទំព័រ។</p>
+            <a href="#" class="btn">មើលបន្ថែម</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('./img/blog-img7.png')">
+          <div class="slide-content">
+            <span class="tag"><i class="bx bxs-purchase-tag"></i>Mobile</span>
+            <h1>បៀបបង្កើតកម្មវិធីទូរស័ព្ទចល័តសម្រាប់អ្នកដំបូង</h1>
+            <p>
+              ស្វែងយល់ពីជំហានសំខាន់ៗក្នុងការបង្កើតកម្មវិធីទូរស័ព្ទដោយប្រើកូដ
+              ឬឧបករណ៍ No-Code
+            </p>
+            <a href="#" class="btn">មើលបន្ថែម</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('./img/blog-img.png')">
+          <div class="slide-content">
+            <span class="tag"
+              ><i class="bx bxs-purchase-tag"></i>Data Science</span
+            >
+            <h1>Data Science ជាអ្វី?</h1>
+            <p>
+              ស្វែងយល់ពីអ្វីដែល Data Science ជាស្នូល, របៀបវាប្រើប្រាស់,
+              និងវិស័យដែលវាសំខាន់។
+            </p>
+            <a href="#" class="btn">មើលបន្ថែម</a>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('./img/blog-img5.png')">
+          <div class="slide-content">
+            <span class="tag"><i class="bx bxs-purchase-tag"></i>Design</span>
+            <h1>UX vs UI: តើមានភាពខុសគ្នាអ្វីខ្លះ?</h1>
+            <p>
+              រៀនអំពី UX/UI ដើម្បីសម្រេចបាននូវការរចនាដែលទាក់ទាញ
+              និងមានប្រសិទ្ធភាពសម្រាប់កម្មវិធីឬគេហទំព័រ។
+            </p>
+            <a href="#" class="btn">មើលបន្ថែម</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore-nav" class="explore-topics-navbar">
+      <div class="topics-container">
+        <!-- Topics List -->
+        <nav class="topics-nav">
+          <a href="#" class="topic-link active" data-topic="all">ទាំងអស់</a>
+          <a href="#" class="topic-link" data-topic="web">Web</a>
+          <a href="#" class="topic-link" data-topic="mobile">Mobile</a>
+          <a href="#" class="topic-link" data-topic="design">Design</a>
+          <a href="#" class="topic-link" data-topic="data-science"
+            >Data Science</a
+          >
+          <a href="#" class="topic-link" data-topic="ai">AI</a>
+          <a href="#" class="topic-link" data-topic="blockchain">Blockchain</a>
+          <a href="#" class="topic-link" data-topic="other">ផ្សេងទៀត</a>
+        </nav>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="search-input"
+            style="font-family: 'Noto Sans Khmer', sans-serif"
+          />
+          <button
+            class="search-btn"
+            style="
+              position: absolute;
+              margin-left: 10rem;
+              font-size: 1.2rem;
+              color: #646363;
+            "
+          >
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Topics Section -->
+    <section id="explore-topics" class="explore-topics">
+      <div class="topics-grid">
+        <a
+          href="#"
+          class="topic-card"
+          data-topic="web"
+          style="width: 17rem; text-decoration: none"
+        >
+          <div class="card">
+            <div class="card-header">
+              <span class="tag"><i class="bx bxs-purchase-tag"></i>Web</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">HTML, CSS, និង Js សម្រាប់អ្នកចាប់ផ្ដើម</h3>
+              <p class="card-date">04 | មិថុនា | 2024</p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./img/blog-img2.png"
+                alt="Card Image"
+                class="card-image"
+              />
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="topic-card"
+          data-topic="mobile"
+          style="width: 17rem; text-decoration: none"
+        >
+          <div class="card">
+            <div class="card-header">
+              <span class="tag"><i class="bx bxs-purchase-tag"></i>Mobile</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">
+                បៀបបង្កើតកម្មវិធីទូរស័ព្ទចល័តសម្រាប់អ្នកដំបូង
+              </h3>
+              <p class="card-date">22 | កញ្ញា | 2024</p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./img/blog-img3.png"
+                alt="Card Image"
+                class="card-image"
+              />
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="topic-card"
+          data-topic="design"
+          style="width: 17rem; text-decoration: none"
+        >
+          <div class="card">
+            <div class="card-header">
+              <span class="tag"><i class="bx bxs-purchase-tag"></i>Design</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">តើ UX និង UI មានលក្ខណ:ខុសគ្នាអ្វីខ្លះ?</h3>
+              <p class="card-date">22 | កញ្ញា | 2024</p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./img/blog-img5.png"
+                alt="Card Image"
+                class="card-image"
+              />
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="topic-card"
+          data-topic="data-science"
+          style="width: 17rem; text-decoration: none"
+        >
+          <div class="card">
+            <div class="card-header">
+              <span class="tag"
+                ><i class="bx bxs-purchase-tag"></i>Data Science</span
+              >
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Data Science ជាអ្វី?</h3>
+              <p class="card-date">22 | កញ្ញា | 2024</p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./img/blog-img.png"
+                alt="Card Image"
+                class="card-image"
+              />
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="topic-card"
+          data-topic="ai"
+          style="width: 17rem; text-decoration: none"
+        >
+          <div class="card">
+            <div class="card-header">
+              <span class="tag"><i class="bx bxs-purchase-tag"></i>AI</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">AI ជាអ្វី?</h3>
+              <p class="card-date">22 | កញ្ញា | 2024</p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./img/blog-img6.png"
+                alt="Card Image"
+                class="card-image"
+              />
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="topic-card"
+          data-topic="blockchain"
+          style="width: 17rem; text-decoration: none"
+        >
+          <div class="card">
+            <div class="card-header">
+              <span class="tag"
+                ><i class="bx bxs-purchase-tag"></i>Blockchain</span
+              >
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">
+                Blockchain ត្រូវបានប្រើប្រាស់ដោយវិធីណា?
+              </h3>
+              <p class="card-date">22 | កញ្ញា | 2024</p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="../img/blog-img4.png"
+                alt="Card Image"
+                class="card-image"
+              />
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="topic-card"
+          data-topic="other"
+          style="width: 17rem; text-decoration: none"
+        >
+          <div class="card">
+            <div class="card-header">
+              <span class="tag"
+                ><i class="bx bxs-purchase-tag"></i>Cyber Security</span
+              >
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cyber Security ជាអ្វី?</h3>
+              <p class="card-date">22 | កញ្ញា | 2024</p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./img/blog-img8.png"
+                alt="Card Image"
+                class="card-image"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="underlinks">
+      <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
+      <div class="bottomInformation">
+        <div class="logo">
+          <h1>គណេស.ខម</h1>
+          <h4>Kanesha.com</h4>
+          <p>
+            គណេស.Kanesha ជាវេបសាយមួយដែលបង្កើតឡើងក្នុងគោលបំណង​
+            អោយអ្នកប្រើប្រាស់អាចសិក្សានូវវគ្គសិក្សាជាច្រើនសម្រាប់អភិវឌ្ឍន៍ចំណេះដឹងលើបច្ចេកវិទ្យាថ្មីៗដោយមិនគិតថ្លៃតាមរយ:
+            វីដេអូ​​ ​និង ឯកសារជាច្រើន។
+          </p>
+        </div>
+        <div class="links">
+          <h2>Link បន្ថែម</h2>
+          <a href="./reanPage.html">រៀន</a>
+          <a href="./blog.html">ប្លុក</a>
+          <a href="#">ការងារ</a>
+          <a href="#">អំពីយើង</a>
+          <a href="#">ទំនាក់ទំនង</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div class="courseBT">
+          <h2>វគ្គសិក្សា</h2>
+          <a href="#">Devolopment</a>
+          <a href="#">Design</a>
+          <a href="#">IT & Software</a>
+        </div>
+        <div class="contactMe">
+          <h2>ទំនាក់ទំនង</h2>
+          <div class="contactLink">
+            <a href="#"><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a>
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a>
+          </div>
+
+          <div class="icon">
+            <a href=""><i class="bx bxl-facebook-circle"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <hr />
+        <div class="creditBy">
+          <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
+          <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/blog.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/loopjs.js"></script>
+  </body>
+</html>
