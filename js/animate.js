@@ -128,3 +128,15 @@ document.querySelectorAll(".services p  ").forEach((element) => {
 document.querySelectorAll(".anima").forEach((element) => {
   observer5.observe(element);
 });
+
+/*animate blog*/
+document.querySelectorAll(".related-article").forEach((element) => {
+  observer3.observe(element);
+});
+document.querySelectorAll(".comparison-section").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".comment-section").forEach((element) => {
+  observer4.observe(element);
+});
+
