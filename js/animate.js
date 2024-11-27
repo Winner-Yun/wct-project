@@ -140,3 +140,24 @@ document.querySelectorAll(".comment-section").forEach((element) => {
   observer4.observe(element);
 });
 
+
+/*animate on job*/
+document.querySelectorAll(".hero-content").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".hero-image").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".search-container").forEach((element) => {
+  observer3.observe(element);
+});
+document.querySelectorAll(".job-card").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".job-info").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".apply-form").forEach((element) => {
+  observer5.observe(element);
+});
+

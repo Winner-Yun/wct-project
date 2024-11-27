@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appy-job</title>
+    <link rel="icon" href="../img/Kanesha.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/jobAppy.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h1>គណេស.ខម</h1>
+        <h4>Kanesha.com</h4>
+      </div>
+      <div class="buttonControl">
+        <div class="search">
+          <input type="text" placeholder="ស្វែងរក...." />
+          <a href=""><i class="bx bx-search-alt-2"></i></a>
+        </div>
+        <div class="controlbtn">
+          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
+            <i class="bx bxs-bell-ring"></i>
+          </button>
+          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
+
+          <!-- Notification Dropdown -->
+          <div id="notificationDropdown" class="notification-dropdown">
+            <!-- Notification Header (Title + Settings) -->
+            <div class="notification-header">
+              <span class="notification-title"> ការជូនដំណឹង</span>
+              <a href="#" class="settings-icon">
+                <i class="bx bx-cog"></i>
+                <!-- Settings Icon -->
+              </a>
+            </div>
+            <!-- Notification Items -->
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">5 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">10 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">
+                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
+                </p>
+                <p class="notification-time">15 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">30 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 ម៉ោងមុន</p>
+              </div>
+            </div>
+            <!-- Add more notifications as needed -->
+          </div>
+        </div>
+      </div>
+      <div class="navbarbtn">
+        <div class="menu">
+          <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
+          <div class="dropdown">
+            <a class="course" id="menu" href="course-study.html">វគ្គសិក្សា</a>
+            <div class="dropdown-content">
+              <div class="devolopmentdrop">
+                <a href="#" id="id1"
+                  ><i class="bx bx-code-alt"></i>Devolopment
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="devolopmentdrop-drop">
+                  <a href="course-study.html">
+                    <i class="bx bx-code-block"></i>Web Devolopment</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-data"></i>Data Science</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
+                  >
+                  <a href="">Progaming language</a>
+                  <a href="">Software Engineering</a>
+                </div>
+              </div>
+              <div class="designdrop">
+                <a href="#" id="id2"
+                  ><i class="bx bxs-pen"></i>Design
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="designdrop-drop">
+                  <a href="">
+                    <i class="bx bxs-eyedropper"></i>UX & UI Design</a
+                  >
+                  <a href=""><i class="bx bxs-slideshow"></i>Graphic Design</a>
+                </div>
+              </div>
+              <div class="itAndSoftwaredrop">
+                <a href="#" id="id3"
+                  ><i class="bx bx-chip"></i>IT & Software
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="itAndSoftwaredrop-drop">
+                  <a href="cyber_security.html"
+                    ><i class="bx bx-shield-quarter"></i>cyber security</a
+                  >
+                  <a href=""
+                    ><i class="bx bx-network-chart"></i>Network security</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
+          <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
+        </div>
+        <button id="profileBtn">
+          <img src="./img/profacer_Man.png" alt="" />
+        </button>
+        <div class="profile-bar">
+          <a
+            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
+          >
+            <div class="profilePic">
+              <img src="./img/profacer_Man.png" id="pfer" alt="" />
+              <h4>នារី​ បុរស</h4>
+            </div>
+          </a>
+          <a href="settingPage.html">
+            <div class="set"><i class="bx bx-cog"></i>ការកំណត់</div>
+          </a>
+          <a href="login_signUp.html"
+            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>ស្វែងរកការងារ <span class="highlight">ដែលអ្នកស្រលាញ់</span></h1>
+          <p>
+            ស្វែងរកឱកាសការងារដែលល្អបំផុតនៅក្នុងឧស្សាហកម្មនិងតំបន់ផ្សេងៗ។
+            ជំហាននៃការផ្លាស់ប្តូរការងារប្រសិនបើអ្នកចាប់ផ្តើមនៅទីនេះ។
+          </p>
+          <div class="hero-buttons">
+            <a id="start-searching-btn" class="btn-primary">ចាប់ផ្តើមស្វែងរក</a>
+            <a id="browse-jobs-btn" class="btn-secondary">មើលការងារ</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="../img/jobBackground.webp"
+            alt="Job Search Illustration"
+            style="width: 500px"
+          />
+        </div>
+      </section>
+
+      <!-- Search Section -->
+      <section id="search" class="search-container">
+        <div class="search-form">
+          <h2>🔍 ស្វែងរកការងារ</h2>
+          <form>
+            <div class="form-row">
+              <input
+                type="text"
+                placeholder="បញ្ចូលចំណងជើងការងារ ឬជំនាញ"
+                class="input-large"
+              />
+              <input
+                type="text"
+                placeholder="ទីតាំង (ឧ. ក្រុង, រដ្ឋ)"
+                class="input-large"
+              />
+              <a href="job_page.html" class="btn-search" style="text-decoration: none;"> ស្វែងរក </a>
+            </div>
+            <div class="filter-row">
+              <select>
+                <option value="" disabled selected>ប្រភេទការងារ</option>
+                <option>Development</option>
+                <option>Cybersecurity</option>
+                <option>Design</option>
+                <option>Data Science</option>
+                <option>Artificial Intelligence</option>
+              </select>
+              <select>
+                <option value="" disabled selected>ប្រភេទការងារ</option>
+                <option>ពេញម៉ោង</option>
+                <option>Part time</option>
+                <option>Internship</option>
+              </select>
+              <select>
+                <option value="" disabled selected>កម្រិតបទពិសោធន៍</option>
+                <option>កម្រិតចាប់ផ្តើម</option>
+                <option>កម្រិតមធ្យម</option>
+                <option>កម្រិតខ្ពស់</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Apply Job Section -->
+      <section class="apply-job-container">
+        <div class="apply-job-content">
+          <!-- Left Section: Job Info and Application Form -->
+          <div class="job-info-and-form">
+            <div class="job-info">
+              <h2>Web Devoloper</h2>
+              <hr />
+              <p><strong>ក្រុមហ៊ុន:</strong> Khanes Technology</p>
+              <p><strong>ប្រាក់ខែ:</strong> $1000 - $1500</p>
+              <p><strong>ប្រភេទការងារ:</strong> ពេញម៉ោង</p>
+              <p><strong>ត្រូវការបទពិសោធន៍:</strong> កម្រិតខ្ពស់</p>
+
+              <!-- Detailed Job Description -->
+              <h3>បរិយាយការងារ</h3>
+              <p>
+                ត្រូវការអ្នកអភិវឌ្ឍន៍វេបដែលមានបទពិសោធន៍ក្នុងការរចនាវេបសាយ
+                និងកម្មវិធីដែលមានប្រសិទ្ធភាពខ្ពស់។
+                អ្នកអភិវឌ្ឍន៍នឹងធ្វើការនៅក្នុងក្រុមជាមួយអ្នកជំនាញផ្សេងទៀត
+                ដើម្បីបង្កើតនិងបញ្ជូនផលិតផលដែលមានគុណភាព។
+              </p>
+              <p>
+                <strong>តម្រូវការផ្សេងទៀត:</strong> មានជំនាញ HTML, CSS,
+                JavaScript, និងការងារលើ Frameworks។
+              </p>
+              <p>
+                <strong>ប្រភេទការងារ:</strong> ពេញម៉ោង |
+                ស្ថិតនៅក្នុងកន្លែងធ្វើការពីភ្នំពេញ។
+              </p>
+
+              <!-- Location Address -->
+              <h3>ទីតាំងការងារ</h3>
+              <p>
+                <strong>អាសយដ្ឋាន:</strong> ផ្ទះលេខ 86B ផ្លូវ 313 កែង 606
+                សង្កាត់បឹងកក់ 2 ខណ្ឌទួលគោក រាជធានីភ្នំពេញ
+              </p>
+            </div>
+
+            <!-- Apply Form -->
+            <div class="apply-form">
+              <h3>ដាក់ពាក្យសម្រាប់ការងារ</h3>
+              <form>
+                <div class="form-row">
+                  <label for="name">ឈ្មោះ:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="បញ្ចូលឈ្មោះរបស់អ្នក"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="email">អ៊ីមែល:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="បញ្ចូលអ៊ីមែលរបស់អ្នក"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="phone">លេខទូរស័ព្ទ:</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="បញ្ចូលលេខទូរស័ព្ទ"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="cover-letter">លិខិតណែនាំ:</label>
+                  <textarea
+                    id="cover-letter"
+                    placeholder="សូមសរសេរលិខិតណែនាំ..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-row">
+                  <a href="job_page.html" style="text-decoration: none; width: 40rem; text-align: center; font-size: 1.2rem;" class="btn-submit">ដាក់ពាក្យ</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Section: Related Jobs -->
+          <div class="related-jobs">
+            <h3 style="color: #007bff">ការងារដែលទាក់ទង</h3>
+            <div class="job-card">
+              <h3>Web Devoloper</h3>
+              <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+              <p><strong>ប្រាក់ខែ:</strong> $1500 - $2000</p>
+              <p><strong>ក្រុមហ៊ុន:</strong> BEBE Inc.</p>
+              <p>
+                <strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i>
+              </p>
+              <p>
+                <strong>ត្រូវការបទពិសោធន៍:</strong>
+                <i id="setstyles">កម្រិតខ្ពស់</i>
+              </p>
+              <button class="btn-apply">ដាក់ពាក្យ</button>
+            </div>
+            <div class="job-card">
+              <h3>Web Devoloper</h3>
+              <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+              <p><strong>ប្រាក់ខែ:</strong> $1500 - $2000</p>
+              <p><strong>ក្រុមហ៊ុន:</strong> CFU Inc.</p>
+              <p>
+                <strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i>
+              </p>
+              <p>
+                <strong>ត្រូវការបទពិសោធន៍:</strong>
+                <i id="setstyles">កម្រិតខ្ពស់</i>
+              </p>
+              <button class="btn-apply">ដាក់ពាក្យ</button>
+            </div>
+            <div class="job-card">
+              <h3>Web Devoloper</h3>
+              <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+              <p><strong>ប្រាក់ខែ:</strong> $1500 - $2000</p>
+              <p><strong>ក្រុមហ៊ុន:</strong> KAB JAK company</p>
+              <p>
+                <strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i>
+              </p>
+              <p>
+                <strong>ត្រូវការបទពិសោធន៍:</strong>
+                <i id="setstyles">កម្រិតខ្ពស់</i>
+              </p>
+              <button class="btn-apply">ដាក់ពាក្យ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="underlinks">
+      <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
+      <div class="bottomInformation">
+        <div class="logo">
+          <h1>គណេស.ខម</h1>
+          <h4>Kanesha.com</h4>
+          <p>
+            គណេស.Kanesha ជាវេបសាយមួយដែលបង្កើតឡើងក្នុងគោលបំណង​
+            អោយអ្នកប្រើប្រាស់អាចសិក្សានូវវគ្គសិក្សាជាច្រើនសម្រាប់អភិវឌ្ឍន៍ចំណេះដឹងលើបច្ចេកវិទ្យាថ្មីៗដោយមិនគិតថ្លៃតាមរយ:
+            វីដេអូ​​ ​និង ឯកសារជាច្រើន។
+          </p>
+        </div>
+        <div class="links">
+          <h2>Link បន្ថែម</h2>
+          <a href="./reanPage.html">រៀន</a>
+          <a href="./blog.html">ប្លុក</a>
+          <a href="#">ការងារ</a>
+          <a href="#">អំពីយើង</a>
+          <a href="#">ទំនាក់ទំនង</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div class="courseBT">
+          <h2>វគ្គសិក្សា</h2>
+          <a href="#">Devolopment</a>
+          <a href="#">Design</a>
+          <a href="#">IT & Software</a>
+        </div>
+        <div class="contactMe">
+          <h2>ទំនាក់ទំនង</h2>
+          <div class="contactLink">
+            <a href="#"><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a>
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a>
+          </div>
+
+          <div class="icon">
+            <a href=""><i class="bx bxl-facebook-circle"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <hr />
+        <div class="creditBy">
+          <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
+          <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var scrollPercentage = 20;
+        var documentHeight = document.documentElement.scrollHeight;
+        var viewportHeight = window.innerHeight;
+        var scrollPosition =
+          (scrollPercentage / 100) * (documentHeight - viewportHeight);
+        window.scrollTo(0, scrollPosition);
+      };
+    </script>
+    <script src="./js/loopjs.js"></script>
+    <script src="./js/job.js"></script>
+    <script src="./js/animate.js"></script>
+  </body>
+</html>

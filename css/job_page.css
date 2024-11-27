@@ -1,0 +1,838 @@
+/* Import Noto Sans Khmer font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer&display=swap");
+
+/* General Styles */
+body {
+  font-family: "Noto Sans Khmer", sans-serif; /* Set the font to Noto Sans Khmer */
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  position: fixed;
+  padding-left: 6rem;
+  align-items: center;
+  display: flex;
+  background-color: rgba(235, 235, 235);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 4rem;
+  z-index: 2;
+}
+.logo {
+  margin-top: -2rem;
+  margin-right: 10rem;
+}
+.logo h1 {
+  color: rgb(15, 223, 255);
+}
+.logo h4 {
+  color: rgb(8, 222, 255);
+  position: absolute;
+  margin-top: -1.5rem;
+  margin-left: 3rem;
+}
+.buttonControl {
+  display: flex;
+  margin-right: 10rem;
+  width: 20rem;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  width: 15rem;
+  font-family: "Noto Sans Khmer", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  height: 2rem;
+  background: rgb(255, 255, 255);
+  padding-left: 1rem;
+  border: none;
+  border-radius: 5rem;
+}
+.search i {
+  background-color: rgb(255, 255, 255);
+  color: rgb(57, 57, 57);
+  font-size: 1.5rem;
+  border-radius: 10rem;
+  padding: 0.3rem;
+  margin-left: -2rem;
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+::placeholder {
+  font-family: "Noto Sans Khmer";
+  font-weight: 400;
+}
+/* Ensure the control button container is positioned relative */
+.controlbtn {
+  display: flex;
+  font-size: 1.4rem;
+  position: relative; /* Add relative positioning */
+}
+
+/* Bell icon styling */
+.controlbtn i {
+  padding: 0.5rem;
+  border-radius: 5rem;
+  background-color: rgb(239, 239, 239);
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Dropdown Styling */
+.notification-dropdown {
+  display: none; /* Hidden by default */
+  position: absolute; /* Positioned absolutely relative to .controlbtn */
+  margin-top: 3.5rem;
+  margin-right: 2rem;
+  right: 0;
+  width: 320px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  max-height: 455px; /* Limit the height of the dropdown to fit 5 items (60px per item) */
+  overflow-y: auto; /* Allow scrolling when the content exceeds the height */
+  transition: overflow-y 0.3s ease; /* Smooth transition when showing scrollbar */
+}
+
+/* Make the scrollbar appear only on hover */
+.notification-dropdown:hover {
+  overflow-y: auto; /* Show the scrollbar when hovered */
+}
+
+/* Custom Scrollbar */
+.notification-dropdown::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+.notification-dropdown::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar */
+  border-radius: 3px; /* Rounded edges of the scrollbar thumb */
+}
+
+.notification-dropdown::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darken scrollbar when hovered */
+}
+
+/* Add hover effect on notification item */
+.notification-item:hover {
+  background-color: #f4f4f4; /* Change background color when hovered */
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+/* Thumbnail hover effect */
+.notification-item img:hover {
+  transform: scale(1.1); /* Slightly enlarge the thumbnail */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Notification Header (Title + Settings Icon) */
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center items */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.notification-title {
+  margin: 0;
+}
+
+.settings-icon {
+  color: #888;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.settings-icon:hover {
+  color: #333; /* Change color on hover */
+}
+
+/* Notification Item Styling */
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box; /* Ensure padding does not affect height */
+}
+
+/* Ensure images are consistent and do not exceed height */
+.notification-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.notification-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text vertically */
+}
+
+.notification-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.notification-time {
+  font-size: 12px;
+  color: #888;
+}
+#costome {
+  border: none;
+  background: none;
+}
+#costome i {
+  font-size: 1.4rem;
+}
+.navbarbtn {
+  margin-top: -0.5rem;
+  align-items: center;
+  display: flex;
+}
+.navbarbtn a:not(.course) {
+  margin-left: 3rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+}
+#profileBtn {
+  background: none;
+  border: none;
+  margin-left: 3rem;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+.profile-bar {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 19rem;
+  margin-left: 16rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  height: 12rem;
+  width: 15rem;
+  transition: all 0.2s ease, opacity 0.5s ease, visibility 0.5s ease;
+}
+.profile-bar.show {
+  opacity: 1;
+  visibility: visible;
+}
+.profilePic {
+  margin-top: -2rem;
+  padding-left: 3rem;
+  display: flex;
+  border-radius: 1rem;
+  align-items: center;
+}
+.profilePic img {
+  margin-right: 1rem;
+}
+.profilePic h4 {
+  font-weight: 400;
+}
+.set {
+  margin-top: -1.7rem;
+  text-align: center;
+  height: 3rem;
+  padding-top: 1rem;
+}
+.set i {
+  margin-right: 1rem;
+}
+.course {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+}
+.navbarbtn img {
+  width: 2.5rem;
+}
+.navbarbtn #menu:not(.home) {
+  padding-bottom: 1.2rem;
+  border-bottom: solid 0.2rem rgba(172, 19, 19, 0);
+  transition: all 0.1s ease-in-out;
+}
+.dropdown {
+  margin-left: 3rem;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  margin-top: 1rem;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  height: 8rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content::after {
+  content: "";
+  position: absolute;
+  top: -19px;
+  transform: translateX(-14rem);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+.dropdown-content a {
+  margin-right: 2rem;
+  font-size: 0.5rem;
+  display: block;
+  margin-top: 0.7rem;
+  width: 11rem;
+  color: black;
+}
+.devolopmentdrop {
+  position: relative;
+  display: inline-block;
+}
+.devolopmentdrop-drop {
+  display: none;
+  margin-top: 0rem;
+  margin-left: 11rem;
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  height: 13rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.devolopmentdrop-drop::after {
+  content: "";
+  position: absolute;
+  top: -19px;
+  transform: translateX(3rem);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+.devolopmentdrop-drop a {
+  margin-right: 2rem;
+  font-size: 0.5rem;
+  display: block;
+  margin-top: 0.7rem;
+  width: 13rem;
+  color: black;
+}
+.designdrop {
+  position: relative;
+  display: inline-block;
+}
+.designdrop-drop {
+  display: none;
+  margin-top: 0rem;
+  margin-left: 11rem;
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  height: 6rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.designdrop-drop::after {
+  content: "";
+  position: absolute;
+  top: -19px;
+  transform: translateX(3rem);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+.designdrop-drop a {
+  margin-right: 2rem;
+  font-size: 0.5rem;
+  display: block;
+  margin-top: 0.7rem;
+  width: 13rem;
+  color: black;
+}
+
+.itAndSoftwaredrop {
+  position: relative;
+  display: inline-block;
+}
+.itAndSoftwaredrop-drop {
+  display: none;
+  margin-top: 0rem;
+  margin-left: 11rem;
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  height: 6rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.itAndSoftwaredrop-drop::after {
+  content: "";
+  position: absolute;
+  top: -19px;
+  transform: translateX(3rem);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+.itAndSoftwaredrop-drop a {
+  margin-right: 2rem;
+  font-size: 0.5rem;
+  display: block;
+  margin-top: 0.7rem;
+  width: 13rem;
+  color: black;
+}
+.controlbtn i:hover {
+  background-color: rgb(189, 189, 189);
+}
+.dropdown a:hover {
+  color: #00a7cd;
+}
+.devolopmentdrop:hover #id1 {
+  color: #00a7cd;
+}
+.designdrop:hover #id2 {
+  color: #00a7cd;
+}
+.itAndSoftwaredrop:hover #id3 {
+  color: #00a7cd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.devolopmentdrop:hover .devolopmentdrop-drop {
+  display: block;
+}
+.designdrop:hover .designdrop-drop {
+  display: block;
+}
+.itAndSoftwaredrop:hover .itAndSoftwaredrop-drop {
+  display: block;
+}
+.navbarbtn #menu:hover {
+  color: rgb(15, 223, 255);
+  padding-bottom: 1.2rem;
+}
+.profilePic:hover {
+  background-color: rgb(183, 183, 183, 0.3);
+  border-radius: 1rem;
+}
+.set:hover {
+  background-color: rgb(183, 183, 183, 0.3);
+  border-radius: 1rem;
+}
+
+/*navbar-end*/
+
+/* Hero Section */
+.hero {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e3f2fd;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.hero-content h1 .highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.hero-buttons {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background: #007bff;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #28a745;
+}
+
+.btn-secondary:hover {
+  background: #218838;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Search Section */
+.search-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.search-container h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0056b3;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.input-large {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Noto Sans Khmer", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-large:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.filter-row select {
+  font-family: "Noto Sans Khmer", sans-serif;
+}
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+select {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-search {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  font-family: "Noto Sans Khmer", sans-serif;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-search:hover {
+  background: #0056b3;
+}
+
+/* Job Listings Section */
+.job-listings {
+  margin-top: 20px;
+}
+
+.job-listings h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+/* Job Grid */
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+}
+
+/* Enhanced Job Cards */
+.job-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.job-card:hover {
+  box-shadow: 0 6px 12px #007bff;
+}
+
+.job-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.job-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.job-card .btn-apply {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Noto Sans Khmer", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.job-card .btn-apply:hover {
+  background: #023f7f;
+}
+
+/* Add a border and padding to the experience section to make it stand out */
+.job-card .experience {
+  font-size: 14px;
+  background: #f1f3f5;
+  padding: 8px;
+  border-radius: 5px;
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Add style for job type (full-time, part-time, etc.) */
+.job-card .job-type {
+  font-size: 14px;
+  background: #e3f2fd;
+  padding: 8px;
+  border-radius: 5px;
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#setstyles {
+  color: rgb(0, 0, 0);
+  background-color: #d4d4d4b3;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 2rem;
+}
+
+
+/*underlink*/
+.underlinks {
+  position: absolute;
+  background-color: rgb(10, 10, 10);
+  margin-top: 5rem;
+  padding: 2rem;
+  width: 95.8%;
+  height: 20.5rem;
+}
+.bottomInformation {
+  margin-left: 4rem;
+  margin-bottom: 5rem;
+  display: flex;
+}
+.bottomInformation h2 {
+  color: #fff;
+  font-size: 1rem;
+  width: 5rem;
+}
+.bottomInformation p {
+  margin-top: 3rem;
+  width: 30rem;
+  color: #fff;
+  font-weight: 200;
+}
+.links {
+  margin-right: 10rem;
+}
+.links a {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+  transition: all 0.2s;
+}
+.courseBT {
+  margin-right: 10rem;
+}
+.courseBT a {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+}
+
+.contactMe a {
+  display: flex;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  gap: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+}
+.contactLink i {
+  color: #c9c9c9;
+}
+.icon {
+  display: flex;
+  gap: 1rem;
+}
+.icon a {
+  font-size: 1.5rem;
+}
+.credit hr {
+  border: solid #a7a7a7 0.05rem;
+}
+.credit {
+  width: 100%;
+}
+.creditBy {
+  display: flex;
+}
+.credit h4 {
+  margin-top: 0.3rem;
+}
+.creditBy h4:nth-child(1) {
+  width: 60rem;
+  margin-right: 35rem;
+  color: #d3d3d3;
+  font-weight: 200;
+}
+.creditBy h4:nth-child(2) {
+  width: 15rem;
+  color: #d3d3d3;
+  font-weight: 200;
+}
+#arrow-upbtn {
+  position: absolute;
+  width: 3rem;
+  margin-left: 93%;
+  height: 3rem;
+  cursor: pointer;
+  background: none;
+  border: solid 2px #00cffd;
+  border-radius: 2rem;
+}
+#arrow-upbtn i {
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.bottomInformation a:hover {
+  color: #777777;
+}
+.set:hover {
+  background-color: rgb(183, 183, 183, 0.3);
+  border-radius: 1rem;
+}
+.profilePic:hover {
+  background-color: rgb(183, 183, 183, 0.3);
+  border-radius: 1rem;
+}
+
+#profileBtn:hover {
+  scale: 1.1;
+}
+
+#arrow-upbtn:hover i {
+  animation: moveUp 0.5s ease-in-out infinite alternate;
+}
+@keyframes moveUp {
+  0% {
+    top: 3px;
+    opacity: 0;
+  }
+  100% {
+    top: -9px;
+    color: red;
+    opacity: 1;
+  }
+}
