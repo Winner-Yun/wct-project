@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Kanesha.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/course-study.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>SignUp and Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Kantumruy Pro", sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: url(https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      color: #f0f0f0;
+    }
+
+    .container {
+      width: 380px;
+      border-radius: 15px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .forms {
+      display: flex;
+      width: 200%;
+      transition: transform 0.6s ease;
+    }
+
+    .form-container {
+      width: 50%;
+      padding: 2.5rem 2rem;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 2.2rem;
+      font-size: 1.8rem;
+      color: #00b5e2;
+      font-weight: bold;
+    }
+
+    input {
+      width: 85%;
+      padding: 0.8rem;
+      margin: 0.3rem 0;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      color: #6b6b6b;
+      background: rgba(255, 255, 255, 0.8);
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    input::placeholder {
+      color: #666;
+    }
+
+    input:focus {
+      background: rgba(255, 255, 255, 0.5);
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(0, 181, 226, 0.9);
+    }
+
+    .password-container {
+      position: relative;
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .password-container input {
+      width: 100%;
+    }
+
+    #togglePassword {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #888;
+    }
+
+    button {
+      width: 85%;
+      padding: 0.8rem;
+      margin-top: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #00b5e2, #1c4d9e);
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #1c4d9e, #00b5e2);
+      transform: translateY(-3px);
+    }
+
+    .toggle-button {
+      margin-top: 0.1rem;
+      background: none;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    #toggleLoginPassword{
+      position: absolute;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #a2a3a3;
+      margin-left: -2.5rem;
+    }
+    #toggleSignUpPassword{
+      position: absolute;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #a2a3a3;
+      margin-left: -2.5rem;
+    }
+    #toggleSignUp2Password{
+      position: absolute;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #a2a3a3;
+      margin-left: -2.5rem;
+    }
+
+    .social-login {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .social-login a {
+      color: #00b5e2;
+      padding: 1rem;
+      font-size: 1.8rem;
+      border: none;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      background: transparent;
+    }
+
+    .social-login a:hover {
+      transform: scale(1.5);
+      color: #a0c5ff;
+    }
+
+    .social-button svg {
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="forms" id="formSlider">
+      
+      <!-- Sign Up Form -->
+      <div class="form-container">
+        <h2>បង្កើតគណនី</h2>
+        <input type="email" placeholder="លេខទូរស័ព្ទ ឬ អ៊ីមែល" value="Kanesha.com"required>
+        <div class="password-container">
+          <input type="password" id="signUpPassword" placeholder="ពាក្យសម្ងាត់" value="slkneabanot" required>
+          <i class="bx bx-show" id="toggleSignUpPassword" style="cursor: pointer;"></i>
+        </div>
+        <div class="password-container">
+          <input type="password" id="signUp2Password" placeholder="បញ្ចាក់ពាក្យសម្ងាត់" value="slkneabanot" required>
+          <i class="bx bx-show" id="toggleSignUp2Password" style="cursor: pointer;"></i>
+        </div>
+        <button id="signUpButton">បង្កើតគណនី</button>
+        <div class="social-login">
+            <a href=""><i class='bx bxl-facebook-square'></i></a>
+            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+            <a href=""><i class='bx bxl-google' ></i></a>
+          </div>
+        <button class="toggle-button" onclick="toggleForm()">មានគណនីហើយមែនទេ? ចូលគណនី</button>
+      </div>
+
+      <!-- Login Form -->
+      <div class="form-container">
+        <h2>ចូល​គណនី</h2>
+        <input type="email" placeholder="លេខទូរស័ព្ទ ឬ អ៊ីមែល" value="Kanesha.com" required>
+        <div class="password-container">
+          <input type="password" id="loginPassword" placeholder="ពាក្យសម្ងាត់" value="slkneabanot" required>
+          <i class="bx bx-show" id="toggleLoginPassword" style="cursor: pointer;"></i>
+        </div>
+        <button id="logInButton">ចូល​គណនី</button>
+        <div class="social-login">
+          <a href="loginBYFB.html"><i class='bx bxl-facebook-square'></i></a>
+          <a href="loginBYIG.html"><i class='bx bxl-instagram-alt' ></i></a>
+          <a href="loginBYGG.html"><i class='bx bxl-google' ></i></a>
+        </div>
+        <button class="toggle-button" onclick="toggleForm()" >មិនទាន់មានគណនីមែនទេ? ​បង្កើតគណនី។</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleForm() {
+      const formSlider = document.getElementById('formSlider');
+      formSlider.style.transform = formSlider.style.transform === 'translateX(-50%)' ? 'translateX(0)' : 'translateX(-50%)';
+    }    
+
+    document.getElementById('toggleLoginPassword').addEventListener('click', function () {
+      const passwordField = document.getElementById('loginPassword');
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+      this.classList.toggle('bx-hide');
+      this.classList.toggle('bx-show');
+    });
+
+    document.getElementById('toggleSignUpPassword').addEventListener('click', function () {
+      const passwordField = document.getElementById('signUpPassword');
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+      this.classList.toggle('bx-show');
+      this.classList.toggle('bx-hide');
+    });
+
+    document.getElementById('toggleSignUp2Password').addEventListener('click', function () {
+      const passwordField = document.getElementById('signUp2Password');
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+      this.classList.toggle('bx-show');
+      this.classList.toggle('bx-hide');
+    });
+
+    document.getElementById("logInButton").addEventListener("click", function() {
+      window.location.href = 'index.html';
+    });
+
+    document.getElementById("signUpButton").addEventListener("click", function() {
+
+      window.location.href = 'index.html';
+    });
+
+  </script>
+</body>
+</html>
