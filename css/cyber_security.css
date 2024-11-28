@@ -462,7 +462,7 @@ input:focus {
 }
 
 .feature-item p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -595,7 +595,7 @@ input:focus {
   animation: slideUp 1s ease-out;
 }
 
-.course-card {
+.course-card1, .course-card2, .course-card3 {
   width: 30%;
   padding: 1rem;
   background-color: #fff;
@@ -605,61 +605,112 @@ input:focus {
   transition: transform 0.3s ease-in-out;
 }
 
-.course-card:hover {
-  transform: translateY(-10px);
-}
-
-.course-card img {
+.course-card1 img,
+.course-card2 img,
+.course-card3 img {
   width: 100%;
-  height: auto;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fills the container */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  max-height: 285px; /* Prevents the image from becoming too tall */
+  display: block; /* Ensure consistent block-level display */
+  margin: 0 auto; /* Center the image */
   margin-bottom: 1rem;
 }
 
-.course-card h3 {
+.course-card1:hover, .course-card2:hover, .course-card3:hover {
+  transform: translateY(-10px);
+}
+
+.course-card1 h3 {
+  font-size: 1.8rem;
+}
+.course-card2 h3 {
+  font-size: 1.8rem;
+}
+.course-card3 h3 {
   font-size: 1.8rem;
 }
 
-.course-card .price {
+.course-card1 .price {
   font-size: 1.5rem;
-  color: #27ae60;
+  color: #007bff;
+}
+.course-card2 .price {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+.course-card3 .price {
+  font-size: 1.5rem;
+  color: #007bff;
 }
 
-.course-card .enroll-button {
+.course-card1 .enroll-button {
   display: block;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background-color: #27ae60;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.course-card2 .enroll-button {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.course-card3 .enroll-button {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
   color: white;
   border-radius: 50px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
-.course-card .enroll-button:hover {
-  background-color: #2ecc71;
+.course-card1 .enroll-button:hover {
+  background-color: #007bff;
+}
+.course-card2 .enroll-button:hover {
+  background-color: #007bff;
+}
+.course-card3 .enroll-button:hover {
+  background-color: #007bff;
 }
 
 /* Call-to-Action Section */
 .cta-section {
   position: absolute;
   width: 91.6%;
-  margin-top: 115rem;
+  margin-top: 125rem;
   text-align: center;
   padding: 3rem 4rem;
-  background-color: #27ae60;
+  background-color: #007bff;
   color: white;
   animation: fadeIn 1.5s ease-out;
 }
 
 .cta-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
 }
 
 .cta-button {
   margin-top: 2rem;
   padding: 1rem 2rem;
   background-color: #fff;
-  color: #27ae60;
+  color: #007bff;
   font-size: 1.2rem;
   border-radius: 5rem;
   text-decoration: none;
@@ -701,7 +752,7 @@ input:focus {
 
 .underlinks {
   position: absolute;
-  margin-top: 135.5rem;
+  margin-top: 148rem;
   background-color: rgb(10, 10, 10);
   padding: 2rem;
   width: 95.8%;
