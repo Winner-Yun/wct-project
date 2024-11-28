@@ -147,11 +147,6 @@ input:focus {
   border-bottom: solid 0.2rem rgba(255, 32, 32,0);
   transition: all 0.1s ease-in-out;
 }
-.contact{
-  padding-bottom: 1.2rem;
-  border-bottom: solid 0.2rem #00cffd;
-  transition: all 0.1s ease-in-out;
-}
 .dropdown {
   margin-left: 3rem;
   position: relative;
