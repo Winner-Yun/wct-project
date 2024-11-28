@@ -635,7 +635,7 @@ section.services{
 /*   === Courses Section Styling Starts ===   */
 section.courses{
   width: 85%;
-  padding: 100px 7.6% 20px;
+  padding: 100px 7.6% 200px;
 }
 .courses .section-header{
   position: relative;
@@ -652,9 +652,10 @@ section.courses{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
 }
 .courses .course-contents .course-card{
-  flex-basis: calc(calc(90% / 1) 1.2rem);
+  flex-basis: calc(calc(100% / 4) - 1.2rem);
   border: 1px solid #00d9ff;
   padding: 10px;
   border-radius: 9px;
