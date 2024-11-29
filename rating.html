@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./img/Kanesha.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/rating.css" />
+    <title>Our Rating</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h1>គណេស.ខម</h1>
+        <h4>Kanesha.com</h4>
+      </div>
+      <div class="buttonControl">
+        <div class="search">
+          <input type="text" placeholder="ស្វែងរក...." />
+          <a href=""><i class="bx bx-search-alt-2"></i></a>
+        </div>
+        <div class="controlbtn">
+          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
+            <i class="bx bxs-bell-ring"></i>
+          </button>
+          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
+
+          <!-- Notification Dropdown -->
+          <div id="notificationDropdown" class="notification-dropdown">
+            <!-- Notification Header (Title + Settings) -->
+            <div class="notification-header">
+              <span class="notification-title"> ការជូនដំណឹង</span>
+              <a href="#" class="settings-icon">
+                <i class="bx bx-cog"></i>
+                <!-- Settings Icon -->
+              </a>
+            </div>
+            <!-- Notification Items -->
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">5 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">10 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">
+                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
+                </p>
+                <p class="notification-time">15 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">30 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 ម៉ោងមុន</p>
+              </div>
+            </div>
+            <!-- Add more notifications as needed -->
+          </div>
+        </div>
+      </div>
+      <div class="navbarbtn">
+        <div class="menu">
+          <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
+          <div class="dropdown">
+            <a class="course" id="menu" href="course-study.html">វគ្គសិក្សា</a>
+            <div class="dropdown-content">
+              <div class="devolopmentdrop">
+                <a href="#" id="id1"
+                  ><i class="bx bx-code-alt"></i>Devolopment
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="devolopmentdrop-drop">
+                  <a href="course-study.html">
+                    <i class="bx bx-code-block"></i>Web Devolopment</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-data"></i>Data Science</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
+                  >
+                  <a href="">Progaming language</a>
+                  <a href="">Software Engineering</a>
+                </div>
+              </div>
+              <div class="designdrop">
+                <a href="#" id="id2"
+                  ><i class="bx bxs-pen"></i>Design
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="designdrop-drop">
+                  <a href="">
+                    <i class="bx bxs-eyedropper"></i>UX & UI Design</a
+                  >
+                  <a href=""><i class="bx bxs-slideshow"></i>Graphic Design</a>
+                </div>
+              </div>
+              <div class="itAndSoftwaredrop">
+                <a href="#" id="id3"
+                  ><i class="bx bx-chip"></i>IT & Software
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
+                <div class="itAndSoftwaredrop-drop">
+                  <a href="cyber_security.html"
+                    ><i class="bx bx-shield-quarter"></i>cyber security</a
+                  >
+                  <a href=""
+                    ><i class="bx bx-network-chart"></i>Network security</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
+          <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
+        </div>
+        <button id="profileBtn">
+          <img src="./img/profacer_Man.png" alt="" />
+        </button>
+        <div class="profile-bar">
+          <a
+            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
+          >
+            <div class="profilePic">
+              <img src="./img/profacer_Man.png" id="pfer" alt="" />
+              <h4>នារី​ បុរស</h4>
+            </div>
+          </a>
+          <a href="settingPage.html">
+            <div class="set"><i class="bx bx-cog"></i>ការកំណត់</div>
+          </a>
+          <a href="login_signUp.html"
+            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="reviews-section">
+      <h1>ការវាយតម្លៃមកលើពួកយើង</h1>
+      <p class="description">
+        វាជាឯកសារ​មួយដែលផ្តល់ព័ត៌មានសំខាន់ៗអំពីគុណភាព និងបញ្ហាដែលអាចមាន
+        បង្កើនភាពជឿជាក់ និងការវិវឌ្ឍន៍វេបសាយរបស់យើង។
+        ការវាយតម្លៃនេះក៏អាចជាកន្លែងសម្រាប់ប្រើប្រាស់ពិចារណាដើម្បីកែលម្អបន្ថែម
+        ឬបង្កើតការលើកតម្កើងនូវអ្វីដែលបានធ្វើបានល្អ។
+      </p>
+
+      <!-- Leave us feedback button -->
+      <a href="#" class="leave-feedback" onclick="showFeedbackForm()"
+        >វាយតម្លៃពួកយើង​ឥឡូវ​នេះ</a
+      >
+
+      <!-- Review summary container -->
+      <div class="review-summary">
+        <div class="rating-summary">
+          <div>
+            <div class="rating-text">
+              4.2 <span class="star-rating">★★★★☆</span>
+            </div>
+            <small style="color: #555">Out of 5 Stars</small>
+          </div>
+        </div>
+        <div class="bar-chart" style="margin-right: 3rem">
+          <div class="bar">
+            <span>5 Stars</span>
+            <div style="background: linear-gradient(to right, #3498db 90%, #cccccc 40%);" data-count="230"></div>
+          </div>
+          <div class="bar">
+            <span>4 Stars</span>
+            <div
+              style="
+                background: linear-gradient(to right, #3498db 40%, #cccccc 40%);
+              "
+              data-count="57"
+            ></div>
+          </div>
+          <div class="bar">
+            <span>3 Stars</span>
+            <div
+              style="
+                background: linear-gradient(to right, #3498db 20%, #cccccc 20%);
+              "
+              data-count="30"
+            ></div>
+          </div>
+          <div class="bar">
+            <span>2 Stars</span>
+            <div
+              style="
+                background: linear-gradient(to right, #3498db 10%, #cccccc 10%);
+              "
+              data-count="7"
+            ></div>
+          </div>
+          <div class="bar">
+            <span>1 Star</span>
+            <div
+              style="
+                background: linear-gradient(to right, #3498db 5%, #cccccc 5%);
+              "
+              data-count="3"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feedback form -->
+      <div class="feedback-form" id="feedbackForm">
+        <span class="close-btn" onclick="closeFeedbackForm()">&times;</span>
+        <h2>វាយតម្លៃពួកយើង​ឥឡូវ​នេះ</h2>
+        <form>
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating">
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option></select
+          ><br />
+
+          <label for="comment">មតិ:</label><br />
+          <textarea
+            id="comment"
+            name="comment"
+            rows="4"
+            placeholder="មតិរបស់អ្នក..."
+          ></textarea
+          ><br />
+
+          <button type="submit">បង្ហោះ</button>
+        </form>
+      </div>
+
+      <!-- Reviews Section -->
+      <div class="reviews">
+        <div class="review">
+          <img src="./img/teacher/kimchayPoster.jpg" alt="Profile Pic" />
+          <div class="review-content">
+            <h3>បង​ គីមឆាយ</h3>
+            <p class="date">22 មេសា,2023</p>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              គេហទំព័រនេះផ្តល់វគ្គសិក្សាជាច្រើនដើម្បីជួយអ្នកស្វែងយល់
+              និងបង្កើនជំនាញថ្មីៗ។ វគ្គសិក្សាត្រូវបានបង្រៀនដោយអ្នកជំនាញ
+              ហើយមានឧទាហរណ៍ជាក់ស្តែង។
+            </p>
+          </div>
+        </div>
+
+        <div class="review">
+          <img src="./img/teacher/utakra.png" alt="Profile Pic" />
+          <div class="review-content">
+            <h3>បង​​ រ៉ា</h3>
+            <p class="date">22 តុលា,2023</p>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              បណ្តាញនេះងាយស្រួលប្រើ សិស្សអាចជ្រើសរើសវគ្គសិក្សានានាបានដោយឆាប់រហ័ស
+              និងសមស្របទៅនឹងតម្រូវការរបស់ខ្លួន។
+            </p>
+          </div>
+        </div>
+
+        <div class="review">
+          <img src="./img/legend/WN.jpg" alt="Profile Pic" />
+          <div class="review-content">
+            <h3>ប្រុស​ ស្អាត</h3>
+            <p class="date">9 កញ្ញា, 2020</p>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              គេហទំព័រនេះផ្តល់នូវបទពិសោធន៍សិក្សាដែលងាយស្រួល និងមានប្រសិទ្ធភាព
+              យ៉ាងពិសេសសម្រាប់អ្នកចង់បង្កើនជំនាញវិជ្ជាជីវៈរបស់ខ្លួន។
+              វគ្គសិក្សាបានរៀបចំដោយប្រកាសយ៉ាងច្បាស់និងមានប្រព័ន្ធល្អ។
+            </p>
+          </div>
+        </div>
+
+        <div class="review">
+          <img src="./img/legend/UK.jpg" alt="Profile Pic" />
+          <div class="review-content">
+            <h3>បង បឿន Single</h3>
+            <p class="date">10 កញ្ញា, 2020</p>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              ចំណេះដឹងដែលទទួលបានពីវគ្គសិក្សានេះអាចប្រើប្រាស់បានពិតប្រាកដ
+              និងអាចជួយពង្រឹងការងាររបស់សិស្ស ឬជួយពង្រឹងគោលដៅអាជីពនាពេលអនាគត។
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination Buttons -->
+      <div class="pagination">
+        <button id="page-1" class="active" onclick="switchPage(1)">1</button>
+        <button id="page-2" onclick="switchPage(2)">2</button>
+      </div>
+    </section>
+
+    <div class="underlinks">
+        <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
+        <div class="bottomInformation">
+          <div class="logo">
+            <h1>គណេស.ខម</h1>
+            <h4>Kanesha.com</h4>
+            <p>
+              គណេស.Kanesha ជាវេបសាយមួយដែលបង្កើតឡើងក្នុងគោលបំណង​
+              អោយអ្នកប្រើប្រាស់អាចសិក្សានូវវគ្គសិក្សាជាច្រើនសម្រាប់អភិវឌ្ឍន៍ចំណេះដឹងលើបច្ចេកវិទ្យាថ្មីៗដោយមិនគិតថ្លៃតាមរយ:
+              វីដេអូ​​ ​និង ឯកសារជាច្រើន។
+            </p>
+          </div>
+          <div class="links">
+            <h2>Link បន្ថែម</h2>
+            <a href="./reanPage.html">រៀន</a>
+            <a href="./blog.html">ប្លុក</a>
+            <a href="./job_page.html">ការងារ</a>
+            <a href="./aboutus.html">អំពីយើង</a>
+            <a href="./contactUs.html">ទំនាក់ទំនង</a>
+            <a href="./rating.html">Rate ពួកយើង</a>
+          </div>
+          <div class="courseBT">
+            <h2>វគ្គសិក្សា</h2>
+            <a href="#">Devolopment</a>
+            <a href="#">Design</a>
+            <a href="#">IT & Software</a>
+          </div>
+          <div class="contactMe">
+            <h2>ទំនាក់ទំនង</h2>
+            <div class="contactLink">
+              <a href="#"><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a>
+            </div>
+            <div class="contactLink">
+              <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
+            </div>
+            <div class="contactLink">
+              <a href="#"><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a>
+            </div>
+  
+            <div class="icon">
+              <a href=""><i class="bx bxl-facebook-circle"></i></a>
+              <a href=""><i class="bx bxl-instagram"></i></a>
+              <a href=""><i class="bx bxl-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="credit">
+          <hr />
+          <div class="creditBy">
+            <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
+            <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
+          </div>
+        </div>
+      </div>
+
+    <script>
+      function switchPage(page) {
+        const reviews = document.querySelectorAll(".review");
+        reviews.forEach((review, index) => {
+          review.style.display =
+            index < page * 2 && index >= (page - 1) * 2 ? "flex" : "none";
+        });
+
+        document.querySelectorAll(".pagination button").forEach((button) => {
+          button.classList.remove("active");
+        });
+        document.getElementById("page-" + page).classList.add("active");
+      }
+
+      // Initial load
+      switchPage(1);
+
+      function showFeedbackForm() {
+        document.getElementById("feedbackForm").classList.add("show");
+      }
+
+      function closeFeedbackForm() {
+        document.getElementById("feedbackForm").classList.remove("show");
+      }
+    </script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/loopjs.js"></script>
+  </body>
+</html>
