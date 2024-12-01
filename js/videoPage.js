@@ -41,19 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let existingComments = [
   {
-    text: "លោកគ្រូ គីមឆាយសង្ហាហើយពូកែពន្យល់ទៀត។",
+    text: "លោកគ្រូសង្ហាហើយពូកែពន្យល់ទៀត។",
     timestamp: new Date(Date.now() - 300000), // 5 minutes ago
     username: "សិស្ស", // Comment username
     profileImage: "../img/secretComment.png", // Comment image
     replies: [
       {
-        text: "គាត់ពិតជាពូកែណាស់!",
+        text: "បាទអគុណប្អូន!",
         timestamp: new Date(Date.now() - 120000), // 2 minutes ago
         username: "លោកគ្រូ", // Reply username
         profileImage: "../img/teacher/kimchayPoster.jpg", // Reply image
       },
       {
-        text: "ខ្ញុំយល់ពីរបៀបស្វែងយល់!",
+        text: "ខំប្រឹងរៀនណា!",
         timestamp: new Date(Date.now() - 30000), // 1 minute ago
         username: "លោកគ្រូ", // Reply username
         profileImage: "../img/teacher/kimchayPoster.jpg", // Reply image
@@ -67,7 +67,7 @@ let existingComments = [
     profileImage: "../img/secretComment.png", // Comment image
     replies: [
       {
-        text: "សូមប្រឹងប្រែង។",
+        text: "ហាសហាលោកគ្រូមានប្តីហើយ។",
         timestamp: new Date(Date.now() - 240000), // 4 minutes ago
         username: "លោកគ្រូ", // Reply username
         profileImage: "../img/teacher/kimchayPoster.jpg", // Reply image
@@ -75,13 +75,13 @@ let existingComments = [
     ]
   },
   {
-    text: "សំឡេងពិរោះណាស់លោកគ្រូ​ គីមឆាយ។",
+    text: "សំឡេងពិរោះណាស់លោកគ្រូ​។",
     timestamp: new Date(Date.now() - 1200000), // 20 minutes ago
     username: "សិស្ស", // Comment username
     profileImage: "../img/secretComment.png", // Comment image
     replies: [
       {
-        text: "ខ្ញុំចូលចិត្តសំឡេងនេះ!",
+        text: "បាទគ្រូអតីតម្ចាស់ពាន The Voice ដែរ។",
         timestamp: new Date(Date.now() - 300000), // 5 minutes ago
         username: "លោកគ្រូ", // Reply username
         profileImage: "../img/teacher/kimchayPoster.jpg", // Reply image
