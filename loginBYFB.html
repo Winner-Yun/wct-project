@@ -19,12 +19,31 @@
       </div>
       <div class="login-form">
         <h2>ចូលគណនីរបស់អ្នកក្នុង Facebook</h2>
-        <form>
-          <input type="text" placeholder="លេខទូរស័ព្ទ ឬ អ៊ីមែល" value="Kanesha.com" class="input-field" />
-          <input type="password" placeholder="ពាក្យសម្ងាត់" value="JJJJJJ" class="input-field" />
-          <button type="submit" class="blue-button">ចូល</button>
-          <div class="links" style="color:#1877f2">
-            <a href="#">បំភ្លេចពាក្យសម្ងាត់?</a> | <a href="#">ផ្លាស់ប្តូរពាក្យសំងាត់</a>
+        <form id="loginForm">
+          <input
+            type="text"
+            placeholder="លេខទូរស័ព្ទ ឬ អ៊ីមែល"
+            value="Kanesha.com"
+            class="input-field"
+          />
+          <input
+            type="password"
+            placeholder="ពាក្យសម្ងាត់"
+            value="JJJJJJ"
+            class="input-field"
+          />
+          <button class="blue-button" id="logInButton">
+            ចូល
+          </button>
+          <script>
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+              event.preventDefault();
+              window.location.href = "index.html";
+            });
+          </script>
+          <div class="links" style="color: #1877f2">
+            <a href="#">បំភ្លេចពាក្យសម្ងាត់?</a> |
+            <a href="#">ផ្លាស់ប្តូរពាក្យសំងាត់</a>
           </div>
           <button class="green-button">បង្កើតគណនីថ្មី</button>
         </form>

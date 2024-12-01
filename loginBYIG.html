@@ -139,7 +139,7 @@
       </div>
       <div class="login-form">
         <h2>ចូលគណនីរបស់អ្នកក្នុង Instagram</h2>
-        <form>
+        <form id="loginForm">
           <input
             type="text"
             placeholder="លេខទូរស័ព្ទ ឬ អ៊ីមែល"
@@ -153,6 +153,12 @@
             class="input-field"
           />
           <button type="submit" class="red-button">ចូល</button>
+          <script>
+            document.getElementById("loginForm").addEventListener("submit",function(even){
+              even.preventDefault();
+              window.location.href="index.html"
+            })
+          </script>
           <div class="links" style="color: #1877f2">
             <a href="#">បំភ្លេចពាក្យសម្ងាត់?</a> |
             <a href="#">ផ្លាស់ប្តូរពាក្យសំងាត់</a>
