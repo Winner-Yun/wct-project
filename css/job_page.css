@@ -1,6 +1,3 @@
-/* Import Noto Sans Khmer font from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer&display=swap");
-
 /* General Styles */
 body {
   font-family: "Noto Sans Khmer", sans-serif; /* Set the font to Noto Sans Khmer */

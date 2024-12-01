@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/loop.css" />
     <link rel="stylesheet" href="./css/course-study.css" />
     <link
       rel="stylesheet"
@@ -47,15 +48,75 @@
           <a href=""><i class="bx bx-search-alt-2"></i></a>
         </div>
         <div class="controlbtn">
-          <a href=""><i class="bx bxs-bell-ring"></i></a>
-          <a href=""><i class="bx bxs-store"></i></a>
+          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
+            <i class="bx bxs-bell-ring"></i>
+          </button>
+          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
+
+          <!-- Notification Dropdown -->
+          <div id="notificationDropdown" class="notification-dropdown">
+            <!-- Notification Header (Title + Settings) -->
+            <div class="notification-header">
+              <span class="notification-title"> ការជូនដំណឹង</span>
+              <a href="#" class="settings-icon">
+                <i class="bx bx-cog"></i>
+                <!-- Settings Icon -->
+              </a>
+            </div>
+            <!-- Notification Items -->
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">5 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">10 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">
+                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
+                </p>
+                <p class="notification-time">15 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">30 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 ម៉ោងមុន</p>
+              </div>
+            </div>
+            <!-- Add more notifications as needed -->
+          </div>
         </div>
       </div>
       <div class="navbarbtn">
         <div class="menu">
-          <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
+          <a class="home" id="menu" href="./index.html">ទំព័រដើម</a>
           <div class="dropdown">
-            <a class="course" id="menu" href="">វគ្គសិក្សា</a>
+            <a class="course" id="menu" href="#course">វគ្គសិក្សា</a>
             <div class="dropdown-content">
               <div class="devolopmentdrop">
                 <a href="#" id="id1"
@@ -63,11 +124,13 @@
                   <i class="bx bxs-chevron-right"></i
                 ></a>
                 <div class="devolopmentdrop-drop">
-                  <a href="">
+                  <a href="course-study.html">
                     <i class="bx bx-code-block"></i>Web Devolopment</a
                   >
-                  <a href=""><i class="bx bx-data"></i>Data Science</a>
-                  <a href=""
+                  <a href="course-study.html"
+                    ><i class="bx bx-data"></i>Data Science</a
+                  >
+                  <a href="course-study.html"
                     ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
                   >
                   <a href="">Progaming language</a>
@@ -88,14 +151,15 @@
                   </a>
                 </div>
               </div>
-              
+
               <div class="itAndSoftwaredrop">
                 <a href="#" id="id3"
                   ><i class="bx bx-chip"></i>IT & Software
                   <i class="bx bxs-chevron-right"></i
                 ></a>
                 <div class="itAndSoftwaredrop-drop">
-                  <a href="cyber_security.html"><i class="bx bx-shield-quarter"></i>cyber security</a
+                  <a href="cyber_security.html"
+                    ><i class="bx bx-shield-quarter"></i>cyber security</a
                   >
                   <a href=""
                     ><i class="bx bx-network-chart"></i>Network security</a
@@ -104,7 +168,7 @@
               </div>
             </div>
           </div>
-          <a class="about" id="menu" href="aboutus.html">អំពីយើង</a>
+          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
           <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
         </div>
         <button id="profileBtn">
@@ -119,18 +183,16 @@
               <h4>នារី​ បុរស</h4>
             </div>
           </a>
-          <a
-            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
-          >
+          <a href="settingPage.html">
             <div class="set"><i class="bx bx-cog"></i>ការកំណត់</div>
           </a>
-          <a
-            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
+          <a href="index-noLog.html"
             ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
           </a>
         </div>
       </div>
     </div>
+
     <div class="introPage">
       <div class="introTelling">
         <h2>ហេហេ!! តោះរៀនសរសេរកូដជាមួយ Kanesha</h2>
@@ -154,7 +216,7 @@
       </div>
     </div>
     <div class="programStudy">
-      <h2 >ស្វែងយល់បន្ថែម</h2>
+      <h2>ស្វែងយល់បន្ថែម</h2>
       <hr />
       <div class="infoProgram">
         <div class="program-section">
@@ -169,7 +231,10 @@
                   ដែលមានភាពទាក់ទាញនៃគេហទំព័រដោយប្រើ HTML, CSS និង JavaScript
                   ដើម្បីធានាបាននូវបទពិសោធន៍អ្នកប្រើប្រាស់យ៉ាងរលូន។
                 </p>
-                <button id="showMore" onclick="window.location.href='infoknowledgeM.html';">
+                <button
+                  id="showMore"
+                  onclick="window.location.href='infoknowledgeM.html';"
+                >
                   ពត៍មានលម្អិត<i class="bx bx-dots-vertical-rounded"></i>
                 </button>
                 <p></p>
@@ -233,16 +298,20 @@
           <i class="bx bx-chevron-left"></i>
         </button>
         <div class="skills-grid">
-         <a class="skill-card" href="teacher_Chose.html" style="text-decoration: none;">       
-              <img
-                src="./img/language/html_css_logo.png"
-                alt="HTML"
-                class="skill-icon"
-              />
-              <div class="skill-text">HTML&CSS</div>
-        </a>
+          <a
+            class="skill-card"
+            href="teacher_Chose.html"
+            style="text-decoration: none"
+          >
+            <img
+              src="./img/language/html_css_logo.png"
+              alt="HTML"
+              class="skill-icon"
+            />
+            <div class="skill-text">HTML&CSS</div>
+          </a>
 
-          <a class="skill-card" href="#" style="text-decoration: none;">
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
               alt="C"
@@ -251,7 +320,7 @@
             <div class="skill-text">C</div>
           </a>
 
-          <a class="skill-card" href="#" style="text-decoration: none;">
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt="Java"
@@ -260,195 +329,194 @@
             <div class="skill-text">Java</div>
           </a>
 
-          <a class="skill-card" href="#" style="text-decoration: none;">
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
               alt="C#"
               class="skill-icon"
             />
             <div class="skill-text">C#</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg"
               alt="R"
               class="skill-icon"
             />
             <div class="skill-text">R</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
               alt="Angular"
               class="skill-icon"
             />
             <div class="skill-text">Angular</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg"
               alt="Ruby"
               class="skill-icon"
             />
             <div class="skill-text">Ruby</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
               alt="MySQL"
               class="skill-icon"
             />
             <div class="skill-text">MySQL</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
               alt="Next JS"
               class="skill-icon"
             />
             <div class="skill-text">Next JS</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               alt="React"
               class="skill-icon"
             />
             <div class="skill-text">React</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt="JavaScript"
               class="skill-icon"
             />
             <div class="skill-text">JavaScript</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
               alt="Python"
               class="skill-icon"
             />
             <div class="skill-text">Python</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
               alt="C++"
               class="skill-icon"
             />
             <div class="skill-text">C++</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
               alt="Bootstrap"
               class="skill-icon"
             />
             <div class="skill-text">Bootstrap</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
               alt="Flutter"
               class="skill-icon"
             />
             <div class="skill-text">Flutter</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
               alt="Vue JS"
               class="skill-icon"
             />
             <div class="skill-text">Vue JS</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
               alt="Laravel"
               class="skill-icon"
             />
             <div class="skill-text">Laravel</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
               alt="PHP"
               class="skill-icon"
             />
             <div class="skill-text">PHP</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="Node JS"
               class="skill-icon"
             />
             <div class="skill-text">Node JS</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
               alt="Jquery"
               class="skill-icon"
             />
             <div class="skill-text">Jquery</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
               alt="Django"
               class="skill-icon"
             />
             <div class="skill-text">Django</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg"
               alt="Netlify"
               class="skill-icon"
             />
             <div class="skill-text">Netlify</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="Git"
               class="skill-icon"
             />
             <div class="skill-text">Git</div>
-        </a>
-        
-        <a class="skill-card" href="#" style="text-decoration: none;">
+          </a>
+
+          <a class="skill-card" href="#" style="text-decoration: none">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
               alt="Docker"
               class="skill-icon"
             />
             <div class="skill-text">Docker</div>
-        </a>        
-
+          </a>
         </div>
         <button class="scroll-buttonC right" id="scroll-right-buttonC">
           <i class="bx bx-chevron-right"></i>
@@ -734,28 +802,34 @@
         <div class="links">
           <h2>Link បន្ថែម</h2>
           <a href="reanPage.html">រៀន</a>
-          <a href="#">ប្លុក</a>
-          <a href="#">ការងារ</a>
-          <a href="#">អំពីយើង</a>
-          <a href="#">ទំនាក់ទំនង</a>
-          <a href="#">FAQs</a>
+          <a href="blog.html">ប្លុក</a>
+          <a href="job_page.html">ការងារ</a>
+          <a href="aboutus.html">អំពីយើង</a>
+          <a href="contactUs.html">ទំនាក់ទំនង</a>
+          <a href="./rating.html">Rate ពួកយើង</a>
         </div>
         <div class="courseBT">
           <h2>វគ្គសិក្សា</h2>
-          <a href="#">Devolopment</a>
-          <a href="#">Design</a>
-          <a href="#">IT & Software</a>
+          <a href="./course-study.html">Devolopment</a>
+          <a href="./design.html">Design</a>
+          <a href="./cyber_security.html">IT & Software</a>
         </div>
         <div class="contactMe">
           <h2>ទំនាក់ទំនង</h2>
           <div class="contactLink">
-            <a href="#"><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a>
+            <a
+              href="https://www.google.com/maps?ll=11.569746,104.888775&z=18&t=m&hl=en&gl=KH&mapclient=embed&cid=13679816548194653181"
+              target="_blank"
+              ><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a
+            >
           </div>
           <div class="contactLink">
             <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
           </div>
           <div class="contactLink">
-            <a href="#"><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a
+            >
           </div>
 
           <div class="icon">

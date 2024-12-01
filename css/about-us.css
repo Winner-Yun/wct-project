@@ -147,10 +147,10 @@ input:focus {
 }
 .navbarbtn #menu:not(.about) {
   padding-bottom: 1.2rem;
-  border-bottom: solid 0.2rem rgba(255, 32, 32,0);
+  border-bottom: solid 0.2rem rgba(255, 32, 32, 0);
   transition: all 0.1s ease-in-out;
 }
-.about{
+.about {
   padding-bottom: 1.2rem;
   border-bottom: solid 0.2rem #00cffd;
   transition: all 0.1s ease-in-out;
@@ -347,13 +347,16 @@ input:focus {
 
 /* Header Section */
 
- .about-header {
+.about-header {
   padding: -10px 20px;
-  background-image: linear-gradient(90deg, rgba(238,255,255,0.7721238938053098) 0%, rgba(24,234,255,0.3495575221238938) 50%, rgba(238,255,255,1) 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(238, 255, 255, 0.7721238938053098) 0%,
+    rgba(24, 234, 255, 0.3495575221238938) 50%,
+    rgba(238, 255, 255, 1) 100%
+  );
   text-align: center;
-
 }
-
 
 .about-header h1 {
   font-size: 3rem;
@@ -363,8 +366,6 @@ input:focus {
   letter-spacing: 2px;
   margin-bottom: 0;
   text-align: center;
-
-  
 }
 
 /* Content Section */
@@ -424,9 +425,6 @@ input:focus {
     margin: 0 auto;
   }
 }
-
-
-
 
 /*underlink*/
 .underlinks {
@@ -521,14 +519,14 @@ input:focus {
   color: #d3d3d3;
   font-weight: 200;
 }
-#arrow-upbtn{
+#arrow-upbtn {
   position: absolute;
   width: 3rem;
   margin-left: 93%;
   height: 3rem;
   cursor: pointer;
   background: none;
-  border:solid 2px #00cffd;
+  border: solid 2px #00cffd;
   border-radius: 2rem;
 }
 #arrow-upbtn i {

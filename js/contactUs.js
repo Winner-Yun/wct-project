@@ -40,3 +40,20 @@ document.querySelectorAll('.navbar').forEach(element => {
 document.querySelectorAll('.informationWeb').forEach(element => {
   observer.observe(element);
 });
+
+function toggleNotificationDropdown() {
+  const dropdown = document.getElementById("notificationDropdown");
+  dropdown.style.display =
+    dropdown.style.display === "block" ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+document.addEventListener("click", function (event) {
+  const dropdown = document.getElementById("notificationDropdown");
+  const bellIcon = document.querySelector(".controlbtn a:first-child");
+
+  if (!dropdown.contains(event.target) && !bellIcon.contains(event.target)) {
+    dropdown.style.display = "none";
+  }
+});
+

@@ -6,20 +6,45 @@
     <link rel="icon" href="./img/Kanesha.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/loop.css">
     <link rel="stylesheet" href="./css/cyber_security.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Cyber Security</title>
   </head>
   <body>
@@ -34,28 +59,93 @@
           <a href=""><i class="bx bx-search-alt-2"></i></a>
         </div>
         <div class="controlbtn">
-          <a href=""><i class="bx bxs-bell-ring"></i></a>
-          <a href=""><i class="bx bxs-store"></i></a>
+          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
+            <i class="bx bxs-bell-ring"></i>
+          </button>
+          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
+
+          <!-- Notification Dropdown -->
+          <div id="notificationDropdown" class="notification-dropdown">
+            <!-- Notification Header (Title + Settings) -->
+            <div class="notification-header">
+              <span class="notification-title"> ការជូនដំណឹង</span>
+              <a href="#" class="settings-icon">
+                <i class="bx bx-cog"></i>
+                <!-- Settings Icon -->
+              </a>
+            </div>
+            <!-- Notification Items -->
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">5 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">10 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">
+                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
+                </p>
+                <p class="notification-time">15 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">30 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 ម៉ោងមុន</p>
+              </div>
+            </div>
+            <!-- Add more notifications as needed -->
+          </div>
         </div>
       </div>
       <div class="navbarbtn">
         <div class="menu">
           <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
           <div class="dropdown">
-            <a class="course" id="menu" href="./course-study.html">វគ្គសិក្សា</a>
+            <a class="course" id="menu" href="#course">វគ្គសិក្សា</a>
             <div class="dropdown-content">
               <div class="devolopmentdrop">
-                <a href="#" id="id1">
-                  <i class="bx bx-code-alt"></i>Devolopment
-                  <i class="bx bxs-chevron-right"></i>
-                </a>
+                <a href="#" id="id1"
+                  ><i class="bx bx-code-alt"></i>Devolopment
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
                 <div class="devolopmentdrop-drop">
-                  <a href="/course-study.html">
-                    <i class="bx bx-code-block"></i>Web Devolopment</a>
-                  <a href="./course-study.html"><i class="bx bx-data"></i>Data Science</a>
-                  <a href="./course-study.html"><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a>
-                  <a href="./course-study.html">Progaming language</a>
-                  <a href="./course-study.html">Software Engineering</a>
+                  <a href="course-study.html">
+                    <i class="bx bx-code-block"></i>Web Devolopment</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-data"></i>Data Science</a
+                  >
+                  <a href="course-study.html"
+                    ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
+                  >
+                  <a href="">Progaming language</a>
+                  <a href="">Software Engineering</a>
                 </div>
               </div>
               <div class="designdrop">
@@ -72,51 +162,63 @@
                   </a>
                 </div>
               </div>
-              
+
               <div class="itAndSoftwaredrop">
-                <a href="#" id="id3">
-                  <i class="bx bx-chip"></i>IT & Software
-                  <i class="bx bxs-chevron-right"></i>
-                </a>
+                <a href="#" id="id3"
+                  ><i class="bx bx-chip"></i>IT & Software
+                  <i class="bx bxs-chevron-right"></i
+                ></a>
                 <div class="itAndSoftwaredrop-drop">
-                  <a href="">
-                    <i class="bx bx-shield-quarter"></i>cyber security</a>
-                  <a href="">
-                    <i class="bx bx-network-chart"></i>Network security</a>
+                  <a href="cyber_security.html"
+                    ><i class="bx bx-shield-quarter"></i>cyber security</a
+                  >
+                  <a href=""
+                    ><i class="bx bx-network-chart"></i>Network security</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <a class="about" id="menu" href="aboutus.html">អំពីយើង</a>
+          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
           <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
         </div>
         <button id="profileBtn">
           <img src="./img/profacer_Man.png" alt="" />
         </button>
         <div class="profile-bar">
-          <a href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14">
+          <a
+            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
+          >
             <div class="profilePic">
               <img src="./img/profacer_Man.png" id="pfer" alt="" />
               <h4>នារី​ បុរស</h4>
             </div>
           </a>
-          <a href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14">
+          <a href="settingPage.html">
             <div class="set"><i class="bx bx-cog"></i>ការកំណត់</div>
           </a>
-          <a href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14">
-            <div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
+          <a href="index-noLog.html"
+            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
           </a>
         </div>
       </div>
     </div>
-  
+
     <div class="header">
       <div class="header_title">
-        <h2><span>បង្កើនចំណេះដឹង Cyber Security របស់អ្នក</span></h2><br>
-        <h3><span>រុករក និងធ្វើជាម្ចាស់លើជំនាញដើម្បីការពារពិភពឌីជីថលរបស់អ្នក</span></h3>
+        <h2><span>បង្កើនចំណេះដឹង Cyber Security របស់អ្នក</span></h2>
+        <br />
+        <h3>
+          <span
+            >រុករក និងធ្វើជាម្ចាស់លើជំនាញដើម្បីការពារពិភពឌីជីថលរបស់អ្នក</span
+          >
+        </h3>
       </div>
       <div class="search-course">
-        <input type="text" placeholder="ស្វែងរកវគ្គសិក្សា ឬប្រធានបទដែលអ្នកកំពុងស្វែងរក..." />
+        <input
+          type="text"
+          placeholder="ស្វែងរកវគ្គសិក្សា ឬប្រធានបទដែលអ្នកកំពុងស្វែងរក..."
+        />
         <button>
           <i class="bx bx-search-alt-2"></i>
         </button>
@@ -129,12 +231,18 @@
         <div class="feature-item">
           <i class="bx bx-shield"></i>
           <h3>គ្រូបង្រៀនឯកទេស</h3>
-          <p>រៀនពីអ្នកជំនាញក្នុងឧស្សាហកម្មដែលមានបទពិសោធន៍ជាច្រើនឆ្នាំក្នុងវិស័យ Cybersecurity</p>
+          <p>
+            រៀនពីអ្នកជំនាញក្នុងឧស្សាហកម្មដែលមានបទពិសោធន៍ជាច្រើនឆ្នាំក្នុងវិស័យ
+            Cybersecurity
+          </p>
         </div>
         <div class="feature-item">
           <i class="bx bx-group"></i>
           <h3>ការគាំទ្រពីសហគមន៍</h3>
-          <p>ចូលរួមជាមួយសហគមន៍ដ៏រស់រវើកនៃអ្នកសិក្សា និងអ្នកជំនាញ ដើម្បីចែករំលែក និងរីកចម្រើនជាមួយគ្នា</p>
+          <p>
+            ចូលរួមជាមួយសហគមន៍ដ៏រស់រវើកនៃអ្នកសិក្សា និងអ្នកជំនាញ ដើម្បីចែករំលែក
+            និងរីកចម្រើនជាមួយគ្នា
+          </p>
         </div>
         <div class="feature-item">
           <i class="bx bx-time"></i>
@@ -143,63 +251,80 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Cybersecurity Courses Section -->
     <section class="course-categories">
       <h2>Explore Cybersecurity Categories</h2>
       <div class="category-list">
         <div class="category-item">
-          <img src="cybersecurity.jpg" alt="Network Security">
+          <img src="cybersecurity.jpg" alt="Network Security" />
           <h3>Network Security</h3>
           <p>ស្វែងយល់ពីរបៀបការពារ Network និងការពារការបញ្ជូនទិន្នន័យ។</p>
         </div>
         <div class="category-item">
-          <img src="cybersecurity.jpg" alt="Ethical Hacking">
+          <img src="cybersecurity.jpg" alt="Ethical Hacking" />
           <h3>Ethical Hacking</h3>
-          <p>Master penetration testing and discover vulnerabilities before attackers do.</p>
+          <p>
+            Master penetration testing and discover vulnerabilities before
+            attackers do.
+          </p>
         </div>
         <div class="category-item">
-          <img src="cybersecurity.jpg" alt="Cloud Security">
+          <img src="cybersecurity.jpg" alt="Cloud Security" />
           <h3>Cloud Security</h3>
-          <p>Learn how to secure data and applications in the cloud environment.</p>
+          <p>
+            Learn how to secure data and applications in the cloud environment.
+          </p>
         </div>
       </div>
     </section>
-    
+
     <!-- Featured Cybersecurity Courses -->
     <section class="featured-courses">
       <h2>វគ្គសិក្សា</h2>
       <div class="courses-list">
         <div class="course-card1">
           <h3>មូលដ្ឋានគ្រឹះ Cybersecurity</h3>
-          <img src="/img/Netwrok-basic.png" alt="Course 1">
-          <p>ស្វែងយល់ពីមូលដ្ឋានគ្រឹះនៃ Cybersecurity <br> រួមទាំងការគំរាមកំហែង និងវិធីការពារ</p>
+          <img src="/img/Netwrok-basic.png" alt="Course 1" />
+          <p>
+            ស្វែងយល់ពីមូលដ្ឋានគ្រឹះនៃ Cybersecurity <br />
+            រួមទាំងការគំរាមកំហែង និងវិធីការពារ
+          </p>
           <a href="#" class="enroll-button">ចុះឈ្មោះឥឡូវនេះ</a>
         </div>
         <div class="course-card2">
           <h3>Advanced Network Security</h3>
-          <img src="/img/Network-Medium.webp" alt="Course 2">
-          <p>សិក្សាឲ្យកាន់តែស៊ីជម្រៅទៅលើសុវត្ថិភាព Network ក្នុងគំនិតសុវត្ថិភាពបណ្តាញ ជញ្ជាំងភ្លើង និង VPN</p>
+          <img src="/img/Network-Medium.webp" alt="Course 2" />
+          <p>
+            សិក្សាឲ្យកាន់តែស៊ីជម្រៅទៅលើសុវត្ថិភាព Network
+            ក្នុងគំនិតសុវត្ថិភាពបណ្តាញ ជញ្ជាំងភ្លើង និង VPN
+          </p>
           <a href="#" class="enroll-button">ចុះឈ្មោះឥឡូវនេះ</a>
         </div>
         <div class="course-card3">
           <h3>Ethical Hacking</h3>
-          <img src="/img/Network-advance.jpg" alt="Course 3">
-          <p>ក្លាយជាស្ទាត់ជំនាញក្នុងការលួចចូល និងបច្ចេកទេសសាកល្បងការជ្រៀតចូលប្រកបដោយក្រមសីលធម៌</p>
+          <img src="/img/Network-advance.jpg" alt="Course 3" />
+          <p>
+            ក្លាយជាស្ទាត់ជំនាញក្នុងការលួចចូល
+            និងបច្ចេកទេសសាកល្បងការជ្រៀតចូលប្រកបដោយក្រមសីលធម៌
+          </p>
           <a href="#" class="enroll-button">ចុះឈ្មោះឥឡូវនេះ</a>
         </div>
       </div>
     </section>
-    
+
     <!-- Call-to-Action -->
     <section class="cta-section">
       <h2>ចាប់ផ្តើមជាមួយ Cybersecurity ថ្ងៃនេះ!</h2>
-      <p>ចុះឈ្មោះឥឡូវនេះ ហើយចាប់ផ្តើមជំនាញ Cybersecurity ដើម្បីការពារពិភពឌីជីថល!</p><br>
+      <p>
+        ចុះឈ្មោះឥឡូវនេះ ហើយចាប់ផ្តើមជំនាញ Cybersecurity ដើម្បីការពារពិភពឌីជីថល!
+      </p>
+      <br />
       <a href="" class="cta-button">ចូលរួមឥឡូវនេះ</a>
     </section>
 
     <div class="underlinks">
-      <button id="arrow-upbtn"><i class='bx bxs-chevrons-up'></i></button>
+      <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
       <div class="bottomInformation">
         <div class="logo">
           <h1>គណេស.ខម</h1>
@@ -212,29 +337,35 @@
         </div>
         <div class="links">
           <h2>Link បន្ថែម</h2>
-          <a href="#">រៀន</a>
-          <a href="#">ប្លុក</a>
-          <a href="#">ការងារ</a>
-          <a href="#">អំពីយើង</a>
-          <a href="#">ទំនាក់ទំនង</a>
-          <a href="#">FAQs</a>
+          <a href="reanPage.html">រៀន</a>
+          <a href="blog.html">ប្លុក</a>
+          <a href="job_page.html">ការងារ</a>
+          <a href="aboutus.html">អំពីយើង</a>
+          <a href="contactUs.html">ទំនាក់ទំនង</a>
+          <a href="./rating.html">Rate ពួកយើង</a>
         </div>
         <div class="courseBT">
           <h2>វគ្គសិក្សា</h2>
-          <a href="#">Devolopment</a>
-          <a href="#">Design</a>
-          <a href="#">IT & Software</a>
+          <a href="./course-study.html">Devolopment</a>
+          <a href="./design.html">Design</a>
+          <a href="./cyber_security.html">IT & Software</a>
         </div>
         <div class="contactMe">
           <h2>ទំនាក់ទំនង</h2>
           <div class="contactLink">
-            <a href="#"><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a>
+            <a
+              href="https://www.google.com/maps?ll=11.569746,104.888775&z=18&t=m&hl=en&gl=KH&mapclient=embed&cid=13679816548194653181"
+              target="_blank"
+              ><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a
+            >
           </div>
           <div class="contactLink">
             <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
           </div>
           <div class="contactLink">
-            <a href="#"><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a
+            >
           </div>
 
           <div class="icon">
@@ -245,13 +376,14 @@
         </div>
       </div>
       <div class="credit">
-        <hr/>
+        <hr />
         <div class="creditBy">
           <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
           <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
         </div>
       </div>
     </div>
-    <script src="./js/contactUs.js"></script>
+    <script src="./js/loopjs.js"></script>
+    <script src="./js/animate.js"></script>
   </body>
 </html>

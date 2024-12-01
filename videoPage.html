@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/loop.css">
     <link rel="stylesheet" href="./css/videoPage.css" />
     <link
       rel="stylesheet"
@@ -47,15 +48,75 @@
           <a href=""><i class="bx bx-search-alt-2"></i></a>
         </div>
         <div class="controlbtn">
-          <a href=""><i class="bx bxs-bell-ring"></i></a>
-          <a href=""><i class="bx bxs-store"></i></a>
+          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
+            <i class="bx bxs-bell-ring"></i>
+          </button>
+          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
+
+          <!-- Notification Dropdown -->
+          <div id="notificationDropdown" class="notification-dropdown">
+            <!-- Notification Header (Title + Settings) -->
+            <div class="notification-header">
+              <span class="notification-title"> ការជូនដំណឹង</span>
+              <a href="#" class="settings-icon">
+                <i class="bx bx-cog"></i>
+                <!-- Settings Icon -->
+              </a>
+            </div>
+            <!-- Notification Items -->
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">5 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">10 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">
+                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
+                </p>
+                <p class="notification-time">15 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">30 នាទីមុន</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <img src="./img/Kanesha.png" alt="Thumbnail" />
+              <div class="notification-info">
+                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                <p class="notification-time">1 ម៉ោងមុន</p>
+              </div>
+            </div>
+            <!-- Add more notifications as needed -->
+          </div>
         </div>
       </div>
       <div class="navbarbtn">
         <div class="menu">
           <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
           <div class="dropdown">
-            <a class="course" id="menu" href="./course-study.html">វគ្គសិក្សា</a>
+            <a class="course" id="menu" href="#course">វគ្គសិក្សា</a>
             <div class="dropdown-content">
               <div class="devolopmentdrop">
                 <a href="#" id="id1"
@@ -63,36 +124,42 @@
                   <i class="bx bxs-chevron-right"></i
                 ></a>
                 <div class="devolopmentdrop-drop">
-                  <a href="/course-study.html">
+                  <a href="course-study.html">
                     <i class="bx bx-code-block"></i>Web Devolopment</a
                   >
-                  <a href="./course-study.html"><i class="bx bx-data"></i>Data Science</a>
-                  <a href="./course-study.html"
+                  <a href="course-study.html"
+                    ><i class="bx bx-data"></i>Data Science</a
+                  >
+                  <a href="course-study.html"
                     ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
                   >
-                  <a href="./course-study.html">Progaming language</a>
-                  <a href="./course-study.html">Software Engineering</a>
+                  <a href="">Progaming language</a>
+                  <a href="">Software Engineering</a>
                 </div>
               </div>
               <div class="designdrop">
-                <a href="#" id="id2"
-                  ><i class="bx bxs-pen"></i>Design
-                  <i class="bx bxs-chevron-right"></i
-                ></a>
+                <a href="#" id="id2">
+                  <i class="bx bxs-pen"></i>Design
+                  <i class="bx bxs-chevron-right"></i>
+                </a>
                 <div class="designdrop-drop">
-                  <a href="">
-                    <i class="bx bxs-eyedropper"></i>UX & UI Design</a
-                  >
-                  <a href=""><i class="bx bxs-slideshow"></i>Graphic Design</a>
+                  <a href="design.html">
+                    <i class="bx bxs-eyedropper"></i>UX & UI Design
+                  </a>
+                  <a href="#">
+                    <i class="bx bxs-slideshow"></i>Graphic Design
+                  </a>
                 </div>
               </div>
+
               <div class="itAndSoftwaredrop">
                 <a href="#" id="id3"
                   ><i class="bx bx-chip"></i>IT & Software
                   <i class="bx bxs-chevron-right"></i
                 ></a>
                 <div class="itAndSoftwaredrop-drop">
-                  <a href="cyber_security.html"><i class="bx bx-shield-quarter"></i>cyber security</a
+                  <a href="cyber_security.html"
+                    ><i class="bx bx-shield-quarter"></i>cyber security</a
                   >
                   <a href=""
                     ><i class="bx bx-network-chart"></i>Network security</a
@@ -101,7 +168,7 @@
               </div>
             </div>
           </div>
-          <a class="about" id="menu" href="aboutus.html">អំពីយើង</a>
+          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
           <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
         </div>
         <button id="profileBtn">
@@ -116,13 +183,10 @@
               <h4>នារី​ បុរស</h4>
             </div>
           </a>
-          <a
-            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
-          >
+          <a href="settingPage.html">
             <div class="set"><i class="bx bx-cog"></i>ការកំណត់</div>
           </a>
-          <a
-            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
+          <a href="index-noLog.html"
             ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
           </a>
         </div>
@@ -131,19 +195,33 @@
     <div class="introPage">
       <div class="introTelling">
         <h2>វគ្គសិក្សា HTML&CSS កម្រិតបឋម</h2>
-        <h4 style="color: gold;">★★★★☆4.0/5.0</h4>
+        <h4 style="color: gold">★★★★☆4.0/5.0</h4>
         <h4>សិស្សចំនួន 1023នាក់ បានបញ្ចប់វគ្គសិក្សាមួយនេះ</h4>
         <h4>បានចេញផ្សាយ: 04/មិថុនា/2024</h4>
       </div>
       <div class="containerBox">
-        <img src="./img/videoIMG/Hml_cssPoster2.jpg" alt="">
+        <img src="./img/videoIMG/Hml_cssPoster2.jpg" alt="" />
         <div class="buttonUp">ដំឡើងទៅ Premium Plus</div>
-        <div class="text"><i class='bx bx-folder' ></i> ប្រធានបទ: <b>HTML&CSS</b></div>
-        <div class="text"><i class='bx bx-bar-chart'></i> កម្រិត: <b>បឋម</b></div>
-        <div class="text"><i class='bx bxs-videos'></i> ចំនួនមេរៀន: <b>8 វីដេអូ</b></div>
-        <div class="text"><i class='bx bx-time'></i> រយ:ពេលសិក្សា: <b>9 ម៉ោង</b></div>
-        <div class="text"><i class='bx bx-street-view'></i> ចំនួនសិស្សដែលបានបញ្ចប់វគ្គសិក្សា: <b>1000 នាក់</b></div>
-        <p>ចំណាំ*: Upgrade ទៅ​ Premium Plus ដើម្បីបានវីដេអូបន្ថែមនិងសញ្ញាប័ត្រក្រោយបញ្ចប់វគ្គសិក្សា </p>
+        <div class="text">
+          <i class="bx bx-folder"></i> ប្រធានបទ: <b>HTML&CSS</b>
+        </div>
+        <div class="text">
+          <i class="bx bx-bar-chart"></i> កម្រិត: <b>បឋម</b>
+        </div>
+        <div class="text">
+          <i class="bx bxs-videos"></i> ចំនួនមេរៀន: <b>8 វីដេអូ</b>
+        </div>
+        <div class="text">
+          <i class="bx bx-time"></i> រយ:ពេលសិក្សា: <b>9 ម៉ោង</b>
+        </div>
+        <div class="text">
+          <i class="bx bx-street-view"></i> ចំនួនសិស្សដែលបានបញ្ចប់វគ្គសិក្សា:
+          <b>1000 នាក់</b>
+        </div>
+        <p>
+          ចំណាំ*: Upgrade ទៅ​ Premium Plus
+          ដើម្បីបានវីដេអូបន្ថែមនិងសញ្ញាប័ត្រក្រោយបញ្ចប់វគ្គសិក្សា
+        </p>
       </div>
     </div>
 
@@ -151,84 +229,142 @@
       <h2>បង្រៀនដោយ:</h2>
       <div class="profile-container">
         <div class="profile-image">
-            <img src="./img/teacher/kimchayPoster.jpg" alt="Profile Image">
+          <img src="./img/teacher/kimchayPoster.jpg" alt="Profile Image" />
         </div>
         <div class="profile-details">
-            <h3>Teacher name</h3>
-            <div class="name">រី​ គីមឆាយ</div>
-            
-            <h4>ជីវប្រវត្តិរបស់គ្រូ</h4>
-            <div class="bio">
-              រី គីមឆាយ បច្ចុប្បន្នជានិស្សិតឆ្នាំទី៣ នៃសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP) ដែលគាត់កំពុងបង្កើនជំនាញសិក្សា និងវិជ្ជាជីវៈរបស់គាត់។ ជាមួយនឹងមូលដ្ឋានគ្រឹះដ៏រឹងមាំនៅក្នុង HTML និង CSS លោក គីមឆាយ មានចំណាប់អារម្មណ៍យ៉ាងខ្លាំងក្នុងការអភិវឌ្ឍន៍គេហទំព័រ ហើយកំពុងបង្កើនចំណេះដឹងបន្ថែមដើម្បីគាំទ្រចំណង់ចំណូលចិត្តរបស់គាត់ចំពោះបច្ចេកវិទ្យា។ ដោយ​គេ​ស្គាល់​ថាគាត់ជាមនុស្ស​មាន​ទំនួល​ខុស​ត្រូវ​ខ្លាំង​ គាត់​បង្ហាញ​ភាព​អាចទុក​ចិត្ត​បាន​ និង​ ​ភាព​ប្ដេជ្ញា​ចិត្ត​ចំពោះ​គម្រោង​របស់​គាត់ ដោយ​ធ្វើ​ឱ្យ​គាត់​ក្លាយ​ជា​លោកគ្រូ​ដ៏​មាន​តម្លៃសម្រាប់សាលារបស់យើង​។
-            </div>
+          <h3>Teacher name</h3>
+          <div class="name">រី​ គីមឆាយ</div>
+
+          <h4>ជីវប្រវត្តិរបស់គ្រូ</h4>
+          <div class="bio">
+            រី គីមឆាយ បច្ចុប្បន្នជានិស្សិតឆ្នាំទី៣ នៃសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ
+            (RUPP) ដែលគាត់កំពុងបង្កើនជំនាញសិក្សា និងវិជ្ជាជីវៈរបស់គាត់។
+            ជាមួយនឹងមូលដ្ឋានគ្រឹះដ៏រឹងមាំនៅក្នុង HTML និង CSS លោក គីមឆាយ
+            មានចំណាប់អារម្មណ៍យ៉ាងខ្លាំងក្នុងការអភិវឌ្ឍន៍គេហទំព័រ
+            ហើយកំពុងបង្កើនចំណេះដឹងបន្ថែមដើម្បីគាំទ្រចំណង់ចំណូលចិត្តរបស់គាត់ចំពោះបច្ចេកវិទ្យា។
+            ដោយ​គេ​ស្គាល់​ថាគាត់ជាមនុស្ស​មាន​ទំនួល​ខុស​ត្រូវ​ខ្លាំង​
+            គាត់​បង្ហាញ​ភាព​អាចទុក​ចិត្ត​បាន​ និង​
+            ​ភាព​ប្ដេជ្ញា​ចិត្ត​ចំពោះ​គម្រោង​របស់​គាត់
+            ដោយ​ធ្វើ​ឱ្យ​គាត់​ក្លាយ​ជា​លោកគ្រូ​ដ៏​មាន​តម្លៃសម្រាប់សាលារបស់យើង​។
+          </div>
         </div>
-    </div>
+      </div>
     </div>
     <div class="info-course">
       <h2>អំពីវគ្គសិក្សា</h2>
-      <hr>
+      <hr />
       <div class="paragraph">
-        <p>ដើម្បីសិក្សា HTML និង CSS ឲ្យបានល្អ និស្សិតត្រូវតែមានចំណេះដឹងមូលដ្ឋានមួយចំនួនជាមុនសិន។ ការយល់ដឹងអំពី បច្ចេកទេសកុំព្យូទ័រ និងការប្រើប្រាស់អ៊ីនធឺណិត គឺជាគោលដៅដំបូងក្នុងការចាប់ផ្តើមដំណើរនៃការសិក្សា ហើយចំណេះដឹងនេះក៏ជួយឱ្យស្វែងយល់ពីរចនាសម្ព័ន្ធគេហទំព័របានយ៉ាងល្អ។ ការយល់អំពី ស្ថាបត្យកម្មវេបសាយ និងរចនាសម្ព័ន្ធគេហទំព័រដូចជា header, footer, និង navigation បន្ថែមពីការដាក់ content ជាកត្តាសំខាន់ផងដែរ។</p>
-        <p>ចំណុចបន្ថែមទៀតនៃការសិក្សាគឺ ភាសា HTML ដែលមានទម្រង់មូលដ្ឋានកូដ ដោយអាចប្រើ tag, element, និង attribute ផ្សេងៗដើម្បីបង្កើតប្លង់នៃគេហទំព័រ។ បន្ទាប់មកគឺការរចនាមួយឱ្យកាន់តែស្អាតជាមួយ CSS ដោយប្រើ selectors, properties និង values ដើម្បីកំណត់ពណ៌, ទំហំ និងការរៀបចំប្លង់ដែលត្រូវការរបស់អ្នក។</p>
-        <p>ការរចនាមានតម្លាភាព (Responsive Design) ក៏មានសារៈសំខាន់ដែរ ដើម្បីធានាថាគេហទំព័របង្ហាញបានល្អលើទំហំអេក្រង់ផ្សេងៗ។ ចំណុចបញ្ចប់សំខាន់នោះគឺការយល់ពី Developer Tools ដូចជា Chrome DevTools ដែលជួយក្នុងការបង្ហាញបញ្ហានៃកូដ និងការកែសម្រួល។</p>
-        <p>ការសិក្សា HTML និង CSS តម្រូវឱ្យមានការអនុវត្តជាក់ស្តែង និងការធ្វើ project បច្ចេកទេសស្របតាមលក្ខណៈស្មោះត្រង់, និងជាជំហានសំខាន់សម្រាប់អាជីពអ្នកអភិវឌ្ឍគេហទំព័រនៅពេលអនាគត។</p>
+        <p>
+          ដើម្បីសិក្សា HTML និង CSS ឲ្យបានល្អ
+          និស្សិតត្រូវតែមានចំណេះដឹងមូលដ្ឋានមួយចំនួនជាមុនសិន។ ការយល់ដឹងអំពី
+          បច្ចេកទេសកុំព្យូទ័រ និងការប្រើប្រាស់អ៊ីនធឺណិត
+          គឺជាគោលដៅដំបូងក្នុងការចាប់ផ្តើមដំណើរនៃការសិក្សា
+          ហើយចំណេះដឹងនេះក៏ជួយឱ្យស្វែងយល់ពីរចនាសម្ព័ន្ធគេហទំព័របានយ៉ាងល្អ។
+          ការយល់អំពី ស្ថាបត្យកម្មវេបសាយ និងរចនាសម្ព័ន្ធគេហទំព័រដូចជា header,
+          footer, និង navigation បន្ថែមពីការដាក់ content ជាកត្តាសំខាន់ផងដែរ។
+        </p>
+        <p>
+          ចំណុចបន្ថែមទៀតនៃការសិក្សាគឺ ភាសា HTML ដែលមានទម្រង់មូលដ្ឋានកូដ
+          ដោយអាចប្រើ tag, element, និង attribute
+          ផ្សេងៗដើម្បីបង្កើតប្លង់នៃគេហទំព័រ។
+          បន្ទាប់មកគឺការរចនាមួយឱ្យកាន់តែស្អាតជាមួយ CSS ដោយប្រើ selectors,
+          properties និង values ដើម្បីកំណត់ពណ៌, ទំហំ
+          និងការរៀបចំប្លង់ដែលត្រូវការរបស់អ្នក។
+        </p>
+        <p>
+          ការរចនាមានតម្លាភាព (Responsive Design) ក៏មានសារៈសំខាន់ដែរ
+          ដើម្បីធានាថាគេហទំព័របង្ហាញបានល្អលើទំហំអេក្រង់ផ្សេងៗ។
+          ចំណុចបញ្ចប់សំខាន់នោះគឺការយល់ពី Developer Tools ដូចជា Chrome DevTools
+          ដែលជួយក្នុងការបង្ហាញបញ្ហានៃកូដ និងការកែសម្រួល។
+        </p>
+        <p>
+          ការសិក្សា HTML និង CSS តម្រូវឱ្យមានការអនុវត្តជាក់ស្តែង និងការធ្វើ
+          project បច្ចេកទេសស្របតាមលក្ខណៈស្មោះត្រង់,
+          និងជាជំហានសំខាន់សម្រាប់អាជីពអ្នកអភិវឌ្ឍគេហទំព័រនៅពេលអនាគត។
+        </p>
       </div>
     </div>
 
     <div class="videoStore">
       <h2>វីដេអូនៃវគ្គសិក្សា</h2>
-      <hr>
+      <hr />
       <div class="container">
         <div class="video-container">
-            <video controls class="video-player">
-                <source src="./img/videoIMG/video2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-info">
-                <h1 class="video-title">Html Part1</h1>
-                <p class="video-description">សួស្តីសិស្សានុសិស្សទាំងអស់គ្នាស្វាគមន៏មកកាន់វគ្គសិក្សា Html&Css។</p>
+          <video controls class="video-player">
+            <source src="./img/videoIMG/video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-info">
+            <h1 class="video-title">Html Part1</h1>
+            <p class="video-description">
+              សួស្តីសិស្សានុសិស្សទាំងអស់គ្នាស្វាគមន៏មកកាន់វគ្គសិក្សា Html&Css។
+            </p>
+          </div>
+          <div class="tab-navigation">
+            <button
+              class="tab-button"
+              onclick="openTab('description')"
+              id="startBtn"
+            >
+              Description
+            </button>
+            <button class="tab-button" onclick="openTab('comments')">
+              សំនួរ&ចម្លើយ
+            </button>
+            <button class="tab-button" onclick="openTab('tested')">
+              តេស្តសាកល្បង
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div id="description" class="tab-content">
+            <div class="viewDate">
+              <b
+                >1,021 views 4,មិថុនា,2024
+                <u style="color: rgb(0, 102, 255)">វគ្គសិក្សា​ Html&Css</u></b
+              >
             </div>
-            <div class="tab-navigation">
-              <button class="tab-button" onclick="openTab('description')" id="startBtn">Description</button>
-              <button class="tab-button" onclick="openTab('comments')">សំនួរ&ចម្លើយ</button>
-              <button class="tab-button" onclick="openTab('tested')">តេស្តសាកល្បង</button>
+            <div class="teacherDatail">
+              <h4>បង្រៀនដោយ: លោកគ្រូ រី គីមឆាយ,</h4>
+              <h4>រក្សាសិទ្ធដោយ: គណេស.ខម,​</h4>
+              <p>
+                ការសិក្សា HTML និង CSS តម្រូវឱ្យមានការអនុវត្តជាក់ស្តែង
+                និងការធ្វើ project បច្ចេកទេសស្របតាមលក្ខណៈស្មោះត្រង់,
+                និងជាជំហានសំខាន់សម្រាប់អាជីពអ្នកអភិវឌ្ឍគេហទំព័រនៅពេលអនាគត។
+              </p>
+              <p id="p2">
+                ចែករំលែកវីដេអូនេះទៅកាន់:
+                <a href=""><i class="bx bxl-facebook-circle"></i></a>
+                <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                <a href=""><i class="bx bxl-telegram"></i></a>
+              </p>
+            </div>
           </div>
 
-            <!-- Tab Content -->
-            <div id="description" class="tab-content">
-                <div class="viewDate"><b>1,021 views 4,មិថុនា,2024 <u style="color: rgb(0, 102, 255);">វគ្គសិក្សា​ Html&Css</u></b></div>
-                <div class="teacherDatail">
-                  <h4>បង្រៀនដោយ: លោកគ្រូ រី គីមឆាយ,</h4>
-                  <h4>រក្សាសិទ្ធដោយ: គណេស.ខម,​</h4>
-                  <p>ការសិក្សា HTML និង CSS តម្រូវឱ្យមានការអនុវត្តជាក់ស្តែង និងការធ្វើ project បច្ចេកទេសស្របតាមលក្ខណៈស្មោះត្រង់, និងជាជំហានសំខាន់សម្រាប់អាជីពអ្នកអភិវឌ្ឍគេហទំព័រនៅពេលអនាគត។</p>
-                  <p id="p2">ចែករំលែកវីដេអូនេះទៅកាន់: <a href=""><i class='bx bxl-facebook-circle'></i></a> <a href=""><i class='bx bxl-instagram-alt'></i></a> <a href=""><i class='bx bxl-telegram' ></i></a></p>
-                </div>
-          </div>
-          
-
-          <div id="comments" class="tab-content" style="display:none;">
+          <div id="comments" class="tab-content" style="display: none">
             <div class="comments-section">
-
               <h2><span id="comment-count">0</span> សំនួរ ពីសិស្ស:</h2>
 
-                  <!-- Comment Form -->
-                  <div class="comment-input-container">
-                    <form id="comment-form">
-                        <textarea id="comment-input" placeholder="មានអ្វីចង់សួរមែនទេ..." required></textarea>
-                        <button type="submit" id="submit">បង្ហោះសំនួរ</button>
-                    </form>
-                </div>
-
-              <div id="comments-list" class="comments-list">
-                
+              <!-- Comment Form -->
+              <div class="comment-input-container">
+                <form id="comment-form">
+                  <textarea
+                    id="comment-input"
+                    placeholder="មានអ្វីចង់សួរមែនទេ..."
+                    required
+                  ></textarea>
+                  <button type="submit" id="submit">បង្ហោះសំនួរ</button>
+                </form>
               </div>
-          </div>
+
+              <div id="comments-list" class="comments-list"></div>
+            </div>
           </div>
 
-          <div id="tested" class="tab-content" style="display:none;">
+          <div id="tested" class="tab-content" style="display: none">
             <div class="quiz-container">
               <h1>តោះ​សាកធ្វើមើល!!</h1>
-              
+
               <div class="quiz-info">
                 <h2>សាកមើលយល់បានប៉ុណ្ណាដែល?</h2>
                 <div class="info-box">
@@ -239,12 +375,16 @@
                   <button onclick="startQuiz()">ចាប់ផ្តើមធ្វើ</button>
                 </div>
               </div>
-              
+
               <p class="disclaimer">
                 Never submit passwords through this form.
               </p>
               <footer>
-                <p><a href="#">Report Abuse</a> - <a href="#">Terms of Service</a> - <a href="#">Privacy Policy</a></p>
+                <p>
+                  <a href="#">Report Abuse</a> -
+                  <a href="#">Terms of Service</a> -
+                  <a href="#">Privacy Policy</a>
+                </p>
                 <p>Kanesha.com</p>
               </footer>
             </div>
@@ -252,90 +392,133 @@
         </div>
 
         <div class="suggestions-container">
-            <h2 style="font-family: Kantumruy Pro, sans-serif;">វីដេអូបន្ត</h2>
-            <hr>
-            <div class="suggestion">
-                <img src="./video/poster2.jpg" alt="Thumbnail 1" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html Part02</h3>
-                    <p>ស្វែងយល់ពីHtml, តើអ្វីជាHtml?</p>
-                </div>
+          <h2 style="font-family: Kantumruy Pro, sans-serif">វីដេអូបន្ត</h2>
+          <hr />
+          <div class="suggestion">
+            <img
+              src="./video/poster2.jpg"
+              alt="Thumbnail 1"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html Part02</h3>
+              <p>ស្វែងយល់ពីHtml, តើអ្វីជាHtml?</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/poster3.jpg" alt="Thumbnail 2" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html Part03</h3>
-                    <p>ណែនាំអោយស្គាល់ពី Besic Html Tag។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/poster3.jpg"
+              alt="Thumbnail 2"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html Part03</h3>
+              <p>ណែនាំអោយស្គាល់ពី Besic Html Tag។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/posterCss1.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html+Css Part01</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss1.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html+Css Part01</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/posterCss2.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html+Css Part02</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss2.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html+Css Part02</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/posterCss3.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html+Css Part03</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss3.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html+Css Part03</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/posterCss4.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html+Css Part04</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss4.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html+Css Part04</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/posterCss5.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html+Css Part05</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss5.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html+Css Part05</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/praPre1.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html+Css Practice</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/praPre1.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html+Css Practice</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/praPre2.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html+Css Practice</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/praPre2.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html+Css Practice</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/praPre3.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Html+Css Practice</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/praPre3.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Html+Css Practice</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <div class="suggestion">
-                <img src="./video/frontPre.jpg" alt="Thumbnail 3" class="suggested-thumbnail">
-                <div class="suggestion-info">
-                    <h3>Front-end Devoloper in 5hours</h3>
-                    <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
-                </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/frontPre.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Front-end Devoloper in 5hours</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើ style Css ទៅលើ​ Html។</p>
             </div>
-            <!-- Add more suggested videos as needed -->
+          </div>
+          <!-- Add more suggested videos as needed -->
         </div>
+      </div>
     </div>
-    </div>
-
 
     <div class="underlinks">
       <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
@@ -352,28 +535,34 @@
         <div class="links">
           <h2>Link បន្ថែម</h2>
           <a href="reanPage.html">រៀន</a>
-          <a href="#">ប្លុក</a>
-          <a href="#">ការងារ</a>
-          <a href="#">អំពីយើង</a>
-          <a href="#">ទំនាក់ទំនង</a>
-          <a href="#">FAQs</a>
+          <a href="blog.html">ប្លុក</a>
+          <a href="job_page.html">ការងារ</a>
+          <a href="aboutus.html">អំពីយើង</a>
+          <a href="contactUs.html">ទំនាក់ទំនង</a>
+          <a href="./rating.html">Rate ពួកយើង</a>
         </div>
         <div class="courseBT">
           <h2>វគ្គសិក្សា</h2>
-          <a href="#">Devolopment</a>
-          <a href="#">Design</a>
-          <a href="#">IT & Software</a>
+          <a href="./course-study.html">Devolopment</a>
+          <a href="./design.html">Design</a>
+          <a href="./cyber_security.html">IT & Software</a>
         </div>
         <div class="contactMe">
           <h2>ទំនាក់ទំនង</h2>
           <div class="contactLink">
-            <a href="#"><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a>
+            <a
+              href="https://www.google.com/maps?ll=11.569746,104.888775&z=18&t=m&hl=en&gl=KH&mapclient=embed&cid=13679816548194653181"
+              target="_blank"
+              ><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a
+            >
           </div>
           <div class="contactLink">
             <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
           </div>
           <div class="contactLink">
-            <a href="#"><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a
+            >
           </div>
 
           <div class="icon">
@@ -392,5 +581,6 @@
       </div>
     </div>
     <script src="./js/videoPage.js"></script>
+    <script src="./js/loopjs.js"></script>
   </body>
 </html>

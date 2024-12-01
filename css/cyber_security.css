@@ -4,6 +4,7 @@ body {
   padding: 0;
   display: flex;
 }
+/*navbar*/
 .navbar {
   position: fixed;
   padding-left: 6rem;
@@ -82,6 +83,7 @@ input:focus {
   align-items: center;
   display: flex;
 }
+
 .navbarbtn a:not(.course) {
   margin-left: 3rem;
   font-size: 1.2rem;
@@ -142,9 +144,14 @@ input:focus {
 .navbarbtn img {
   width: 2.5rem;
 }
-.navbarbtn #menu:not(.contact) {
+.navbarbtn #menu:not(.course) {
   padding-bottom: 1.2rem;
   border-bottom: solid 0.2rem rgba(255, 32, 32,0);
+  transition: all 0.1s ease-in-out;
+}
+.course{
+  padding-bottom: 1.2rem;
+  border-bottom: solid 0.2rem #00cffd;
   transition: all 0.1s ease-in-out;
 }
 .dropdown {
@@ -321,6 +328,7 @@ input:focus {
   background-color: rgb(230, 230, 230);
   border-radius: 1rem;
 }
+/*end*/
 
 .header {
   position: absolute;
