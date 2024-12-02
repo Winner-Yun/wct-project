@@ -528,6 +528,40 @@ section.home {
   font-size: 15px;
   text-align: center;
 }
+
+.banner .banner-desc .search-bar{
+  position: relative;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.banner-desc .search-bar input{
+  width: 100%;
+  height: 100%;
+  padding: 0px 60px 0px 10px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  background-color: #d6f0f0;
+  color: #000000;
+  border: 2px solid #c1dbcc;
+  border-radius: 5px;
+  outline-color: var(--primary-clr);
+}
+.banner-desc .search-bar i{
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  background-color: #59b8bd;
+  right: 0;
+  color: var(--light-heading-clr);
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 /*   === Services Section Styling Starts ===   */
 section.services{
   width: 70%;
