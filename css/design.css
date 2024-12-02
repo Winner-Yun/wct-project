@@ -445,6 +445,7 @@ section.home {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Kantumruy Pro", sans-serif;
 }
 
 .banner .banner-desc h2{
@@ -566,6 +567,8 @@ section.home {
 section.services{
   width: 70%;
   padding: 10px 15% 20px;
+  font-family: "Kantumruy Pro", sans-serif;
+  
 }
 .services .services-contents{
   width: 100%;
@@ -635,6 +638,8 @@ section.services{
 section.courses{
   width: 85%;
   padding: 100px 7.6% 200px;
+  font-family: "Kantumruy Pro", sans-serif;
+
 }
 .courses .section-header{
   position: relative;
@@ -651,8 +656,10 @@ section.courses{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-family: "Kantumruy Pro", sans-serif;
 
 }
+
 .courses .course-contents .course-card{
   flex-basis: calc(calc(128% / 4) - 1.2rem);
   border: 1px solid #00d9ff;
@@ -699,6 +706,8 @@ section.courses{
 .course-card .course-title{
   font-size: 20px;
   color: #00b6b9;
+  font-family: "Kantumruy Pro", sans-serif;
+
 }
 .course-card .course-desc{
   margin: 20px 0px;
@@ -741,7 +750,7 @@ section.courses{
 /*underlink*/
 .underlinks {
   position: absolute;
-  margin-top: -9rem;
+  margin-top: -20rem;
   background-color: rgb(10, 10, 10);
   padding: 2rem;
   width: 95.8%;
