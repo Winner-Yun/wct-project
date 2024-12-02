@@ -701,26 +701,6 @@ section.courses{
 }
 /*   === Courses Section Styling Ends ===   */
 
-  /*   === Teacher Section Styling Starts ===   */
-  section.instructor{
-    width: 73%;
-    padding: 10px 8% 20px;
-  }
-  .instructor .instructor-container{
-    width: 100%;
-    padding: 60px 8%;
-    background-color: #9fe8f392;
-    border-radius: 0px 100px 0px 100px;
-  }
-  .instructor-container h2{
-    font-size: 24px;
-    color: #2a7877;
-  }
-  .instructor-container p{
-    margin: 20px 0px 35px;
-    color: #062221;
-  }
-  /*   === Teacher Section Styling Ends ===   */
 
 
 
@@ -729,7 +709,7 @@ section.courses{
 /*underlink*/
 .underlinks {
   position: absolute;
-  margin-top: 2rem;
+  margin-top: -9rem;
   background-color: rgb(10, 10, 10);
   padding: 2rem;
   width: 95.8%;
