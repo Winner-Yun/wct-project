@@ -1,6 +1,5 @@
 body {
   font-family: "Noto Sans Khmer", sans-serif;
-  background-color: #ffffff;
   margin: 0;
   padding: 0;
   display: flex;
@@ -447,6 +446,7 @@ section.home {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Kantumruy Pro", sans-serif;
 }
 
 .banner .banner-desc h2{
@@ -530,10 +530,47 @@ section.home {
   font-size: 15px;
   text-align: center;
 }
+
+.banner .banner-desc .search-bar{
+  position: relative;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  
+}
+.banner-desc .search-bar input{
+  width: 100%;
+  height: 100%;
+  padding: 0px 60px 0px 10px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  background-color: #d6f0f0;
+  color: #000000;
+  border: 2px solid #d6f0f0;
+  border-radius: 5px;
+  outline-color: var(--primary-clr);
+}
+.banner-desc .search-bar i{
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  background-color: #d6f0f0;
+  right: 0;
+  color: #0089b7;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 /*   === Services Section Styling Starts ===   */
 section.services{
   width: 70%;
   padding: 10px 15% 20px;
+  font-family: "Kantumruy Pro", sans-serif;
+  
 }
 .services .services-contents{
   width: 100%;
@@ -603,6 +640,8 @@ section.services{
 section.courses{
   width: 85%;
   padding: 100px 7.6% 200px;
+  font-family: "Kantumruy Pro", sans-serif;
+
 }
 .courses .section-header{
   position: relative;
@@ -614,13 +653,16 @@ section.courses{
   right: 0;
   bottom: 40px;
   padding: 10px 26px;
+  font-family: "Kantumruy Pro", sans-serif;
 }
 .courses .course-contents{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-family: "Kantumruy Pro", sans-serif;
 
 }
+
 .courses .course-contents .course-card{
   flex-basis: calc(calc(128% / 4) - 1.2rem);
   border: 1px solid #00d9ff;
@@ -667,6 +709,8 @@ section.courses{
 .course-card .course-title{
   font-size: 20px;
   color: #00b6b9;
+  font-family: "Kantumruy Pro", sans-serif;
+
 }
 .course-card .course-desc{
   margin: 20px 0px;
@@ -701,26 +745,6 @@ section.courses{
 }
 /*   === Courses Section Styling Ends ===   */
 
-  /*   === Teacher Section Styling Starts ===   */
-  section.instructor{
-    width: 73%;
-    padding: 10px 8% 20px;
-  }
-  .instructor .instructor-container{
-    width: 100%;
-    padding: 60px 8%;
-    background-color: #9fe8f392;
-    border-radius: 0px 100px 0px 100px;
-  }
-  .instructor-container h2{
-    font-size: 24px;
-    color: #2a7877;
-  }
-  .instructor-container p{
-    margin: 20px 0px 35px;
-    color: #062221;
-  }
-  /*   === Teacher Section Styling Ends ===   */
 
 
 
@@ -729,7 +753,7 @@ section.courses{
 /*underlink*/
 .underlinks {
   position: absolute;
-  margin-top: 2rem;
+  margin-top: -20rem;
   background-color: rgb(10, 10, 10);
   padding: 2rem;
   width: 95.8%;
