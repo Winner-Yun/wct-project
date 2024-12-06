@@ -440,10 +440,6 @@
   color: #555;
 }
 
-/* Profile Button Hover */
-#profileBtn:hover .profile-bar {
-  display: block;
-}
 
 /* Animations */
 @keyframes fadeIn {

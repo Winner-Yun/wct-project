@@ -315,9 +315,7 @@ input:focus {
 .informationWeb button:hover {
   background-color: #00568f;
 }
-#profileBtn:hover {
-  scale: 1.1;
-}
+
 .set:hover {
   background-color: rgb(230, 230, 230);
   border-radius: 1rem;
@@ -760,9 +758,6 @@ footer {
   border-radius: 1rem;
 }
 
-#profileBtn:hover {
-  scale: 1.1;
-}
 
 #arrow-upbtn:hover i {
   animation: moveUp 0.5s ease-in-out infinite alternate;
