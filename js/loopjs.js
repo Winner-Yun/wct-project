@@ -1,4 +1,3 @@
-
 const scrollToTopBtn = document.getElementById("arrow-upbtn");
 
 // Add click event listener

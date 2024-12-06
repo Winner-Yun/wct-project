@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/loop.css">
     <link rel="stylesheet" href="./css/blog.css" />
   </head>
   <body>
@@ -29,150 +30,86 @@
         <h1>គណេស.ខម</h1>
         <h4>Kanesha.com</h4>
       </div>
+
       <div class="buttonControl">
         <div class="search">
-          <input type="text" placeholder="ស្វែងរក...." />
+          <input type="text" placeholder="ស្វែងរក..." />
           <a href=""><i class="bx bx-search-alt-2"></i></a>
         </div>
-        <div class="controlbtn">
-          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
+      </div>
+
+      <div class="navbarbtn">
+        <button class="menu-toggle" id="menuToggle">
+          <i class="bx bxs-chevron-down"></i>
+        </button>
+        <div class="menu">
+          <a class="home" href="index.html">ទំព័រដើម</a>
+          <div class="dropdown">
+            <a class="course" href="#course"
+              >វគ្គសិក្សា<i class="bx bxs-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="course-study.html"><i class='bx bx-code-alt'></i>Devolopment</a>
+              <a href="design.html"><i class='bx bxs-pen' ></i>Design</a>
+              <a href="cyber_security.html"><i class='bx bx-shield-quarter'></i>Cyber Security</a>
+            </div>
+          </div>
+          <a class="about" href="/aboutus.html">អំពីយើង</a>
+          <a class="contact" style="margin-top: -0.1rem" href="contactUs.html"
+            >ទំនាក់ទំនង</a
+          >
+          <a class="contact" style="margin-top: -0.1rem" href="reanPage.html"
+            >រៀន</a
+          >
+          <a class="contact" style="margin-top: -0.1rem; color: #00cffd; font-weight: 500;" href="blog.html"
+            >ប្លុក</a
+          >
+          <a class="contact" style="margin-top: -0.1rem" href="job_page.html"
+            >ការងារ</a
+          >
+        </div>
+
+        <div class="controlbtn" id="controlBtn2">
+          <a href="shopPage.html" id="shopId"><i class="bx bxs-store"></i></a>
+          <button class="costome">
             <i class="bx bxs-bell-ring"></i>
           </button>
-          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
-
-          <!-- Notification Dropdown -->
           <div id="notificationDropdown" class="notification-dropdown">
-            <!-- Notification Header (Title + Settings) -->
             <div class="notification-header">
-              <span class="notification-title"> ការជូនដំណឹង</span>
-              <a href="#" class="settings-icon">
-                <i class="bx bx-cog"></i>
-                <!-- Settings Icon -->
-              </a>
+              <span class="notification-title">ការជូនដំណឹង</span>
+              <a href="./settingPage.html" class="settings-icon" style="color: white;"><i class="bx bx-cog"></i></a>
             </div>
-            <!-- Notification Items -->
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">1 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">5 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">10 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">
-                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
-                </p>
-                <p class="notification-time">15 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">30 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">1 ម៉ោងមុន</p>
-              </div>
-            </div>
-            <!-- Add more notifications as needed -->
-          </div>
-        </div>
-      </div>
-      <div class="navbarbtn">
-        <div class="menu">
-          <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
-          <div class="dropdown">
-            <a class="course" id="menu" href="#course">វគ្គសិក្សា</a>
-            <div class="dropdown-content">
-              <div class="devolopmentdrop">
-                <a href="#" id="id1"
-                  ><i class="bx bx-code-alt"></i>Devolopment
-                  <i class="bx bxs-chevron-right"></i
-                ></a>
-                <div class="devolopmentdrop-drop">
-                  <a href="course-study.html">
-                    <i class="bx bx-code-block"></i>Web Devolopment</a
-                  >
-                  <a href="course-study.html"
-                    ><i class="bx bx-data"></i>Data Science</a
-                  >
-                  <a href="course-study.html"
-                    ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
-                  >
-                  <a href="">Progaming language</a>
-                  <a href="">Software Engineering</a>
-                </div>
-              </div>
-              <div class="designdrop">
-                <a href="#" id="id2"
-                  ><i class="bx bxs-pen"></i>Design
-                  <i class="bx bxs-chevron-right"></i
-                ></a>
-                <div class="designdrop-drop">
-                  <a href="">
-                    <i class="bx bxs-eyedropper"></i>UX & UI Design</a
-                  >
-                  <a href=""><i class="bx bxs-slideshow"></i>Graphic Design</a>
-                </div>
-              </div>
-              <div class="itAndSoftwaredrop">
-                <a href="#" id="id3"
-                  ><i class="bx bx-chip"></i>IT & Software
-                  <i class="bx bxs-chevron-right"></i
-                ></a>
-                <div class="itAndSoftwaredrop-drop">
-                  <a href="cyber_security.html"
-                    ><i class="bx bx-shield-quarter"></i>cyber security</a
-                  >
-                  <a href=""
-                    ><i class="bx bx-network-chart"></i>Network security</a
-                  >
+            <div class="notification-list">
+              <div class="notification-item">
+                <img src="./img/Kanesha.png" alt="Thumbnail" />
+                <div class="notification-info">
+                  <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                  <p class="notification-time">1 នាទីមុន</p>
                 </div>
               </div>
             </div>
           </div>
-          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
-          <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
         </div>
         <button id="profileBtn">
           <img src="./img/profacer_Man.png" alt="" />
         </button>
+
         <div class="profile-bar">
-          <a
-            href="https://www.youtube.com/watch?v=0H-dQzHbNrg&list=RDCcSp0p_2rjQ&index=14"
-          >
-            <div class="profilePic">
+          <a href="#" style="text-decoration: none"
+            ><div
+              class="profilePic"
+              style="background-color: #00a7cd; padding: 0.5rem; border-radius: 0.5rem;"
+            >
               <img src="./img/profacer_Man.png" id="pfer" alt="" />
-              <h4>នារី​ បុរស</h4>
+              <h4 style="color: white">នារី​ បុរស</h4>
             </div>
           </a>
-          <a href="settingPage.html">
-            <div class="set"><i class="bx bx-cog"></i>ការកំណត់</div>
-          </a>
-          <a href="login_signUp.html"
-            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div>
-          </a>
+          <a href="settingPage.html" style="text-decoration: none; color: black"
+            ><div class="set"><i class="bx bx-cog"></i>ការកំណត់</div></a
+          >
+          <a href="index-noLog.html" style="text-decoration: none; color: black"
+            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div></a
+          >
         </div>
       </div>
     </div>
