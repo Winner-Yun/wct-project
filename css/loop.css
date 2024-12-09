@@ -23,6 +23,7 @@
 }
 
 .logo h4 {
+  margin-left: 3rem;
   font-size: 12px;
 }
 
@@ -242,145 +243,8 @@
   opacity: 0;
   transform: translateY(-20px);
   animation: profileBarFadeIn 0.5s ease-out forwards;
-}
 
-/*underlink*/
-.underlinks {
-  position: absolute;
-  background-color: rgb(10, 10, 10);
-  margin-top: 0.5rem;
-  padding: 2rem;
-  width: 95.8%;
-  height: 20.5rem;
 }
-.bottomInformation {
-  margin-left: 4rem;
-  margin-bottom: 5rem;
-  display: flex;
-}
-.bottomInformation h2 {
-  color: #fff;
-  font-size: 1rem;
-  width: 5rem;
-}
-.bottomInformation p {
-  margin-top: 3rem;
-  width: 30rem;
-  color: #fff;
-  font-weight: 200;
-}
-.links {
-  margin-right: 10rem;
-}
-.links a {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9rem;
-  margin-top: 0.7rem;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 200;
-  transition: all 0.2s;
-}
-.courseBT {
-  margin-right: 10rem;
-}
-.courseBT a {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9rem;
-  margin-top: 0.7rem;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 200;
-}
-
-.contactMe a {
-  display: flex;
-  font-size: 0.9rem;
-  margin-top: 0.7rem;
-  gap: 1rem;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 200;
-}
-.contactLink i {
-  color: #c9c9c9;
-}
-.icon {
-  display: flex;
-  gap: 1rem;
-}
-.icon a {
-  font-size: 1.5rem;
-}
-.credit hr {
-  border: solid #a7a7a7 0.05rem;
-}
-.credit {
-  width: 100%;
-}
-.creditBy {
-  display: flex;
-}
-.credit h4 {
-  margin-top: 0.3rem;
-}
-.creditBy h4:nth-child(1) {
-  width: 60rem;
-  margin-right: 35rem;
-  color: #d3d3d3;
-  font-weight: 200;
-}
-.creditBy h4:nth-child(2) {
-  width: 15rem;
-  color: #d3d3d3;
-  font-weight: 200;
-}
-#arrow-upbtn {
-  position: absolute;
-  width: 3rem;
-  margin-left: 93%;
-  height: 3rem;
-  cursor: pointer;
-  background: none;
-  border: solid 2px #00cffd;
-  border-radius: 2rem;
-}
-#arrow-upbtn i {
-  font-size: 2rem;
-  color: #fff;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-}
-.bottomInformation a:hover {
-  color: #777777;
-}
-.set:hover {
-  background-color: rgb(183, 183, 183, 0.3);
-  border-radius: 1rem;
-}
-.profilePic:hover {
-  background-color: rgb(183, 183, 183, 0.3);
-  border-radius: 1rem;
-}
-
-
-#arrow-upbtn:hover i {
-  animation: moveUp 0.5s ease-in-out infinite alternate;
-}
-@keyframes moveUp {
-  0% {
-    top: 3px;
-    opacity: 0;
-  }
-  100% {
-    top: -9px;
-    color: red;
-    opacity: 1;
-  }
-}
-
 @keyframes profileBarFadeIn {
   0% {
     opacity: 0;
@@ -599,3 +463,197 @@
   }
 }
 /*end*/
+
+/* Main Footer Container */
+.underlinks {
+  position: absolute;
+  background-color: rgb(10, 10, 10); /* Dark background */
+  padding-top: 3rem;
+  width: 100%;
+  color: #fff; /* Ensures all content is white */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Added subtle shadow */
+}
+
+/* Footer Content Layout */
+.bottomInformation {
+  display: flex;
+  scale: 0.9;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 80rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto; /* Centers content */
+}
+
+/* Section Titles */
+.bottomInformation h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #d6d6d6;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem; /* Improves readability */
+}
+
+/* Box Text Styling */
+.bottomInformation p {
+  color: #fff;
+  font-size: 0.95rem; /* Slightly larger for readability */
+  line-height: 1.8; /* Better line spacing */
+}
+
+/* Links Styling */
+.links a,
+.courseBT a,
+.contactMe a {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300; /* Lighter font for modern look */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Added smooth transitions */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.courseBT,
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.links a:hover,
+.courseBT a:hover,
+.contactMe a:hover {
+  color: #00d0ff;
+  text-decoration: underline; /* Visual feedback for hover */
+}
+
+/* Social Icons */
+.icon {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.icon a {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon a:hover {
+  color: #00cffd; /* Hover color effect on icons */
+  transform: scale(1.2);
+}
+
+/* Divider */
+.credit hr {
+  border: solid 1px #333;
+}
+
+/* Credit Section */
+.creditBy {
+  display: flex;
+  justify-content: center; /* Center-align content */
+  color: #fff;
+  gap: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.creditBy h4 {
+  font-weight: 300;
+  opacity: 0.8; /* Slightly muted for a cleaner look */
+}
+
+/* Scroll to Top Button */
+#arrow-upbtn {
+  position: fixed;
+  opacity: 0.6; /* More visible */
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  background: radial-gradient(circle, #00cffd, #00a1c7);
+  border: none;
+  border-radius: 50%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: jello 2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#arrow-upbtn i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#arrow-upbtn:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+#arrow-upbtn:hover i {
+  color: #005e72;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .bottomInformation {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .bottomInformation h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .links a,
+  .courseBT a,
+  .contactMe a {
+    font-size: 0.95rem;
+  }
+
+  #arrow-upbtn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #arrow-upbtn i {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottomInformation h2 {
+    font-size: 1rem;
+  }
+
+  .links a,
+  .courseBT a,
+  .contactMe a {
+    font-size: 0.9rem;
+  }
+}
