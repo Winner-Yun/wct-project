@@ -32,144 +32,64 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="./css/loop.css" />
     <link rel="stylesheet" href="./css/index-noLog.css" />
     <title>Kanesha វេបសាយ</title>
   </head>
   <body>
-    <div class="navbar">
+    <nav class="navbar">
       <div class="logo">
         <h1>គណេស.ខម</h1>
         <h4>Kanesha.com</h4>
       </div>
+
       <div class="buttonControl">
         <div class="search">
-          <input type="text" placeholder="ស្វែងរក...." />
+          <input type="text" placeholder="ស្វែងរក..." />
           <a href=""><i class="bx bx-search-alt-2"></i></a>
         </div>
-        <div class="controlbtn">
-          <button id="costome" href="#" onclick="toggleNotificationDropdown()">
-            <i class="bx bxs-bell-ring"></i>
-          </button>
-          <a href="shopPage.html"><i class="bx bxs-store"></i></a>
-
-          <!-- Notification Dropdown -->
-          <div id="notificationDropdown" class="notification-dropdown">
-            <!-- Notification Header (Title + Settings) -->
-            <div class="notification-header">
-              <span class="notification-title"> ការជូនដំណឹង</span>
-              <a href="#" class="settings-icon">
-                <i class="bx bx-cog"></i>
-                <!-- Settings Icon -->
-              </a>
-            </div>
-            <!-- Notification Items -->
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">1 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">5 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">10 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">
-                  ចំណាយ៥០ដុល្លាក្នុង១ឆ្នាំទទួលបានអត្ថប្រយោជន៏ច្រើន
-                </p>
-                <p class="notification-time">15 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">30 នាទីមុន</p>
-              </div>
-            </div>
-            <div class="notification-item">
-              <img src="./img/Kanesha.png" alt="Thumbnail" />
-              <div class="notification-info">
-                <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                <p class="notification-time">1 ម៉ោងមុន</p>
-              </div>
-            </div>
-            <!-- Add more notifications as needed -->
-          </div>
-        </div>
       </div>
-      <div class="navbarbtn">
-        <div class="menu">
-          <a class="home" id="menu" href="index.html">ទំព័រដើម</a>
-          <div class="dropdown">
-            <a class="course" id="menu" href="#course">វគ្គសិក្សា</a>
-            <div class="dropdown-content">
-              <div class="devolopmentdrop">
-                <a href="#" id="id1"
-                  ><i class="bx bx-code-alt"></i>Devolopment
-                  <i class="bx bxs-chevron-right"></i
-                ></a>
-                <div class="devolopmentdrop-drop">
-                  <a href="course-study.html">
-                    <i class="bx bx-code-block"></i>Web Devolopment</a
-                  >
-                  <a href="course-study.html"
-                    ><i class="bx bx-data"></i>Data Science</a
-                  >
-                  <a href="course-study.html"
-                    ><i class="bx bx-mobile-alt"></i>Mobile Devolopment</a
-                  >
-                  <a href="">Progaming language</a>
-                  <a href="">Software Engineering</a>
-                </div>
-              </div>
-              <div class="designdrop">
-                <a href="#" id="id2">
-                  <i class="bx bxs-pen"></i>Design
-                  <i class="bx bxs-chevron-right"></i>
-                </a>
-                <div class="designdrop-drop">
-                  <a href="design.html">
-                    <i class="bx bxs-eyedropper"></i>UX & UI Design
-                  </a>
-                  <a href="#">
-                    <i class="bx bxs-slideshow"></i>Graphic Design
-                  </a>
-                </div>
-              </div>
 
-              <div class="itAndSoftwaredrop">
-                <a href="#" id="id3"
-                  ><i class="bx bx-chip"></i>IT & Software
-                  <i class="bx bxs-chevron-right"></i
-                ></a>
-                <div class="itAndSoftwaredrop-drop">
-                  <a href="cyber_security.html"
-                    ><i class="bx bx-shield-quarter"></i>cyber security</a
-                  >
-                  <a href=""
-                    ><i class="bx bx-network-chart"></i>Network security</a
-                  >
-                </div>
-              </div>
+      <div class="navbarbtn">
+        <button class="menu-toggle" id="menuToggle">
+          <i class="bx bxs-chevron-down"></i>
+        </button>
+        <div class="menu">
+          <a
+            class="home"
+            style="color: #00cffd; font-weight: 500"
+            href="index.html"
+            >ទំព័រដើម</a
+          >
+          <div class="dropdown">
+            <a class="course" href="#course"
+              >វគ្គសិក្សា<i class="bx bxs-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="course-study.html"
+                ><i class="bx bx-code-alt"></i>Devolopment</a
+              >
+              <a href="design.html"><i class="bx bxs-pen"></i>Design</a>
+              <a href="cyber_security.html"
+                ><i class="bx bx-shield-quarter"></i>Cyber Security</a
+              >
             </div>
           </div>
-          <a class="about" id="menu" href="/aboutus.html">អំពីយើង</a>
-          <a class="contact" id="menu" href="contactUs.html">ទំនាក់ទំនង</a>
+          <a class="about" href="/aboutus.html">អំពីយើង</a>
+          <a class="contact" style="margin-top: -0.1rem" href="contactUs.html"
+            >ទំនាក់ទំនង</a
+          >
+          <a class="contact" style="margin-top: -0.1rem" href="reanPage.html"
+            >រៀន</a
+          >
+          <a class="contact" style="margin-top: -0.1rem" href="blog.html"
+            >ប្លុក</a
+          >
+          <a class="contact" style="margin-top: -0.1rem" href="job_page.html"
+            >ការងារ</a
+          >
         </div>
+
         <div
           class="btn"
           style="
@@ -195,7 +115,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </nav>
 
     <div class="informationWeb">
       <h2>ព្យាយាមក្នុងការអភិវឌ្ឍន៍សម្ថភាព</h2>
@@ -716,7 +636,7 @@
         <div class="logo">
           <h1>គណេស.ខម</h1>
           <h4>Kanesha.com</h4>
-          <p>
+          <p style="width: 30rem; font-weight: 300; line-height: 2rem">
             គណេស.Kanesha ជាវេបសាយមួយដែលបង្កើតឡើងក្នុងគោលបំណង​
             អោយអ្នកប្រើប្រាស់អាចសិក្សានូវវគ្គសិក្សាជាច្រើនសម្រាប់អភិវឌ្ឍន៍ចំណេះដឹងលើបច្ចេកវិទ្យាថ្មីៗដោយមិនគិតថ្លៃតាមរយ:
             វីដេអូ​​ ​និង ឯកសារជាច្រើន។
@@ -766,6 +686,7 @@
         <hr />
         <div class="creditBy">
           <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
+          <h4>|</h4>
           <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
         </div>
       </div>

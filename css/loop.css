@@ -595,7 +595,7 @@
   border: none;
   border-radius: 50%;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  animation: jello 2s infinite;
+  animation: bounceIn 5s infinite;
   display: flex;
   align-items: center;
   justify-content: center;
