@@ -71,7 +71,6 @@
         </div>
 
         <div
-          class="btn"
           style="
             padding: 0.5rem;
             color: #00568f;
@@ -111,7 +110,7 @@
               ស្វែងយល់ពីសេចក្ដីនិយមន័យ
               និងការចែកចាយជាគ្រិកនៃបញ្ញាសិប្បនិម្មិតក្នុងបរិស្ថានស្នូល។
             </p>
-            <a href="aI.html" class="btn-display">មើលបន្ថែម</a>
+            <a href="login_signUp.html" class="btn-display">មើលបន្ថែម</a>
           </div>
         </div>
 
@@ -125,7 +124,7 @@
               ការពិពណ៌នាអំពីការប្រើប្រាស់ Blockchain ក្នុងដែនកសិកម្ម សុខាភិបាល
               និងសេដ្ឋកិច្ច។
             </p>
-            <a href="Blockchain.html" class="btn-display">មើលបន្ថែម</a>
+            <a href="login_signUp.html" class="btn-display">មើលបន្ថែម</a>
           </div>
         </div>
 
@@ -134,7 +133,7 @@
             <span class="tag"><i class="bx bxs-purchase-tag"></i>Web</span>
             <h1>HTML, CSS, និង Js សម្រាប់អ្នកចាប់ផ្ដើម</h1>
             <p>ការចាប់ផ្ដើមជាមួយបច្ចេកទេសគន្លឹះក្នុងការសាងសង់គេហទំព័រ។</p>
-            <a href="webDecribe.html" class="btn-display">មើលបន្ថែម</a>
+            <a href="login_signUp.html" class="btn-display">មើលបន្ថែម</a>
           </div>
         </div>
 
@@ -146,7 +145,7 @@
               ស្វែងយល់ពីជំហានសំខាន់ៗក្នុងការបង្កើតកម្មវិធីទូរស័ព្ទដោយប្រើកូដ
               ឬឧបករណ៍ No-Code
             </p>
-            <a href="mobileDecribe.html" class="btn-display">មើលបន្ថែម</a>
+            <a href="login_signUp.html" class="btn-display">មើលបន្ថែម</a>
           </div>
         </div>
 
@@ -160,7 +159,7 @@
               ស្វែងយល់ពីអ្វីដែល Data Science ជាស្នូល, របៀបវាប្រើប្រាស់,
               និងវិស័យដែលវាសំខាន់។
             </p>
-            <a href="dataScience.html" class="btn-display">មើលបន្ថែម</a>
+            <a href="login_signUp.html" class="btn-display">មើលបន្ថែម</a>
           </div>
         </div>
 
@@ -172,7 +171,7 @@
               រៀនអំពី UX/UI ដើម្បីសម្រេចបាននូវការរចនាដែលទាក់ទាញ
               និងមានប្រសិទ្ធភាពសម្រាប់កម្មវិធីឬគេហទំព័រ។
             </p>
-            <a href="designPageblog.html" class="btn-display">មើលបន្ថែម</a>
+            <a href="login_signUp.html" class="btn-display">មើលបន្ថែម</a>
           </div>
         </div>
       </div>
@@ -221,7 +220,7 @@
     <section id="explore-topics" class="explore-topics">
       <div class="topics-grid">
         <a
-          href="webDecribe.html"
+          href="login_signUp.html"
           class="topic-card"
           data-topic="web"
           style="width: 17rem; text-decoration: none"
@@ -245,7 +244,7 @@
         </a>
 
         <a
-          href="mobileDecribe.html"
+          href="login_signUp.html"
           class="topic-card"
           data-topic="mobile"
           style="width: 17rem; text-decoration: none"
@@ -271,7 +270,7 @@
         </a>
 
         <a
-          href="designPageblog.html"
+          href="login_signUp.html"
           class="topic-card"
           data-topic="design"
           style="width: 17rem; text-decoration: none"
@@ -295,7 +294,7 @@
         </a>
 
         <a
-          href="dataScience.html"
+          href="login_signUp.html"
           class="topic-card"
           data-topic="data-science"
           style="width: 17rem; text-decoration: none"
@@ -321,7 +320,7 @@
         </a>
 
         <a
-          href="aI.html"
+          href="login_signUp.html"
           class="topic-card"
           data-topic="ai"
           style="width: 17rem; text-decoration: none"
@@ -345,7 +344,7 @@
         </a>
 
         <a
-          href="Blockchain.html"
+          href="login_signUp.html"
           class="topic-card"
           data-topic="blockchain"
           style="width: 17rem; text-decoration: none"
@@ -463,6 +462,28 @@
     </div>
 
     <!-- JavaScript -->
+    <script>
+      // Get all dropdowns
+      const dropdowns = document.querySelectorAll(".menu .dropdown");
+
+      dropdowns.forEach((dropdown) => {
+        dropdown.addEventListener("click", function (event) {
+          event.stopPropagation();
+          this.classList.toggle("show");
+        });
+      });
+
+      const scrollToTopBtn = document.getElementById("arrow-upbtn");
+
+      // Add click event listener
+      scrollToTopBtn.addEventListener("click", function () {
+        // Scroll to the top smoothly
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // This ensures smooth scrolling
+        });
+      });
+    </script>
     <script src="./js/blog.js"></script>
     <script src="./js/animate.js"></script>
   </body>
