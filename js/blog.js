@@ -43,3 +43,24 @@ topicLinks.forEach((link) => {
 });
 
 filterTopics("all");
+
+// Get all dropdowns
+const dropdowns = document.querySelectorAll(".menu .dropdown");
+
+dropdowns.forEach((dropdown) => {
+  dropdown.addEventListener("click", function (event) {
+    event.stopPropagation();
+    this.classList.toggle("show");
+  });
+});
+
+const scrollToTopBtn = document.getElementById("arrow-upbtn");
+
+// Add click event listener
+scrollToTopBtn.addEventListener("click", function () {
+  // Scroll to the top smoothly
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // This ensures smooth scrolling
+  });
+});

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/blog.css" />
   </head>
   <body>
-    <div class="navbar">
+    <nav class="navbar">
       <div class="logo">
         <h1>គណេស.ខម</h1>
         <h4>Kanesha.com</h4>
@@ -43,92 +43,59 @@
           <i class="bx bxs-chevron-down"></i>
         </button>
         <div class="menu">
-          <a class="home" href="index.html">ទំព័រដើម</a>
+          <a class="home" href="index-noLog.html">ទំព័រដើម</a>
           <div class="dropdown">
             <a class="course" href="#course"
               >វគ្គសិក្សា<i class="bx bxs-chevron-down"></i
             ></a>
             <div class="dropdown-content">
-              <a href="course-study.html"
+              <a href="login_signUp.html"
                 ><i class="bx bx-code-alt"></i>Devolopment</a
               >
-              <a href="design.html"><i class="bx bxs-pen"></i>Design</a>
-              <a href="cyber_security.html"
+              <a href="login_signUp.html"><i class="bx bxs-pen"></i>Design</a>
+              <a href="login_signUp.html"
                 ><i class="bx bx-shield-quarter"></i>Cyber Security</a
               >
             </div>
           </div>
-          <a class="about" href="/aboutus.html">អំពីយើង</a>
-          <a class="contact" style="margin-top: -0.1rem" href="contactUs.html"
-            >ទំនាក់ទំនង</a
-          >
-          <a class="contact" style="margin-top: -0.1rem" href="reanPage.html"
-            >រៀន</a
-          >
+          <a class="about" href="aboutus-noLog.html">អំពីយើង</a>
+          <a class="contact" href="contactUs-noLog.html">ទំនាក់ទំនង</a>
+          <a class="contact" href="reanPage-noLog.html">រៀន</a>
           <a
             class="contact"
-            style="margin-top: -0.1rem; color: #00cffd; font-weight: 500"
             href="blog.html"
+            style="color: #00cffd; font-weight: 500"
             >ប្លុក</a
           >
-          <a class="contact" style="margin-top: -0.1rem" href="job_page.html"
-            >ការងារ</a
-          >
+          <a class="contact" href="job_page-noLog.html">ការងារ</a>
         </div>
 
-        <div class="controlbtn" id="controlBtn2">
-          <a href="shopPage.html" id="shopId"><i class="bx bxs-store"></i></a>
-          <button class="costome">
-            <i class="bx bxs-bell-ring"></i>
+        <div
+          class="btn"
+          style="
+            padding: 0.5rem;
+            color: #00568f;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-left: 1rem;
+          "
+        >
+          <button
+            class="loginbtn"
+            onclick="window.location='login_signUp.html'"
+          >
+            ចូលគណនី
           </button>
-          <div id="notificationDropdown" class="notification-dropdown">
-            <div class="notification-header">
-              <span class="notification-title">ការជូនដំណឹង</span>
-              <a
-                href="./settingPage.html"
-                class="settings-icon"
-                style="color: white"
-                ><i class="bx bx-cog"></i
-              ></a>
-            </div>
-            <div class="notification-list">
-              <div class="notification-item">
-                <img src="./img/Kanesha.png" alt="Thumbnail" />
-                <div class="notification-info">
-                  <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
-                  <p class="notification-time">1 នាទីមុន</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button id="profileBtn">
-          <img src="./img/profacer_Man.png" alt="" />
-        </button>
-
-        <div class="profile-bar">
-          <a href="#" style="text-decoration: none"
-            ><div
-              class="profilePic"
-              style="
-                background-color: #00a7cd;
-                padding: 0.5rem;
-                border-radius: 0.5rem;
-              "
-            >
-              <img src="./img/profacer_Man.png" id="pfer" alt="" />
-              <h4 style="color: white">នារី​ បុរស</h4>
-            </div>
-          </a>
-          <a href="settingPage.html" style="text-decoration: none; color: black"
-            ><div class="set"><i class="bx bx-cog"></i>ការកំណត់</div></a
+          |
+          <button
+            class="signUpbtn"
+            onclick="window.location='signUp_login.html'"
           >
-          <a href="index-noLog.html" style="text-decoration: none; color: black"
-            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div></a
-          >
+            បង្កើតគណនី
+          </button>
         </div>
       </div>
-    </div>
+    </nav>
 
     <!-- Hero Section with Auto-Switching Background -->
     <section id="home" class="hero">
@@ -447,18 +414,18 @@
         </div>
         <div class="links">
           <h2>Link បន្ថែម</h2>
-          <a href="reanPage.html">រៀន</a>
-          <a href="blog.html">ប្លុក</a>
-          <a href="job_page.html">ការងារ</a>
-          <a href="aboutus.html">អំពីយើង</a>
-          <a href="contactUs.html">ទំនាក់ទំនង</a>
-          <a href="./rating.html">Rate ពួកយើង</a>
+          <a href="reanPage-noLog.html">រៀន</a>
+          <a href="blog-noLog.html">ប្លុក</a>
+          <a href="job_page-noLog.html">ការងារ</a>
+          <a href="aboutus-noLog.html">អំពីយើង</a>
+          <a href="contactUs-noLog.html">ទំនាក់ទំនង</a>
+          <a href="login_signUp.html">Rate ពួកយើង</a>
         </div>
         <div class="courseBT">
           <h2>វគ្គសិក្សា</h2>
-          <a href="./course-study.html">Devolopment</a>
-          <a href="./design.html">Design</a>
-          <a href="./cyber_security.html">IT & Software</a>
+          <a href="login_signUp.html">Devolopment</a>
+          <a href="login_signUp.html">Design</a>
+          <a href="login_signUp.html">IT & Software</a>
         </div>
         <div class="contactMe">
           <h2>ទំនាក់ទំនង</h2>
@@ -498,6 +465,5 @@
     <!-- JavaScript -->
     <script src="./js/blog.js"></script>
     <script src="./js/animate.js"></script>
-    <script src="./js/loopjs.js"></script>
   </body>
 </html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find-Job</title>
+    <link rel="icon" href="../img/Kanesha.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/loop.css" />
+    <link rel="stylesheet" href="./css/job_page.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>គណេស.ខម</h1>
+        <h4>Kanesha.com</h4>
+      </div>
+
+      <div class="buttonControl">
+        <div class="search">
+          <input type="text" placeholder="ស្វែងរក..." />
+          <a href=""><i class="bx bx-search-alt-2"></i></a>
+        </div>
+      </div>
+
+      <div class="navbarbtn">
+        <button class="menu-toggle" id="menuToggle">
+          <i class="bx bxs-chevron-down"></i>
+        </button>
+        <div class="menu">
+          <a class="home" href="index-noLog.html">ទំព័រដើម</a>
+          <div class="dropdown">
+            <a class="course" href="#course"
+              >វគ្គសិក្សា<i class="bx bxs-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="login_signUp.html"
+                ><i class="bx bx-code-alt"></i>Devolopment</a
+              >
+              <a href="login_signUp.html"><i class="bx bxs-pen"></i>Design</a>
+              <a href="login_signUp.html"
+                ><i class="bx bx-shield-quarter"></i>Cyber Security</a
+              >
+            </div>
+          </div>
+          <a class="about" href="/aboutus.html">អំពីយើង</a>
+          <a class="contact" href="contactUs-noLog.html">ទំនាក់ទំនង</a>
+          <a class="contact" href="reanPage-noLog.html">រៀន</a>
+          <a class="contact" href="blog-noLog.html">ប្លុក</a>
+          <a
+            class="contact"
+            href="job_page-noLog.html"
+            style="color: #00cffd; font-weight: 500"
+            >ការងារ</a
+          >
+        </div>
+
+        <div
+          class="btn"
+          style="
+            padding: 0.5rem;
+            color: #00568f;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-left: 1rem;
+          "
+        >
+          <button
+            class="loginbtn"
+            onclick="window.location='login_signUp.html'"
+          >
+            ចូលគណនី
+          </button>
+          |
+          <button
+            class="signUpbtn"
+            onclick="window.location='signUp_login.html'"
+          >
+            បង្កើតគណនី
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>ស្វែងរកការងារ <span class="highlight">ដែលអ្នកស្រលាញ់</span></h1>
+          <p>
+            ស្វែងរកឱកាសការងារដែលល្អបំផុតនៅក្នុងឧស្សាហកម្មនិងតំបន់ផ្សេងៗ។
+            ជំហាននៃការផ្លាស់ប្តូរការងារប្រសិនបើអ្នកចាប់ផ្តើមនៅទីនេះ។
+          </p>
+          <div class="hero-buttons">
+            <a id="start-searching-btn" class="btn-primary">ចាប់ផ្តើមស្វែងរក</a>
+            <a id="browse-jobs-btn" class="btn-secondary">មើលការងារ</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="../img/jobBackground.webp"
+            alt="Job Search Illustration"
+            style="width: 500px"
+          />
+        </div>
+      </section>
+
+      <!-- Search Section -->
+      <section id="search" class="search-container">
+        <div class="search-form">
+          <h2>🔍 ស្វែងរកការងារ</h2>
+          <form>
+            <div class="form-row">
+              <input
+                type="text"
+                placeholder="បញ្ចូលចំណងជើងការងារ ឬជំនាញ"
+                class="input-large"
+              />
+              <input
+                type="text"
+                placeholder="ទីតាំង (ឧ. ក្រុង, រដ្ឋ)"
+                class="input-large"
+              />
+              <button type="submit" class="btn-search">ស្វែងរក</button>
+            </div>
+            <div class="filter-row">
+              <select>
+                <option value="" disabled selected>ប្រភេទការងារ</option>
+                <option>Development</option>
+                <option>Cybersecurity</option>
+                <option>Design</option>
+                <option>Data Science</option>
+                <option>Artificial Intelligence</option>
+              </select>
+              <select>
+                <option value="" disabled selected>ប្រភេទការងារ</option>
+                <option>ពេញម៉ោង</option>
+                <option>Part time</option>
+                <option>Internship</option>
+              </select>
+              <select>
+                <option value="" disabled selected>កម្រិតបទពិសោធន៍</option>
+                <option>កម្រិតចាប់ផ្តើម</option>
+                <option>កម្រិតមធ្យម</option>
+                <option>កម្រិតខ្ពស់</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Job Listings Section -->
+      <section id="job-listings" class="job-listings">
+        <h2>ការងារដែលមានស្រាប់</h2>
+        <div class="job-grid">
+          <div class="job-card">
+            <h3>Web Developer</h3>
+            <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+            <p><strong>ប្រាក់ខែ:</strong> $300 - $500</p>
+            <p><strong>ក្រុមហ៊ុន:</strong> វិទ្យាស្ថានបណ្តុះបណ្តាល ANT</p>
+            <p><strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i></p>
+            <p>
+              <strong>ត្រូវការបទពិសោធន៍:</strong>
+              <i id="setstyles">កម្រិតខ្ពស់</i>
+            </p>
+            <button class="btn-apply" onclick="window.location='jobApply.html'">
+              ដាក់ពាក្យ
+            </button>
+          </div>
+          <div class="job-card">
+            <h3>Computer Security Expert</h3>
+            <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+            <p><strong>ប្រាក់ខែ:</strong> $800 - $1100</p>
+            <p><strong>ក្រុមហ៊ុន:</strong> វិទ្យាស្ថានបណ្តុះបណ្តាល ANT</p>
+            <p><strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i></p>
+            <p>
+              <strong>ត្រូវការបទពិសោធន៍:</strong>
+              <i id="setstyles">កម្រិតខ្ពស់</i>
+            </p>
+            <button class="btn-apply" onclick="window.location='jobApply.html'">
+              ដាក់ពាក្យ
+            </button>
+          </div>
+          <div class="job-card">
+            <h3>Designer UX/UI</h3>
+            <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+            <p><strong>ប្រាក់ខែ:</strong> $1200 - $1500</p>
+            <p><strong>ក្រុមហ៊ុន:</strong> Creative Studio</p>
+            <p><strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i></p>
+            <p>
+              <strong>ត្រូវការបទពិសោធន៍:</strong>
+              <i id="setstyles">កម្រិតខ្ពស់</i>
+            </p>
+            <button class="btn-apply" onclick="window.location='jobApply.html'">
+              ដាក់ពាក្យ
+            </button>
+          </div>
+          <div class="job-card">
+            <h3>Data Scientist</h3>
+            <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+            <p><strong>ប្រាក់ខែ:</strong> $1500 - $2000</p>
+            <p><strong>ក្រុមហ៊ុន:</strong> Data Solutions Inc.</p>
+            <p><strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i></p>
+            <p>
+              <strong>ត្រូវការបទពិសោធន៍:</strong>
+              <i id="setstyles">កម្រិតខ្ពស់</i>
+            </p>
+            <button class="btn-apply" onclick="window.location='jobApply.html'">
+              ដាក់ពាក្យ
+            </button>
+          </div>
+          <div class="job-card">
+            <h3>Data Scientist</h3>
+            <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+            <p><strong>ប្រាក់ខែ:</strong> $1500 - $2000</p>
+            <p><strong>ក្រុមហ៊ុន:</strong> Data Solutions Inc.</p>
+            <p><strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i></p>
+            <p>
+              <strong>ត្រូវការបទពិសោធន៍:</strong>
+              <i id="setstyles">កម្រិតខ្ពស់</i>
+            </p>
+            <button class="btn-apply" onclick="window.location='jobApply.html'">
+              ដាក់ពាក្យ
+            </button>
+          </div>
+          <div class="job-card">
+            <h3>Data Scientist</h3>
+            <p><strong>ទីតាំង:</strong> ភ្នំពេញ</p>
+            <p><strong>ប្រាក់ខែ:</strong> $1500 - $2000</p>
+            <p><strong>ក្រុមហ៊ុន:</strong> Data Solutions Inc.</p>
+            <p><strong>ប្រភេទការងារ:</strong> <i id="setstyles">ពេញម៉ោង</i></p>
+            <p>
+              <strong>ត្រូវការបទពិសោធន៍:</strong>
+              <i id="setstyles">កម្រិតខ្ពស់</i>
+            </p>
+            <button class="btn-apply" onclick="window.location='jobApply.html'">
+              ដាក់ពាក្យ
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="underlinks">
+      <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
+      <div class="bottomInformation">
+        <div class="logo">
+          <h1>គណេស.ខម</h1>
+          <h4>Kanesha.com</h4>
+          <p style="width: 30rem; font-weight: 300; line-height: 2rem">
+            គណេស.Kanesha ជាវេបសាយមួយដែលបង្កើតឡើងក្នុងគោលបំណង​
+            អោយអ្នកប្រើប្រាស់អាចសិក្សានូវវគ្គសិក្សាជាច្រើនសម្រាប់អភិវឌ្ឍន៍ចំណេះដឹងលើបច្ចេកវិទ្យាថ្មីៗដោយមិនគិតថ្លៃតាមរយ:
+            វីដេអូ​​ ​និង ឯកសារជាច្រើន។
+          </p>
+        </div>
+        <div class="links">
+          <h2>Link បន្ថែម</h2>
+          <a href="reanPage-noLog.html">រៀន</a>
+          <a href="blog-noLog.html">ប្លុក</a>
+          <a href="job_page-noLog.html">ការងារ</a>
+          <a href="aboutus-noLog.html">អំពីយើង</a>
+          <a href="contactUs-noLog.html">ទំនាក់ទំនង</a>
+          <a href="login_signUp.html">Rate ពួកយើង</a>
+        </div>
+        <div class="courseBT">
+          <h2>វគ្គសិក្សា</h2>
+          <a href="login_signUp.html">Devolopment</a>
+          <a href="login_signUp.html">Design</a>
+          <a href="login_signUp.html">IT & Software</a>
+        </div>
+        <div class="contactMe">
+          <h2>ទំនាក់ទំនង</h2>
+          <div class="contactLink">
+            <a
+              href="https://www.google.com/maps?ll=11.569746,104.888775&z=18&t=m&hl=en&gl=KH&mapclient=embed&cid=13679816548194653181"
+              target="_blank"
+              ><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a
+            >
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
+          </div>
+          <div class="contactLink">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a
+            >
+          </div>
+
+          <div class="icon">
+            <a href=""><i class="bx bxl-facebook-circle"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <hr />
+        <div class="creditBy">
+          <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
+          <h4>|</h4>
+          <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
+        </div>
+      </div>
+    </div>
+    <script src="./js/job.js"></script>
+    <script src="./js/animate.js"></script>
+  </body>
+</html>

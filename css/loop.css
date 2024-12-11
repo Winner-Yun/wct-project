@@ -1,3 +1,36 @@
+.loginbtn {
+  margin-left: 1rem;
+  background-color: #00a7cd;
+  color: #fff;
+  font-family: "Noto Sans Khmer";
+  cursor: pointer;
+  height: 2rem;
+  width: 6rem;
+  border-radius: 5rem;
+  border: none;
+  transition: all 0.2s;
+}
+.loginbtn:hover {
+  background-color: #00568f;
+  scale: 1.1;
+}
+.signUpbtn {
+  margin-right: 1rem;
+  cursor: pointer;
+  background-color: #00a100;
+  color: #fff;
+  font-family: "Noto Sans Khmer";
+  height: 2rem;
+  width: 6rem;
+  border-radius: 5rem;
+  border: none;
+  transition: all 0.2s;
+}
+.signUpbtn:hover {
+  background-color: #006700;
+  scale: 1.1;
+}
+
 .navbar {
   display: flex;
   position: fixed;
@@ -243,7 +276,6 @@
   opacity: 0;
   transform: translateY(-20px);
   animation: profileBarFadeIn 0.5s ease-out forwards;
-
 }
 @keyframes profileBarFadeIn {
   0% {
@@ -303,7 +335,6 @@
   margin-right: 10px;
   color: #555;
 }
-
 
 /* Animations */
 @keyframes fadeIn {
@@ -541,7 +572,7 @@
   text-decoration: underline;
 }
 
-.contactLink i{
+.contactLink i {
   margin-right: 0.5rem;
 }
 

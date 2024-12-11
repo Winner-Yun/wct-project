@@ -11,17 +11,6 @@ body {
   color: #e0e0e0;
 }
 /* Buttons */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #00d8ff;
-  color: #000;
-  font-weight: bold;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
 
 .btn:hover {
   background: #00b2cc;
@@ -260,7 +249,7 @@ body {
 }
 
 /* Button Styling */
-.btn {
+.btn-display {
   display: inline-block;
   padding: 10px 15px;
   background: #007bff;

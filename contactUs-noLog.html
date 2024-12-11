@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Kanesha.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/loop.css" />
+    <link rel="stylesheet" href="./css/contactUs.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>គណេស.ខម</h1>
+        <h4>Kanesha.com</h4>
+      </div>
+
+      <div class="buttonControl">
+        <div class="search">
+          <input type="text" placeholder="ស្វែងរក..." />
+          <a href=""><i class="bx bx-search-alt-2"></i></a>
+        </div>
+      </div>
+
+      <div class="navbarbtn">
+        <button class="menu-toggle" id="menuToggle">
+          <i class="bx bxs-chevron-down"></i>
+        </button>
+        <div class="menu">
+          <a class="home" href="index-noLog.html">ទំព័រដើម</a>
+          <div class="dropdown">
+            <a class="course" href="#course"
+              >វគ្គសិក្សា<i class="bx bxs-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="login_signUp.html"
+                ><i class="bx bx-code-alt"></i>Devolopment</a
+              >
+              <a href="login_signUp.html"><i class="bx bxs-pen"></i>Design</a>
+              <a href="login_signUp.html"
+                ><i class="bx bx-shield-quarter"></i>Cyber Security</a
+              >
+            </div>
+          </div>
+          <a class="about" href="aboutus-noLog.html">អំពីយើង</a>
+          <a
+            class="contact"
+            style="color: #00cffd; font-weight: 500"
+            href="contactUs.html "
+            >ទំនាក់ទំនង</a
+          >
+          <a class="contact" href="reanPage-noLog.html">រៀន</a>
+          <a class="contact" href="blog-noLog.html">ប្លុក</a>
+          <a class="contact" href="job_page-noLog.html">ការងារ</a>
+        </div>
+
+        <div
+          class="btn"
+          style="
+            padding: 0.5rem;
+            color: #00568f;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-left: 1rem;
+          "
+        >
+          <button
+            class="loginbtn"
+            onclick="window.location='login_signUp.html'"
+          >
+            ចូលគណនី
+          </button>
+          |
+          <button
+            class="signUpbtn"
+            onclick="window.location='signUp_login.html'"
+          >
+            បង្កើតគណនី
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <h1>ទំនាក់ទំនងមកកាន់ពួកយើង</h1>
+      <p>
+        យើងនៅទីនេះដើម្បីជួយអ្នក! ទាក់ទងដោយប្រើទម្រង់ខាងក្រោម
+        ឬតាមរយៈមធ្យោបាយផ្សេងទៀត។
+      </p>
+    </header>
+
+    <main>
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>ផ្ញើរសារមកកាន់ពួកយើង</h2>
+          <form action="#" method="post">
+            <label for="name">ឈ្មោះ</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="ឈ្មោះរបស់អ្នក"
+              required
+            />
+
+            <label for="email">អុីម៉ែល</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="បញ្ជូលអុីម៉ែល"
+              required
+            />
+
+            <label for="message">មតិ</label>
+            <textarea
+              class="messagebox"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="មតិរបស់អ្នក..."
+              required
+            ></textarea>
+
+            <button type="submit">ផ្ញើមតិ</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h2>ទាក់ទង</h2>
+
+          <!-- Email Section -->
+          <div class="contact-item">
+            <div class="icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="content-box">
+              <p><strong>អ៊ីម៉ែល :</strong></p>
+              <p>support@example.com</p>
+            </div>
+          </div>
+
+          <!-- Phone Section -->
+          <div class="contact-item">
+            <div class="icon-box">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="content-box">
+              <p><strong>លេខទូរស័ព្ទ :</strong></p>
+              <p>+855 123-456-7890</p>
+            </div>
+          </div>
+
+          <!-- Address Section -->
+          <div class="contact-item">
+            <div class="icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="content-box">
+              <p><strong>អាស័យដ្ធាន​ :</strong></p>
+              <p>សង្កាត់បឹងកេងកង១, ខណ្ឌទួលគោក, រាជធានីភ្នំពេញ</p>
+            </div>
+          </div>
+
+          <!-- Social Media Section -->
+          <h3>បណ្ដាញសង្គម</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Map Embed -->
+      <div class="map">
+        <h2>ទីតាំង</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d690.9768118349097!2d104.8889377626415!3d11.569405098499864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519fad8972b5%3A0xbdd878abfba713fd!2sRUPP%20STEM%20Building!5e0!3m2!1sen!2skh!4v1732096548487!5m2!1sen!2skh"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+
+    <div class="underlinks">
+      <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
+      <div class="bottomInformation">
+        <div class="logo">
+          <h1>គណេស.ខម</h1>
+          <h4>Kanesha.com</h4>
+          <p style="width: 30rem; font-weight: 300; line-height: 2rem">
+            គណេស.Kanesha ជាវេបសាយមួយដែលបង្កើតឡើងក្នុងគោលបំណង​
+            អោយអ្នកប្រើប្រាស់អាចសិក្សានូវវគ្គសិក្សាជាច្រើនសម្រាប់អភិវឌ្ឍន៍ចំណេះដឹងលើបច្ចេកវិទ្យាថ្មីៗដោយមិនគិតថ្លៃតាមរយ:
+            វីដេអូ​​ ​និង ឯកសារជាច្រើន។
+          </p>
+        </div>
+        <div class="links">
+          <h2>Link បន្ថែម</h2>
+          <a href="reanPage-noLog.html">រៀន</a>
+          <a href="blog-noLog.html">ប្លុក</a>
+          <a href="job_page-noLog.html">ការងារ</a>
+          <a href="aboutus-noLog.html">អំពីយើង</a>
+          <a href="contactUs-noLog.html">ទំនាក់ទំនង</a>
+          <a href="login_signUp.html">Rate ពួកយើង</a>
+        </div>
+        <div class="courseBT">
+          <h2>វគ្គសិក្សា</h2>
+          <a href="login_signUp.html">Devolopment</a>
+          <a href="login_signUp.html">Design</a>
+          <a href="login_signUp.html">IT & Software</a>
+        </div>
+        <div class="contactMe">
+          <h2>ទំនាក់ទំនង</h2>
+          <div class="contactLink">
+            <a
+              href="https://www.google.com/maps?ll=11.569746,104.888775&z=18&t=m&hl=en&gl=KH&mapclient=embed&cid=13679816548194653181"
+              target="_blank"
+              ><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a
+            >
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
+          </div>
+          <div class="contactLink">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a
+            >
+          </div>
+
+          <div class="icon">
+            <a href=""><i class="bx bxl-facebook-circle"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <hr />
+        <div class="creditBy">
+          <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
+          <h4>|</h4>
+          <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get all dropdowns
+      const dropdowns = document.querySelectorAll(".menu .dropdown");
+      dropdowns.forEach((dropdown) => {
+        dropdown.addEventListener("click", function (event) {
+          event.stopPropagation();
+          this.classList.toggle("show");
+        });
+      });
+
+      const scrollToTopBtn = document.getElementById("arrow-upbtn");
+
+      // Add click event listener
+      scrollToTopBtn.addEventListener("click", function () {
+        // Scroll to the top smoothly
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // This ensures smooth scrolling
+        });
+      });
+    </script>
+    <script src="./js/animate.js"></script>
+  </body>
+</html>
