@@ -126,21 +126,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("whyKanesha").addEventListener("click", function (e) {
     e.preventDefault();
-    scrollToPercentage(15); 
+    scrollToPercentage(17); 
   });
 
   document
     .getElementById("programInfo")
     .addEventListener("click", function (e) {
       e.preventDefault();
-      scrollToPercentage(42); 
+      scrollToPercentage(47); 
     });
 
   document
     .getElementById("programPrice")
     .addEventListener("click", function (e) {
       e.preventDefault();
-      scrollToPercentage(62);
+      scrollToPercentage(69);
     });
 });
 

@@ -166,6 +166,7 @@ body {
 
 .payment-form input {
   width: 23rem;
+  font-family: "Noto Sans Khmer", sans-serif;
   padding: 12px;
   margin-bottom: 1.5rem;
   border: 1px solid #ddd;
