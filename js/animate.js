@@ -172,6 +172,18 @@ document.querySelectorAll(".course-card2").forEach((element) => {
 document.querySelectorAll(".course-card3").forEach((element) => {
   observer2.observe(element);
 });
+document.querySelectorAll(".course-card").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".instructor").forEach((element) => {
+  observer.observe(element);
+});
+document.querySelectorAll(".banner-desc").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".banner-img-container").forEach((element) => {
+  observer2.observe(element);
+});
 
 
 
