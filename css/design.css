@@ -477,7 +477,7 @@ section.courses {
   color: #f9f9f9;
   padding: 4rem 5rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -493,7 +493,6 @@ section.courses {
   line-height: 1.5;
   margin: 0;
 }
-
 
 /*   === Courses Section Styling Ends ===   */
 
