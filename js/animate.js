@@ -160,6 +160,18 @@ document.querySelectorAll(".job-info").forEach((element) => {
 document.querySelectorAll(".apply-form").forEach((element) => {
   observer5.observe(element);
 });
+document.querySelectorAll(".cta-section").forEach((element) => {
+  observer.observe(element);
+});
+document.querySelectorAll(".course-card1").forEach((element) => {
+  observer.observe(element);
+});
+document.querySelectorAll(".course-card2").forEach((element) => {
+  observer5.observe(element);
+});
+document.querySelectorAll(".course-card3").forEach((element) => {
+  observer2.observe(element);
+});
 
 
 

@@ -123,24 +123,24 @@ body {
 .features-list {
   display: flex;
   justify-content: space-around;
-  gap: 3rem; /* Increased spacing between feature items */
+  gap: 3rem;
   margin-top: 2rem;
 }
 
 .feature-item {
   max-width: 300px;
   text-align: center;
-  font-size: 1.2rem; /* Slightly increase text size */
+  font-size: 1.2rem;
 }
 
 .feature-item i {
-  font-size: 4rem; /* Increased icon size */
+  font-size: 4rem;
   color: #ffcc00;
-  margin-bottom: 1.5rem; /* Added more space below icons */
+  margin-bottom: 1.5rem;
 }
 
 .feature-item h3 {
-  font-size: 1.8rem; /* Larger heading size */
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -285,24 +285,24 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 2rem;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .course-card1 img,
 .course-card2 img,
 .course-card3 img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure the image fills the container */
-  border-radius: 8px; /* Optional: Adds rounded corners */
-  max-height: 285px; /* Prevents the image from becoming too tall */
-  display: block; /* Ensure consistent block-level display */
-  margin: 0 auto; /* Center the image */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  max-height: 285px;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
 
 .course-card1:hover, .course-card2:hover, .course-card3:hover {
-  transform: translateY(-10px);
+  scale: 1.04;
 }
 
 .course-card1 h3 {
