@@ -225,7 +225,6 @@ section.services {
 .services-contents .service-box {
   flex-basis: calc(calc(100% / 3) - 2%);
   padding: 25px 20px;
-  cursor: pointer;
   transition: all 0.3s;
 }
 .services-contents .service-box:hover {
