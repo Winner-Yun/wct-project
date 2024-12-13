@@ -7,9 +7,45 @@ body {
 	overflow-x: hidden;
 }
 
+.info-course {
+	position: absolute;
+	margin-top: 40rem;
+	margin-left: 5rem;
+	width: 85rem;
+}
 
+.info-course h2 {
+	color: #00a7cd;
+	font-size: 2rem;
+	font-family: "Kantumruy Pro", sans-serif;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+}
 
+hr {
+	border: none;
+	border-top: solid 2px #00a7cd;
+	width: 50%;
+	margin: 1rem 0;
+}
 
+.paragraph {
+	margin-top: 4rem;
+	padding: 2rem;
+	border-left: solid 10px #00a7cd;
+	color: #333;
+	background: linear-gradient(90deg, rgba(0, 167, 205, 0.1), rgba(255, 255, 255, 0));
+	font-style: italic;
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-course p {
+	font-size: 1.2rem;
+	line-height: 2.3rem;
+	font-weight: 300;
+	color: #383838;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
 
 .header {
 	position: absolute;
@@ -177,7 +213,7 @@ body {
 	position: absolute;
 	margin-left: 5rem;
 	width: 85rem;
-	margin-top: 40rem;
+	margin-top: 85rem;
 	margin-bottom: 10rem;
 }
 .videoStore h2 {
@@ -602,5 +638,5 @@ body {
 }
 
 .underlinks{
-	margin-top: 150rem;
+	margin-top: 190rem;
 }
