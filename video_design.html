@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Kanesha.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/loop.css" />
+    <link rel="stylesheet" href="./css/video_Design.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Video Info</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <h1>គណេស.ខម</h1>
+        <h4>Kanesha.com</h4>
+      </div>
+
+      <div class="buttonControl">
+        <div class="search">
+          <input type="text" placeholder="ស្វែងរក..." />
+          <a href=""><i class="bx bx-search-alt-2"></i></a>
+        </div>
+      </div>
+
+      <div class="navbarbtn">
+        <button class="menu-toggle" id="menuToggle">
+          <i class="bx bxs-chevron-down"></i>
+        </button>
+        <div class="menu">
+          <a class="home" href="index.html">ទំព័រដើម</a>
+          <div class="dropdown">
+            <a class="course" href="#course"
+              >វគ្គសិក្សា<i class="bx bxs-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="course-study.html"
+                ><i class="bx bx-code-alt"></i>Devolopment</a
+              >
+              <a href="design.html"><i class="bx bxs-pen"></i>Design</a>
+              <a href="cyber_security.html"
+                ><i class="bx bx-shield-quarter"></i>Cyber Security</a
+              >
+            </div>
+          </div>
+          <a class="about" href="/aboutus.html">អំពីយើង</a>
+          <a class="contact" style="margin-top: -0.1rem" href="contactUs.html"
+            >ទំនាក់ទំនង</a
+          >
+          <a class="contact" style="margin-top: -0.1rem" href="reanPage.html"
+            >រៀន</a
+          >
+          <a class="contact" style="margin-top: -0.1rem" href="blog.html"
+            >ប្លុក</a
+          >
+          <a class="contact" style="margin-top: -0.1rem" href="job_page.html"
+            >ការងារ</a
+          >
+        </div>
+
+        <div class="controlbtn" id="controlBtn2">
+          <a href="shopPage.html" id="shopId"><i class="bx bxs-store"></i></a>
+          <button class="costome">
+            <i class="bx bxs-bell-ring"></i>
+          </button>
+          <div id="notificationDropdown" class="notification-dropdown">
+            <div class="notification-header">
+              <span class="notification-title">ការជូនដំណឹង</span>
+              <a
+                href="./settingPage.html"
+                class="settings-icon"
+                style="color: white"
+                ><i class="bx bx-cog"></i
+              ></a>
+            </div>
+            <div class="notification-list">
+              <div class="notification-item">
+                <img src="./img/Kanesha.png" alt="Thumbnail" />
+                <div class="notification-info">
+                  <p class="notification-title">មានការប្រម៉ូសិនពិសេស</p>
+                  <p class="notification-time">1 នាទីមុន</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="profileBtn">
+          <img src="./img/profacer_Man.png" alt="" />
+        </button>
+
+        <div class="profile-bar">
+          <a href="#" style="text-decoration: none"
+            ><div
+              class="profilePic"
+              style="
+                background-color: #00a7cd;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+              "
+            >
+              <img src="./img/profacer_Man.png" id="pfer" alt="" />
+              <h4 style="color: white">នារី​ បុរស</h4>
+            </div>
+          </a>
+          <a href="settingPage.html" style="text-decoration: none; color: black"
+            ><div class="set"><i class="bx bx-cog"></i>ការកំណត់</div></a
+          >
+          <a href="index-noLog.html" style="text-decoration: none; color: black"
+            ><div class="set"><i class="bx bx-log-out"></i>ចាក់ចេញ</div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="header_content">
+        <div class="profile_wrapper">
+          <div class="profile_picture">
+            <img
+              src="./img/teacher/kimchay.png"
+              alt="Profile Picture"
+            />
+          </div>
+        </div>
+        <div class="info_wrapper">
+          <div class="info">
+            <h2><span>ជួបជាមួយគ្រូរបស់អ្នក : Ry Kimchhay</span></h2>
+            <br />
+            <h3><span>អ្នកជំនាញ Design </span></h3>
+            <p>
+              <span
+                >Ry Kimchhay
+                គឺជាអ្នកឯកទេសផ្នែករចនាដែលមានបទពិសោធន៍ជាង 15 ឆ្នាំនៅក្នុងវិស័យនេះ។ 
+                គាត់បានបម្រើការជាមួយក្រុមហ៊ុនជាង 50 កន្លែង ដោយបង្កើតការរចនាប្លង់ស្រស់ស្អាត 
+                និងការបង្កើតអត្ថប្រយោជន៍បច្ចេកវិទ្យាដ៏ច្នៃប្រឌិត។
+                </span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-course">
+      <h2>អំពីវគ្គសិក្សា</h2>
+      <hr />
+      <div class="paragraph">
+        <p>
+        ដើម្បីសិក្សាវិស័យ ការរចនាប្រកបដោយភាពស្នាដៃ (Design) ឲ្យបានល្អ, និស្សិតត្រូវមានចំណេះដឹងមូលដ្ឋានមួយចំនួនជាមុនសិន។ ការយល់ដឹងអំពីស្ថាបត្យកម្មរចនា (Design Principles), ការប្រើប្រាស់ឧបករណ៍រចនា (Design Tools), និងការបង្ហាញស្នាដៃតាមបណ្តាញគឺជាដំណាក់កាលដំបូងសម្រាប់ការចាប់ផ្តើមដំណើរសិក្សា។ ចំណេះដឹងនេះអាចជួយស្វែងយល់ពីស្ថាបត្យកម្មរចនាបែបសិល្បៈ, អន្តរកម្មរូបភាព (Interactive Graphics), និងការរចនាអតិភាពអ្នកប្រើប្រាស់ (User Experience Design) បានយ៉ាងប្រសើរ។
+        </p>
+        <p>
+            ចំណុចសំខាន់ក្នុងការសិក្សាវិស័យរចនា គឺការយល់ពី ការរៀបចំគំនិត (Concept Development), ការប្រើប្រាស់បណ្តាញពណ៌ និងរចនាមុខមាត់ (Color Theory & Visual Composition), និង ការប្រើប្រាស់សូហ្វវែរ ដូចជា Adobe Creative Suite (Photoshop, Illustrator, After Effects) និង Figma ដើម្បីបង្កើតស្នាដៃដែលមានគុណភាពខ្ពស់។ ការយល់ដឹងអំពី Typography ផងដែរ គឺសំខាន់សម្រាប់ការបង្កើតរចនាត្រឹមត្រូវនិងមានអារម្មណ៍សាមគ្គីភាព។
+        </p>
+        <p>
+            ការអនុវត្តន៍និងការធ្វើ Practical Projects ជាការសំខាន់ក្នុងការយល់ពី ការប្រើប្រាស់ Grid Systems, ការរៀបចំ Layout, និងការរចនាសម្រាប់ប្រព័ន្ធផ្សព្វផ្សាយផ្សេងៗ ដូចជា Print Design និង Digital Design។ ការប្រើប្រាស់និងស្វែងយល់ពី UI/UX Tools ដូចជា Sketch, Figma, និង Adobe XD អាចជួយអ្នកធ្វើការរចនាសម្រាប់ Web និង Mobile Applications បានយ៉ាងល្អ។
+        </p>
+        <p>
+            ចុងក្រោយនេះ ការសិក្សាអំពី Design Trends និងការប្រើប្រាស់ Mockup Tools ជួយក្នុងការបង្ហាញស្នាដៃដល់អតិថិជន ឬបណ្តាញផ្សព្វផ្សាយ។ ការអនុវត្តលើ Portfolio Development និងការចូលរួមក្នុងសហគមន៍រចនា គឺជាជំហានសំខាន់សម្រាប់បង្កើតអាជីពអ្នករចនា។
+        </p>        
+      </div>
+    </div>
+
+    <div class="videoStore">
+      <h2>វីដេអូនៃវគ្គសិក្សា</h2>
+      <hr />
+      <div class="container">
+        <div class="video-container">
+          <video controls class="video-player">
+            <source src="./img/videoIMG/video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-info">
+            <h1 class="video-title">Fundamentals of Design</h1>
+            <p class="video-description">
+              សួស្តីសិស្សានុសិស្សទាំងអស់គ្នាស្វាគមន៏មកកាន់វគ្គសិក្សា
+              Design។
+            </p>
+          </div>
+          <div class="tab-navigation">
+            <button
+              class="tab-button"
+              onclick="openTab('description')"
+              id="startBtn"
+            >
+              Description
+            </button>
+            <button class="tab-button" onclick="openTab('comments')">
+              សំនួរ&ចម្លើយ
+            </button>
+            <button class="tab-button" onclick="openTab('tested')">
+              តេស្តសាកល្បង
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div id="description" class="tab-content">
+            <div class="viewDate">
+              <b
+                >2,769 views 30, វិច្ឆិកា, 2024
+                <u style="color: rgb(0, 102, 255)"
+                  >វគ្គសិក្សា​ Design</u
+                ></b
+              >
+            </div>
+            <div class="teacherDatail">
+              <h4>បង្រៀនដោយ: លោកគ្រូ រី គីមឆាយ,</h4>
+              <h4>រក្សាសិទ្ធដោយ: គណេស.ខម,​</h4>
+              <p>
+                ការសិក្សា Design តម្រូវឱ្យមានការអនុវត្តជាក់ស្តែង
+                និងការធ្វើ project បច្ចេកទេសដែលស្មោះត្រង់នឹងការច្នៃប្រឌិត។ 
+                វាជាជំហានសំខាន់សម្រាប់អាជីពរចនាដែលមានភាពច្នៃប្រឌិតនៅពេលអនាគត។
+            </p>
+            
+              <p id="p2">
+                ចែករំលែកវីដេអូនេះទៅកាន់:
+                <a href=""><i class="bx bxl-facebook-circle"></i></a>
+                <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                <a href=""><i class="bx bxl-telegram"></i></a>
+              </p>
+            </div>
+          </div>
+
+          <div id="comments" class="tab-content" style="display: none">
+            <div class="comments-section">
+              <h2><span id="comment-count">0</span> សំនួរ ពីសិស្ស:</h2>
+
+              <!-- Comment Form -->
+              <div class="comment-input-container">
+                <form id="comment-form">
+                  <textarea
+                    id="comment-input"
+                    placeholder="មានអ្វីចង់សួរមែនទេ..."
+                    required
+                  ></textarea>
+                  <button type="submit" id="submit">បង្ហោះសំនួរ</button>
+                </form>
+              </div>
+
+              <div id="comments-list" class="comments-list"></div>
+            </div>
+          </div>
+
+          <div id="tested" class="tab-content" style="display: none">
+            <div class="quiz-container">
+              <h1>តោះ​សាកធ្វើមើល!!</h1>
+
+              <div class="quiz-info">
+                <h2>សាកមើលយល់បានប៉ុណ្ណាដែល?</h2>
+                <div class="info-box">
+                  <p>ប្រភេទលំហាត់: QCM</p>
+                  <p><span>រយ:ពេលក្នុងការធ្វើ:</span> 10 នាទី</p>
+                  <p><span>ពិន្ទុទទួលបានក្នុង១លំហាត់:</span> 1 ពិន្ទុ</p>
+                  <p><span>ពិន្ទុដែលត្រូវដកពេលជ្រើសខុស:</span> 1 ពិន្ទុ</p>
+                  <button onclick="startQuiz()">ចាប់ផ្តើមធ្វើ</button>
+                </div>
+              </div>
+
+              <p class="disclaimer">
+                Never submit passwords through this form.
+              </p>
+              <footer>
+                <p>
+                  <a href="#">Report Abuse</a> -
+                  <a href="#">Terms of Service</a> -
+                  <a href="#">Privacy Policy</a>
+                </p>
+                <p>Kanesha.com</p>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="suggestions-container">
+          <h2 style="font-family: Kantumruy Pro, sans-serif">វីដេអូបន្ត</h2>
+          <hr />
+          <div class="suggestion">
+            <img
+              src="./video/poster2.jpg"
+              alt="Thumbnail 1"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Design Basics</h3>
+              <p>ស្វែងយល់ពី Design, តើអ្វីជា Design?</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/poster3.jpg"
+              alt="Thumbnail 2"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Adobe Photoshop</h3>
+              <p>ណែនាំអោយស្គាល់ពី Besic Design Photoshop</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss1.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Design Fundamental</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss2.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>UX/UI</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss3.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Adobe premiere pro</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design premiere pro</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss4.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Figma</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design Figma</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/posterCss5.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Adobe Creative Cloud</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/praPre1.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Adobe Illustrator</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design Illustrator</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/praPre2.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Capcut</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/praPre3.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Adobe Bridge</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design Bridge</p>
+            </div>
+          </div>
+          <div class="suggestion">
+            <img
+              src="./video/frontPre.jpg"
+              alt="Thumbnail 3"
+              class="suggested-thumbnail"
+            />
+            <div class="suggestion-info">
+              <h3>Adobe Lighroom</h3>
+              <p>កម្រិតតំបូងនៃការសិក្សាលើទៅលើ​ Design</p>
+            </div>
+          </div>
+          <!-- Add more suggested videos as needed -->
+        </div>
+      </div>
+    </div>
+
+    <div class="underlinks">
+      <button id="arrow-upbtn"><i class="bx bxs-chevrons-up"></i></button>
+      <div class="bottomInformation">
+        <div class="logo">
+          <h1>គណេស.ខម</h1>
+          <h4>Kanesha.com</h4>
+          <p style="width: 30rem; font-weight: 300; line-height: 2rem">
+            គណេស.Kanesha ជាវេបសាយមួយដែលបង្កើតឡើងក្នុងគោលបំណង​
+            អោយអ្នកប្រើប្រាស់អាចសិក្សានូវវគ្គសិក្សាជាច្រើនសម្រាប់អភិវឌ្ឍន៍ចំណេះដឹងលើបច្ចេកវិទ្យាថ្មីៗដោយមិនគិតថ្លៃតាមរយ:
+            វីដេអូ​​ ​និង ឯកសារជាច្រើន។
+          </p>
+        </div>
+        <div class="links">
+          <h2>Link បន្ថែម</h2>
+          <a href="reanPage.html">រៀន</a>
+          <a href="blog.html">ប្លុក</a>
+          <a href="job_page.html">ការងារ</a>
+          <a href="aboutus.html">អំពីយើង</a>
+          <a href="contactUs.html">ទំនាក់ទំនង</a>
+          <a href="./rating.html">Rate ពួកយើង</a>
+        </div>
+        <div class="courseBT">
+          <h2>វគ្គសិក្សា</h2>
+          <a href="./course-study.html">Devolopment</a>
+          <a href="./design.html">Design</a>
+          <a href="./cyber_security.html">Cyber Security</a>
+        </div>
+        <div class="contactMe">
+          <h2>ទំនាក់ទំនង</h2>
+          <div class="contactLink">
+            <a
+              href="https://www.google.com/maps?ll=11.569746,104.888775&z=18&t=m&hl=en&gl=KH&mapclient=embed&cid=13679816548194653181"
+              target="_blank"
+              ><i class="bx bxs-location-plus"></i>ភ្នំពេញ</a
+            >
+          </div>
+          <div class="contactLink">
+            <a href="#"><i class="bx bx-phone-call"></i>+855 81 51 3746</a>
+          </div>
+          <div class="contactLink">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><i class="bx bxl-gmail"></i>Kanesha@gmail.com</a
+            >
+          </div>
+
+          <div class="icon">
+            <a href=""><i class="bx bxl-facebook-circle"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <hr />
+        <div class="creditBy">
+          <h4>រក្សាសិទ្ធដោយ ©​​ 2024 គណេស.ខម​ .រៀបចំដោយ ក្រុម​ NightOwl</h4>
+          <h4>|</h4>
+          <h4>លក្ខណ្ឌ​ & គោលការណ៍ឯកជន</h4>
+        </div>
+      </div>
+    </div>
+    <script src="./js/videoPage.js"></script>
+  </body>
+</html>
