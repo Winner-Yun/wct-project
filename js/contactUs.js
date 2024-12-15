@@ -28,10 +28,40 @@ const observer2 = new IntersectionObserver((entries) => {
     }
   });
 });
+const observer3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Add animation classes when the element is in view
+      entry.target.classList.add("animate__animated", "animate__fadeInLeft");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+const observer4 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Add animation classes when the element is in view
+      entry.target.classList.add("animate__animated", "animate__fadeInRight");
+      observer.unobserve(entry.target);
+    }
+  });
+});
 document.querySelectorAll(".navbar").forEach((element) => {
   observer2.observe(element);
 });
 document.querySelectorAll(".informationWeb").forEach((element) => {
+  observer.observe(element);
+});
+document.querySelectorAll(".contact-form").forEach((element) => {
+  observer3.observe(element);
+});
+document.querySelectorAll(".contact-item").forEach((element) => {
+  observer4.observe(element);
+});
+document.querySelectorAll(".social-icons").forEach((element) => {
+  observer4.observe(element);
+});
+document.querySelectorAll(".map").forEach((element) => {
   observer.observe(element);
 });
 
