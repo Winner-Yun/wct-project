@@ -184,6 +184,9 @@ document.querySelectorAll(".banner-desc").forEach((element) => {
 document.querySelectorAll(".banner-img-container").forEach((element) => {
   observer2.observe(element);
 });
+document.querySelectorAll(".about-section").forEach((element) => {
+  observer5.observe(element);
+});
 
 
 
